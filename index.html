@@ -173,12 +173,34 @@
             gap: 20px;
         }
 
-        .social-icons a {
+        .social-icons a, .footer-socials a {
             font-size: 1.2rem;
             color: var(--text-muted);
+            transition: all 0.3s ease;
         }
 
-        .social-icons a:hover { color: var(--primary-light); }
+        .social-icons a:hover, .footer-socials a:hover {
+            transform: translateY(-2px);
+        }
+
+        .social-icons a.linkedin:hover, .footer-socials a.linkedin:hover {
+            color: #0A66C2; /* LinkedIn Blue */
+        }
+
+        .social-icons a.github:hover, .footer-socials a.github:hover {
+            color: #ffffff; /* GitHub Light for dark theme */
+        }
+
+        .social-icons a.instagram:hover, .footer-socials a.instagram:hover {
+            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .social-icons a.email:hover, .footer-socials a.email:hover {
+            color: #EA4335; /* Gmail Red */
+        }
 
         .hamburger { display: none; font-size: 1.5rem; cursor: pointer; }
 
@@ -653,8 +675,6 @@
         .footer-logo span { color: var(--text-muted); font-size: 0.85rem; }
 
         .footer-socials { display: flex; gap: 20px; }
-        .footer-socials a { color: var(--text-muted); font-size: 1.2rem; }
-        .footer-socials a:hover { color: var(--primary-light); }
 
         /* --- RESPONSIVE --- */
         @media (max-width: 1024px) {
@@ -714,9 +734,10 @@
 
             <div class="nav-right">
                 <div class="social-icons">
-                    <a href="https://www.linkedin.com/in/khurram-naveed-0083851aa/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/Khurramnaveed3233/Portfolio" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="mailto:khurramnaveed4545@gmail.com"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/khurram-naveed-0083851aa/" target="_blank" class="linkedin"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Khurramnaveed3233/Portfolio" target="_blank" class="github"><i class="fab fa-github"></i></a>
+                    <a href="mailto:khurramnaveed4545@gmail.com" class="email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.instagram.com/khurram_insights/" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
                 </div>
                 <a href="contact.html" class="btn btn-primary" style="padding: 8px 20px; font-size: 0.85rem;">Download Resume</a>
                 <div class="hamburger"><i class="fas fa-bars"></i></div>
@@ -957,9 +978,10 @@
                 <span>Aspiring Data Analyst</span>
             </div>
             <div class="footer-socials">
-                <a href="https://www.linkedin.com/in/khurram-naveed-0083851aa/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/Khurramnaveed3233/Portfolio" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="mailto:khurramnaveed4545@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/khurram-naveed-0083851aa/" target="_blank" class="linkedin"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Khurramnaveed3233/Portfolio" target="_blank" class="github"><i class="fab fa-github"></i></a>
+                <a href="mailto:khurramnaveed4545@gmail.com" class="email"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.instagram.com/khurram_insights/" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
             </div>
         </div>
     </footer>
