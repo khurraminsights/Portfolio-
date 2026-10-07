@@ -3,26 +3,28 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/jpeg" href="Khurram Insights.jpeg">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 <title>Projects — Khurram Naveed | Data Analyst Portfolio</title>
 <meta name="description" content="19 real-world SQL, Power BI, Excel, and Python data analytics projects by Khurram Naveed — turning raw business data into actionable insights.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
 
 <style>
   :root{
-    --bg-primary:#0a0713;
-    --bg-secondary:#120b1f;
-    --purple:#8b5cf6;
-    --purple-light:#a78bfa;
-    --purple-dark:#5b21b6;
-    --text-primary:#f5f3f9;
-    --text-secondary:#a5a0b5;
-    --border:rgba(139,92,246,0.22);
-    --border-strong:rgba(139,92,246,0.5);
+    --bg-primary:#0b111b;
+    --bg-secondary:#111d2d;
+    --purple:#179bff;
+    --purple-light:#49b9ef;
+    --purple-dark:#007aff;
+    --text-primary:#f5f7fb;
+    --text-secondary:#a6b4c7;
+    --border:rgba(23,155,255,0.22);
+    --border-strong:rgba(23,155,255,0.5);
     --card-bg:rgba(255,255,255,0.03);
-    --card-bg-hover:rgba(139,92,246,0.06);
+    --card-bg-hover:rgba(23,155,255,0.06);
     --radius-lg:20px;
     --radius-md:14px;
     --radius-pill:999px;
@@ -67,8 +69,8 @@
     inset:0;
     z-index:-2;
     background-image:
-      linear-gradient(rgba(139,92,246,0.05) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(139,92,246,0.05) 1px, transparent 1px);
+      linear-gradient(rgba(23,155,255,0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(23,155,255,0.05) 1px, transparent 1px);
     background-size:48px 48px;
     mask-image:radial-gradient(ellipse 80% 60% at 50% 20%, black 40%, transparent 90%);
   }
@@ -80,97 +82,9 @@
     transform:translateX(-50%);
     width:900px;
     height:600px;
-    background:radial-gradient(closest-side, rgba(139,92,246,0.20), transparent 70%);
+    background:radial-gradient(closest-side, rgba(23,155,255,0.20), transparent 70%);
     z-index:-1;
     pointer-events:none;
-  }
-
-  /* ---------- Navigation ---------- */
-  .navbar{
-    position:sticky;
-    top:0;
-    z-index:100;
-    background:linear-gradient(180deg, rgba(18,11,31,0.95), rgba(10,7,19,0.92));
-    backdrop-filter:blur(10px);
-    border-bottom:1px solid var(--border);
-  }
-
-  .nav-inner{
-    max-width:var(--max-width);
-    margin:0 auto;
-    padding:16px 32px;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    gap:40px;
-  }
-
-  .nav-brand {
-    display: flex;
-    align-items: center;
-    flex-shrink: 0;
-  }
-
-  .nav-brand img {
-    height: 38px;
-    width: auto;
-    border-radius: 8px;
-    object-fit: contain;
-  }
-
-  .nav-links {
-    display: flex;
-    gap: 32px;
-    list-style: none;
-    align-items: center;
-    margin-left: auto;
-    flex-wrap: nowrap;
-  }
-
-  .nav-link{
-    font-size:14px;
-    font-weight:600;
-    letter-spacing:1.5px;
-    text-transform:uppercase;
-    color:var(--text-secondary);
-    transition:color .25s ease;
-    padding:4px 0;
-    white-space: nowrap;
-  }
-
-  .nav-link:hover{color:var(--text-primary);}
-
-  .nav-link.active{
-    color:var(--text-primary);
-    border-bottom:2px solid var(--purple-light);
-  }
-
-  /* Responsive navbar adjustments */
-  @media (max-width: 768px){
-    .nav-inner{
-        padding:16px 20px;
-        gap:24px;
-    }
-    
-    .nav-links{
-        gap:20px;
-    }
-    
-    .nav-link{
-        font-size:12px;
-        letter-spacing:1.2px;
-    }
-  }
-
-  @media (max-width: 640px){
-    .nav-links{
-        gap:16px;
-    }
-    
-    .nav-link{
-        font-size:11px;
-        letter-spacing:1px;
-    }
   }
 
   /* ---------- Hero Redesigned with Analytics Side Panels ---------- */
@@ -200,7 +114,7 @@
   /* Dashboard Panels & Cards styling */
   .analytics-panel {
     position: absolute;
-    background: rgba(18, 11, 31, 0.75);
+    background: rgba(17, 29, 45, 0.75);
     border: 1px solid var(--border-strong);
     backdrop-filter: blur(12px);
     border-radius: 16px;
@@ -229,7 +143,7 @@
     top: 140px;
     left: 140px;
     z-index: 3;
-    background: rgba(18, 11, 31, 0.9);
+    background: rgba(17, 29, 45, 0.9);
     border: 1px solid var(--border-strong);
     padding: 10px 14px;
     border-radius: 12px;
@@ -249,7 +163,7 @@
     bottom: -10px;
     left: 150px;
     z-index: 3;
-    background: rgba(18, 11, 31, 0.9);
+    background: rgba(17, 29, 45, 0.9);
     border: 1px solid var(--border-strong);
     padding: 10px 14px;
     border-radius: 12px;
@@ -279,7 +193,7 @@
     top: 150px;
     right: 170px;
     z-index: 3;
-    background: rgba(18, 11, 31, 0.9);
+    background: rgba(17, 29, 45, 0.9);
     border: 1px solid var(--border-strong);
     padding: 10px;
     border-radius: 12px;
@@ -291,7 +205,7 @@
     top: 250px;
     right: 35px;
     z-index: 3;
-    background: linear-gradient(135deg, rgba(217, 119, 6, 0.2), rgba(18, 11, 31, 0.9));
+    background: linear-gradient(135deg, rgba(217, 119, 6, 0.2), rgba(17, 29, 45, 0.9));
     border: 1px solid rgba(245, 158, 11, 0.5);
     padding: 12px;
     border-radius: 14px;
@@ -500,7 +414,7 @@
   }
 
   .filter-btn.active{
-    background:rgba(139,92,246,0.16);
+    background:rgba(23,155,255,0.16);
     border-color:var(--purple-light);
     color:#fff;
   }
@@ -528,7 +442,7 @@
 
   @media (max-width: 680px){
     .grid{grid-template-columns:1fr;}
-    .nav-inner{gap:20px 28px;}
+    
     .stats{gap:44px;}
     
     .view-projects-wrapper {
@@ -551,7 +465,7 @@
     transform:translateY(-8px);
     border-color:var(--border-strong);
     background:var(--card-bg-hover);
-    box-shadow:0 20px 50px -20px rgba(139,92,246,0.35);
+    box-shadow:0 20px 50px -20px rgba(23,155,255,0.35);
   }
 
   .card-media{
@@ -640,7 +554,7 @@
   }
 
   .card-insight{
-    background:rgba(139,92,246,0.06);
+    background:rgba(23,155,255,0.06);
     border:1px solid var(--border);
     border-radius:var(--radius-md);
     padding:14px 16px;
@@ -703,7 +617,7 @@
 
   .btn-primary:hover{
     transform:translateY(-2px);
-    box-shadow:0 12px 30px -10px rgba(139,92,246,0.6);
+    box-shadow:0 12px 30px -10px rgba(23,155,255,0.6);
   }
 
   /* ---------- Footer ---------- */
@@ -778,7 +692,7 @@
     height:auto;
     border-radius:var(--radius-md);
     border:1px solid var(--border-strong);
-    box-shadow:0 30px 80px -20px rgba(139,92,246,0.4);
+    box-shadow:0 30px 80px -20px rgba(23,155,255,0.4);
   }
 
   .lightbox-caption{
@@ -813,6 +727,194 @@
   @media (max-width:600px){
     .lightbox-close{top:-46px;right:0;}
   }
+
+:root {--font-heading:'Space Grotesk',sans-serif;--font-body:'Inter',sans-serif;--text-muted:#a6b4c7;--primary:#007aff;--bg-dark:#0b111b;--border-glass:rgba(73,185,239,.18)}
+a {transition:.3s ease}ul {list-style:none}.container{padding:0 24px}
+.navbar{line-height:1.6;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background: rgba(9, 5, 31, 0.8);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border-glass);
+            padding: 16px 0;
+        }
+.nav-inner{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+.logo h2{
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+.logo span{
+            display: block;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            font-weight: 400;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+.nav-links{
+            display: flex;
+            gap: 24px; 
+        }
+.nav-links a{
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--text-muted);
+            position: relative;
+        }
+.nav-links a:hover,.nav-links a.active{
+            color: var(--text-main);
+        }
+.nav-links a::after{
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary);
+            transition: width 0.3s;
+        }
+.nav-links a:hover::after,.nav-links a.active::after{
+            width: 100%;
+        }
+.nav-right{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+.nav-logo{
+            height: 40px;
+            width: auto;
+            object-fit: contain;
+            display: block;
+        }
+.social-icons a{
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            transition: all 0.3s ease;
+        }
+.social-icons a:hover{
+            transform: translateY(-2px);
+        }
+.social-icons a.linkedin:hover{
+            color: #0A66C2; 
+        }
+.social-icons a.github:hover{
+            color: #ffffff; 
+        }
+.social-icons a.instagram:hover{
+            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+.social-icons a.email:hover{
+            color: #EA4335; 
+        }
+.hamburger{ display: none; font-size: 1.5rem; cursor: pointer; }
+@media (max-width: 768px){.nav-links,.nav-right .nav-logo{ display: none; }
+.hamburger{ display: block; }
+.nav-links{
+                position: fixed;
+                top: 70px;
+                right: -100%;
+                width: 70%;
+                height: calc(100vh - 70px);
+                background: var(--bg-dark);
+                flex-direction: column;
+                padding: 40px;
+                transition: 0.3s ease;
+                border-left: 1px solid var(--border-glass);
+            }
+.nav-links.active{
+                right: 0;
+            }}
+.navbar{ top:20px; left:50%; transform:translateX(-50%); width:calc(100% - 64px); max-width:1320px; padding:0; border:1px solid #ffffff90; border-radius:60px; background:rgba(255,255,255,.97); box-shadow:0 8px 35px #0002; color:#122034; }
+.nav-inner{ padding:14px 26px; gap:20px; }
+.logo h2{font-size:1.1rem;white-space:nowrap}
+.logo span{color:#667085;font-size:.65rem}
+.nav-links{gap:20px}
+.nav-links a{color:#344054;font-size:.82rem;white-space:nowrap}
+.nav-links a:hover,.nav-links a.active{color:#007aff}
+.nav-links a::after{background:#007aff}
+.nav-right{gap:14px}
+.nav-logo{height:34px;width:34px;border-radius:50%;object-fit:cover}
+.social-icons{display:flex;align-items:center;gap:13px}
+.social-icons a{display:inline-flex;align-items:center;justify-content:center;min-width:24px;min-height:36px}
+.social-icons .linkedin{color:#0a66c2}
+.social-icons .github,.social-icons .github:hover{color:#182230}
+.social-icons .email{color:#ea4335}
+.social-icons .instagram{color:#d6249f}
+.hamburger{border:0;background:transparent;color:#182230;padding:8px}
+a:focus-visible,button:focus-visible{outline:3px solid #179bff;outline-offset:5px}
+@media(max-width:1200px){.navbar{width:calc(100% - 32px)}
+.nav-inner{padding:13px 20px;gap:12px}
+.nav-links{gap:12px}
+.nav-logo{display:none}}
+@media(max-width:992px){.hamburger{display:block}
+.nav-links{display:none;position:absolute;top:calc(100% + 12px);left:0;right:0;width:100%;height:auto;padding:20px;background:white;border:1px solid #e2e8f0;border-radius:22px;box-shadow:0 12px 30px #0002;flex-direction:column;gap:0}
+.nav-links.active{display:flex;right:0}
+.nav-links a{display:block;padding:12px}}
+@media(max-width:768px){.navbar{top:12px;width:calc(100% - 24px)}
+.nav-inner{padding:10px 16px}
+.social-icons{gap:8px}}
+@media(max-width:480px){.logo h2{font-size:.86rem}
+.logo span{font-size:.56rem}
+.nav-inner{gap:7px;padding:10px 12px}
+.nav-right{gap:6px}
+.social-icons{gap:5px}
+.social-icons a{font-size:1rem;min-width:22px}
+.hamburger{font-size:1.1rem;padding:6px}}
+.navbar{top:12px;width:92%;max-width:1180px;box-shadow:0 6px 24px #0002}
+.nav-inner{padding:8px 20px;gap:14px}
+.nav-links{gap:15px}
+.nav-links a{font-size:.8rem}
+.nav-right{gap:10px}
+.social-icons{gap:10px}
+.social-icons a{font-size:1.08rem;min-height:34px}
+.nav-logo{width:30px;height:30px}
+@media(max-width:1200px){.navbar{width:92%}
+.nav-inner{padding:8px 16px}
+.nav-links{gap:11px}}
+@media(max-width:992px){.nav-inner{padding:8px 18px}
+.nav-links{gap:0}}
+@media(max-width:768px){.navbar{top:10px;width:94%}
+.nav-inner{padding:8px 14px}}
+@media(max-width:480px){.navbar{width:94%}
+.nav-inner{padding:7px 10px;gap:5px}
+.nav-right{gap:4px}
+.social-icons{gap:4px}
+.social-icons a{font-size:1rem;min-width:22px}}
+        
+.hero {padding:150px 24px 50px}
+.hero h1 {font-size:clamp(3.1rem,6.8vw,5.8rem);line-height:1.05;letter-spacing:-2px}
+.hero h1 .gradient {background:none;color:#49b9ef;-webkit-text-fill-color:currentColor}
+.hero .sub {max-width:620px;margin:22px auto 18px;color:#b8c4d3;font-size:1.05rem}
+.project-typewriter {display:grid;grid-template-columns:minmax(0,1fr);max-width:760px;margin:0 auto 30px;font-size:clamp(1rem,1.7vw,1.3rem);line-height:1.55;font-weight:500;color:#49b9ef}
+.project-reserve,.project-display {grid-area:1/1}
+.project-reserve {visibility:hidden;display:grid;pointer-events:none}
+.project-reserve > span {grid-area:1/1}
+.type-cursor {display:inline-block;width:2px;height:.85em;vertical-align:-.02em;margin-left:5px;background:#49b9ef;animation:cursor-blink 1s step-end infinite}
+@keyframes cursor-blink {0%,100%{opacity:1}50%{opacity:0}}
+.sr-only {position:absolute;width:1px;height:1px;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
+.hero .stats {gap:14px;flex-wrap:wrap;margin-top:0}
+.hero .stats > div {min-width:145px;padding:16px 24px;background:#111d2d80;border:1px solid #49b9ef22;border-radius:16px}
+.hero .stat-num {color:#49b9ef}
+.analytics-panel {background:#111d2d90;box-shadow:0 12px 35px #0002;opacity:.55}
+.bg-glow {background:radial-gradient(closest-side,#179bff12,transparent 70%)}
+.card:hover {box-shadow:0 14px 35px #0003}
+@media(max-width:992px) {.hero-analytics-bg{display:none}}
+@media(max-width:768px) {.hero{padding:130px 24px 38px}.hero .stats > div{min-width:130px;padding:14px 18px}}
+@media(max-width:480px) {.hero{padding:115px 20px 32px}.hero h1{letter-spacing:-1px}.hero .sub{font-size:.95rem}.hero .stats{gap:8px}.hero .stats > div{min-width:0;flex:1;padding:13px 8px}.hero .stat-label{font-size:.6rem}}
+@media(prefers-reduced-motion:reduce) {html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}.type-cursor{display:none}}
 </style>
 </head>
 <body>
@@ -821,20 +923,37 @@
 <div class="bg-glow" aria-hidden="true"></div>
 
 <header class="navbar">
-  <nav class="nav-inner" aria-label="Primary navigation">
-    <div class="nav-brand">
-      <img src="Khurram Insights.jpeg" alt="Khurram Insights Logo">
-    </div>
-    <div class="nav-links">
-      <a class="nav-link" href="index.html">Home</a>
-      <a class="nav-link" href="about.html">About</a>
-      <a class="nav-link active" href="projects.html" aria-current="page">Projects</a>
-      <a class="nav-link" href="skills.html">Skills</a>
-      <a class="nav-link" href="certifications.html">Certifications</a>
-      <a class="nav-link" href="contact.html">Contact</a>
-    </div>
-  </nav>
-</header>
+        <div class="container nav-inner">
+            <div class="logo">
+                <a href="index.html">
+                    <h2>Khurram Naveed</h2>
+                    <span>Data Analyst</span>
+                </a>
+            </div>
+            
+            <nav aria-label="Main navigation">
+                <ul class="nav-links" id="main-navigation">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html" class="active" aria-current="page">Projects</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="certifications.html">Certifications</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-right">
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/khurram-naveed-0083851aa/" target="_blank" rel="noopener noreferrer" class="linkedin" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Khurramnaveed3233/Portfolio" target="_blank" rel="noopener noreferrer" class="github" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="mailto:khurramnaveed4545@gmail.com" class="email" aria-label="Email Khurram"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.instagram.com/khurram_insights/" target="_blank" rel="noopener noreferrer" class="instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+                <img src="Khurram Insights.jpeg" alt="Khurram Insights Logo" class="nav-logo">
+                <button class="hamburger" type="button" aria-label="Open navigation" aria-controls="main-navigation" aria-expanded="false"><i class="fas fa-bars" aria-hidden="true"></i></button>
+            </div>
+        </div>
+    </header>
 
 <main id="main">
 
@@ -926,11 +1045,8 @@
       Featured<br>
       <span class="gradient">Projects</span>
     </h1>
-    <p class="sub">
-      19 end-to-end SQL, Power BI, Excel, and Python projects — turning raw business data from
-      e-commerce, retail, telecom, and ride-hailing companies into clear,
-      actionable insights.
-    </p>
+    <p class="sub">Real-world analytics projects built to turn complex business data into decisions that matter.</p>
+    <div class="project-typewriter"><span class="sr-only">Turning Raw Data into Actionable Insights</span><span class="project-reserve" aria-hidden="true"><span>Turning Raw Data into Actionable Insights<span class="type-cursor"></span></span><span>Building Dashboards That Drive Decisions<span class="type-cursor"></span></span><span>Uncovering Patterns That Reveal Opportunity<span class="type-cursor"></span></span><span>Transforming Business Data into Clear Strategy<span class="type-cursor"></span></span><span>From Complex Data to Smarter Decisions<span class="type-cursor"></span></span></span><span class="project-display" aria-hidden="true"><span id="typed-projects">Turning Raw Data into Actionable Insights</span><span class="type-cursor"></span></span></div>
 
     <div class="stats" aria-label="Project statistics">
       <div>
@@ -1761,7 +1877,57 @@
       if (e.key === 'Escape' && lightbox.classList.contains('open')) closeLightbox();
     });
   })();
+
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        function closeMenu() {
+            navLinks.classList.remove('active');
+            hamburger.setAttribute('aria-expanded', 'false');
+            hamburger.setAttribute('aria-label', 'Open navigation');
+        }
+        hamburger.addEventListener('click', () => {
+            const open = navLinks.classList.toggle('active');
+            hamburger.setAttribute('aria-expanded', String(open));
+            hamburger.setAttribute('aria-label', open ? 'Close navigation' : 'Open navigation');
+        });
+        document.addEventListener('keydown', event => {
+            if (event.key === 'Escape' && navLinks.classList.contains('active')) {
+                closeMenu(); hamburger.focus();
+            }
+        });
+        document.addEventListener('click', event => {
+            if (!event.target.closest('.navbar')) closeMenu();
+        });
+        navLinks.addEventListener('click', event => { if (event.target.closest('a')) closeMenu(); });
+        window.addEventListener('resize', () => { if (window.innerWidth > 992) closeMenu(); });
+
+        
+        // Same typing/deleting cadence as the hero; reusable for any phrase list.
+        function startTypewriter(element, phrases) {
+            const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
+            let timer, index = 0, count = phrases[0].length, deleting = true;
+            function tick() {
+                if (motion.matches) return;
+                const phrase = phrases[index];
+                count += deleting ? -1 : 1;
+                element.textContent = phrase.slice(0, count);
+                let delay = deleting ? 45 : 85;
+                if (!deleting && count === phrase.length) {deleting = true; delay = 1600;}
+                else if (deleting && count === 0) {deleting = false; index = (index + 1) % phrases.length; delay = 300;}
+                timer = window.setTimeout(tick, delay);
+            }
+            function reset() {
+                window.clearTimeout(timer); index = 0; count = phrases[0].length; deleting = true;
+                element.textContent = phrases[0];
+                if (!motion.matches) timer = window.setTimeout(tick, 1600);
+            }
+            motion.addEventListener('change', reset);
+            reset();
+        }
+
+startTypewriter(document.getElementById('typed-projects'), ['Turning Raw Data into Actionable Insights', 'Building Dashboards That Drive Decisions', 'Uncovering Patterns That Reveal Opportunity', 'Transforming Business Data into Clear Strategy', 'From Complex Data to Smarter Decisions']);
 </script>
 
 </body>
 </html>
+
