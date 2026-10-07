@@ -915,6 +915,19 @@ a:focus-visible,button:focus-visible{outline:3px solid #179bff;outline-offset:5p
 @media(max-width:768px) {.hero{padding:130px 24px 38px}.hero .stats > div{min-width:130px;padding:14px 18px}}
 @media(max-width:480px) {.hero{padding:115px 20px 32px}.hero h1{letter-spacing:-1px}.hero .sub{font-size:.95rem}.hero .stats{gap:8px}.hero .stats > div{min-width:0;flex:1;padding:13px 8px}.hero .stat-label{font-size:.6rem}}
 @media(prefers-reduced-motion:reduce) {html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}.type-cursor{display:none}}
+
+/* Minimal visual scroll hint. */
+.hero-project-scroll {
+  display:flex;align-items:center;justify-content:center;
+  width:44px;height:44px;margin:24px auto 0;
+  color:#49b9ef;background:transparent;border:0;border-radius:50%;
+  transition:color .25s,background .25s;
+}
+.hero-project-scroll:hover {color:#a8dfff;background:rgba(73,185,239,.06)}
+.hero-project-scroll:focus-visible {outline:2px solid #49b9ef;outline-offset:4px}
+.hero-scroll-arrow {display:block;font-size:1.8rem;line-height:1;animation:hero-scroll-cue 1.8s ease-in-out infinite}
+@keyframes hero-scroll-cue {0%,100%{transform:translateY(0);opacity:1}50%{transform:translateY(8px);opacity:.45}}
+@media(prefers-reduced-motion:reduce) {.hero-project-scroll .hero-scroll-arrow{animation:none;transform:none;opacity:1}.hero-project-scroll{transition:none}}
 </style>
 </head>
 <body>
@@ -1062,15 +1075,12 @@ a:focus-visible,button:focus-visible{outline:3px solid #179bff;outline-offset:5p
         <div class="stat-label">Power BI Projects</div>
       </div>
     </div>
-  </section>
 
-  <!-- View Projects Button -->
-  <div class="view-projects-wrapper">
-    <button class="btn-view-projects" id="scrollToProjectsBtn" aria-label="Scroll to featured projects">
-      <span>View Projects</span>
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
-    </button>
-  </div>
+    <!-- Scroll cue for the project content below -->
+    <a class="hero-project-scroll" href="#featured-projects-grid" aria-label="Scroll to view projects">
+      <span class="hero-scroll-arrow" aria-hidden="true">↓</span>
+    </a>
+  </section>
 
   <div class="filters" role="group" aria-label="Filter projects by category">
     <button class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
@@ -1803,26 +1813,6 @@ a:focus-visible,button:focus-visible{outline:3px solid #179bff;outline-offset:5p
     });
   })();
 
-  /* ---------- Smooth Scroll to Projects ---------- */
-  (function(){
-    const scrollBtn = document.getElementById('scrollToProjectsBtn');
-    const targetSection = document.getElementById('featured-projects-grid');
-    
-    if(scrollBtn && targetSection){
-      scrollBtn.addEventListener('click', (e) => {
-        e.preventDefault();
-        
-        const navbarHeight = document.querySelector('.navbar').offsetHeight;
-        const targetPosition = targetSection.getBoundingClientRect().top + window.pageYOffset - navbarHeight - 20;
-        
-        window.scrollTo({
-          top: targetPosition,
-          behavior: 'smooth'
-        });
-      });
-    }
-  })();
-
   /* ---------- Lightbox: click a project image to view it full size ---------- */
   (function(){
     const lightbox = document.getElementById('lightbox');
@@ -1926,6 +1916,22 @@ a:focus-visible,button:focus-visible{outline:3px solid #179bff;outline-offset:5p
         }
 
 startTypewriter(document.getElementById('typed-projects'), ['Turning Raw Data into Actionable Insights', 'Building Dashboards That Drive Decisions', 'Uncovering Patterns That Reveal Opportunity', 'Transforming Business Data into Clear Strategy', 'From Complex Data to Smarter Decisions']);
+
+  // Scroll cue uses the actual existing project section and navbar offset.
+  (() => {
+    const cue = document.querySelector('.hero-project-scroll');
+    const target = document.getElementById('featured-projects-grid');
+    if (!cue || !target) return;
+    cue.addEventListener('click', event => {
+      event.preventDefault();
+      const navbar = document.querySelector('.navbar');
+      const offset = navbar ? navbar.getBoundingClientRect().bottom + 20 : 20;
+      window.scrollTo({
+        top: Math.max(0, target.getBoundingClientRect().top + window.scrollY - offset),
+        behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth'
+      });
+    });
+  })();
 </script>
 
 </body>
