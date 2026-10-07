@@ -4,24 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact | Khurram Insights</title>
-    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/jpeg" href="Khurram Insights.jpeg">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <style>
         :root {
-            --bg:      #07030f;
-            --surface: #0f0720;
-            --border:  rgba(209,179,255,0.12);
-            --accent:  #c084fc;
-            --accent2: #7c3aed;
-            --white:   #f0e8ff;
-            --muted:   #8b7aa0;
+            --bg:      #0b111b;
+            --surface: #111d2d;
+            --border:  rgba(73,185,239,0.12);
+            --accent:  #49b9ef;
+            --accent2: #007aff;
+            --white:   #f5f7fb;
+            --muted:   #a6b4c7;
         }
 
         *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
         html { scroll-behavior:smooth; }
 
         body {
-            font-family: 'DM Sans', sans-serif;
+            font-family: 'Inter', sans-serif;
             background: var(--bg);
             color: var(--white);
             overflow-x: hidden;
@@ -33,36 +34,16 @@
             content:'';
             position:fixed; inset:0;
             background-image:
-                linear-gradient(rgba(124,58,237,0.05) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(124,58,237,0.05) 1px, transparent 1px);
+                linear-gradient(rgba(23,155,255,0.05) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(23,155,255,0.05) 1px, transparent 1px);
             background-size: 60px 60px;
             pointer-events:none; z-index:0;
         }
 
         /* Orbs */
         .orb { position:fixed; border-radius:50%; filter:blur(130px); pointer-events:none; z-index:0; }
-        .orb-1 { width:500px; height:500px; background:rgba(124,58,237,0.15); top:-80px; right:-100px; }
-        .orb-2 { width:350px; height:350px; background:rgba(192,132,252,0.08); bottom:0; left:-60px; }
-
-        /* ── NAV ── */
-        nav {
-            position:sticky; top:0; z-index:1000;
-            background:rgba(26,11,46,0.88);
-            backdrop-filter:blur(18px);
-            border-bottom:1px solid var(--border);
-            padding:14px 5%;
-            display:flex; justify-content:space-between; align-items:center;
-        }
-        .logo-img { height:44px; width:auto; border-radius:8px; transition:0.3s; }
-        .logo-img:hover { transform:scale(1.05); }
-        .nav-links a {
-            color:#d1b3ff; text-decoration:none; margin-left:20px;
-            font-family:'Syne',sans-serif; font-size:0.78rem;
-            text-transform:uppercase; font-weight:700; letter-spacing:1.5px;
-            transition:color 0.2s;
-        }
-        .nav-links a:hover { color:#fff; }
-        .nav-links a.active { color:#fff; border-bottom:2px solid var(--accent); padding-bottom:2px; }
+        .orb-1 { width:500px; height:500px; background:rgba(23,155,255,0.15); top:-80px; right:-100px; }
+        .orb-2 { width:350px; height:350px; background:rgba(73,185,239,0.08); bottom:0; left:-60px; }
 
         /* ── REDESIGNED HEADER (Moved Upward with Analytics Side Graphics) ── */
         .page-header {
@@ -154,7 +135,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            color: #c084fc;
+            color: #49b9ef;
             box-shadow: 0 10px 25px rgba(124, 58, 237, 0.3);
         }
 
@@ -197,10 +178,10 @@
             display:inline-flex; align-items:center; gap:8px;
             font-size:0.72rem; font-weight:700; letter-spacing:3px;
             text-transform:uppercase; color:var(--accent);
-            border:1px solid rgba(192,132,252,0.3);
+            border:1px solid rgba(73,185,239,0.3);
             padding:6px 18px; border-radius:50px;
             margin-bottom:16px;
-            background:rgba(192,132,252,0.06);
+            background:rgba(73,185,239,0.06);
         }
         .eyebrow span {
             width:6px; height:6px; background:var(--accent);
@@ -210,13 +191,13 @@
         @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0.3} }
 
         .page-header h1 {
-            font-family:'Syne',sans-serif;
+            font-family:'Space Grotesk',sans-serif;
             font-size:clamp(2.2rem, 5vw, 3.8rem);
             font-weight:800; letter-spacing:-1px; color:#fff; line-height:1.1;
         }
         .page-header h1 em {
             font-style:normal;
-            background:linear-gradient(90deg,#c084fc,#7c3aed);
+            background:linear-gradient(90deg,#49b9ef,#007aff);
             -webkit-background-clip:text; -webkit-text-fill-color:transparent;
         }
         .page-header p {
@@ -238,13 +219,13 @@
         }
 
         .methods-label {
-            font-family:'Syne',sans-serif; font-size:0.72rem; font-weight:700;
+            font-family:'Space Grotesk',sans-serif; font-size:0.72rem; font-weight:700;
             letter-spacing:2px; text-transform:uppercase; color:var(--muted);
             margin-bottom:4px;
         }
 
         .method-card {
-            background:rgba(15,7,32,0.7);
+            background:rgba(17,29,45,0.7);
             border:1px solid var(--border);
             border-radius:16px; padding:18px 20px;
             display:flex; align-items:center; gap:16px;
@@ -261,8 +242,8 @@
         }
         .method-card:hover {
             transform:translateY(-4px);
-            border-color:rgba(192,132,252,0.35);
-            box-shadow:0 16px 40px rgba(124,58,237,0.18);
+            border-color:rgba(73,185,239,0.35);
+            box-shadow:0 16px 40px rgba(23,155,255,0.18);
         }
         .method-card:hover::before { opacity:1; }
 
@@ -302,7 +283,7 @@
             50%    { box-shadow:0 0 0 7px rgba(74,222,128,0.06); }
         }
         .avail-text {
-            font-family:'Syne',sans-serif; font-size:0.78rem; font-weight:700;
+            font-family:'Space Grotesk',sans-serif; font-size:0.78rem; font-weight:700;
             color:#4ade80; letter-spacing:0.5px;
         }
         .avail-sub { font-size:0.72rem; color:var(--muted); margin-top:2px; }
@@ -310,7 +291,7 @@
         /* ── RIGHT: Contact Form ── */
         .contact-form-card {
             flex:1.3;
-            background:rgba(15,7,32,0.7);
+            background:rgba(17,29,45,0.7);
             border:1px solid var(--border);
             border-radius:24px; padding:40px;
             backdrop-filter:blur(10px);
@@ -323,7 +304,7 @@
         }
 
         .form-heading {
-            font-family:'Syne',sans-serif; font-size:1.3rem; font-weight:800;
+            font-family:'Space Grotesk',sans-serif; font-size:1.3rem; font-weight:800;
             color:#fff; margin-bottom:6px;
         }
         .form-sub { font-size:0.85rem; color:var(--muted); margin-bottom:28px; line-height:1.5; }
@@ -332,7 +313,7 @@
 
         .form-group { margin-bottom:18px; }
         .form-group label {
-            display:block; font-family:'Syne',sans-serif;
+            display:block; font-family:'Space Grotesk',sans-serif;
             font-size:0.7rem; font-weight:700; letter-spacing:1.5px;
             text-transform:uppercase; color:var(--accent); margin-bottom:8px;
         }
@@ -342,7 +323,7 @@
             border-radius:10px;
             border:1px solid var(--border);
             background:rgba(255,255,255,0.04);
-            font-family:'DM Sans',sans-serif;
+            font-family:'Inter',sans-serif;
             font-size:0.92rem; color:var(--white);
             box-sizing:border-box;
             transition:border-color 0.25s, box-shadow 0.25s, background 0.25s;
@@ -352,17 +333,17 @@
         .form-group textarea::placeholder { color:var(--muted); }
         .form-group input:focus,
         .form-group textarea:focus {
-            border-color:rgba(192,132,252,0.5);
-            background:rgba(192,132,252,0.05);
-            box-shadow:0 0 0 3px rgba(192,132,252,0.1);
+            border-color:rgba(73,185,239,0.5);
+            background:rgba(73,185,239,0.05);
+            box-shadow:0 0 0 3px rgba(73,185,239,0.1);
         }
         .form-group textarea { resize:vertical; min-height:130px; }
 
         .send-btn {
             width:100%; padding:15px;
-            background:linear-gradient(90deg, #7c3aed, #c084fc);
+            background:linear-gradient(90deg, #007aff, #49b9ef);
             color:#fff; border:none; border-radius:12px;
-            font-family:'Syne',sans-serif; font-size:0.9rem;
+            font-family:'Space Grotesk',sans-serif; font-size:0.9rem;
             font-weight:800; letter-spacing:1.5px; text-transform:uppercase;
             cursor:pointer;
             transition:transform 0.25s, box-shadow 0.25s, letter-spacing 0.25s;
@@ -370,7 +351,7 @@
         }
         .send-btn:hover {
             transform:translateY(-2px);
-            box-shadow:0 12px 30px rgba(124,58,237,0.45);
+            box-shadow:0 12px 30px rgba(23,155,255,0.45);
             letter-spacing:2.5px;
         }
         .send-btn:active { transform:translateY(0); }
@@ -398,31 +379,234 @@
             .main-container { flex-direction:column; }
             .form-row { grid-template-columns:1fr; }
             .contact-form-card { padding:28px 22px; }
-            .nav-links a { margin-left:12px; font-size:0.72rem; }
         }
         @media (max-width:500px) {
-            .nav-links a { margin-left:8px; font-size:0.68rem; }
             .logo-img { height:36px; }
         }
-    </style>
+    
+:root{--font-heading:'Space Grotesk',sans-serif;--font-body:'Inter',sans-serif;--primary:#007aff;--text-muted:#a6b4c7;--bg-dark:#0b111b;--border-glass:rgba(73,185,239,.18)}
+body{line-height:1.6}a{text-decoration:none;color:inherit;transition:.3s ease}ul{list-style:none}img{max-width:100%;display:block}.container{max-width:1280px;margin:0 auto;padding:0 24px}
+.navbar{line-height:1.6;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background: rgba(9, 5, 31, 0.8);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border-glass);
+            padding: 16px 0;
+        }
+.nav-inner{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+.logo h2{
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+.logo span{
+            display: block;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            font-weight: 400;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+.nav-links{
+            display: flex;
+            gap: 24px; 
+        }
+.nav-links a{
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--text-muted);
+            position: relative;
+        }
+.nav-links a:hover,.nav-links a.active{
+            color: var(--text-main);
+        }
+.nav-links a::after{
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary);
+            transition: width 0.3s;
+        }
+.nav-links a:hover::after,.nav-links a.active::after{
+            width: 100%;
+        }
+.nav-right{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+.nav-logo{
+            height: 40px;
+            width: auto;
+            object-fit: contain;
+            display: block;
+        }
+.social-icons a{
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            transition: all 0.3s ease;
+        }
+.social-icons a:hover{
+            transform: translateY(-2px);
+        }
+.social-icons a.linkedin:hover{
+            color: #0A66C2; 
+        }
+.social-icons a.github:hover{
+            color: #ffffff; 
+        }
+.social-icons a.instagram:hover{
+            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+.social-icons a.email:hover{
+            color: #EA4335; 
+        }
+.hamburger{ display: none; font-size: 1.5rem; cursor: pointer; }
+@media (max-width: 768px){.nav-links,.nav-right .nav-logo{ display: none; }
+.hamburger{ display: block; }
+.nav-links{
+                position: fixed;
+                top: 70px;
+                right: -100%;
+                width: 70%;
+                height: calc(100vh - 70px);
+                background: var(--bg-dark);
+                flex-direction: column;
+                padding: 40px;
+                transition: 0.3s ease;
+                border-left: 1px solid var(--border-glass);
+            }
+.nav-links.active{
+                right: 0;
+            }}
+.navbar{ top:20px; left:50%; transform:translateX(-50%); width:calc(100% - 64px); max-width:1320px; padding:0; border:1px solid #ffffff90; border-radius:60px; background:rgba(255,255,255,.97); box-shadow:0 8px 35px #0002; color:#122034; }
+.nav-inner{ padding:14px 26px; gap:20px; }
+.logo h2{font-size:1.1rem;white-space:nowrap}
+.logo span{color:#667085;font-size:.65rem}
+.nav-links{gap:20px}
+.nav-links a{color:#344054;font-size:.82rem;white-space:nowrap}
+.nav-links a:hover,.nav-links a.active{color:#007aff}
+.nav-links a::after{background:#007aff}
+.nav-right{gap:14px}
+.nav-logo{height:34px;width:34px;border-radius:50%;object-fit:cover}
+.social-icons{display:flex;align-items:center;gap:13px}
+.social-icons a{display:inline-flex;align-items:center;justify-content:center;min-width:24px;min-height:36px}
+.social-icons .linkedin{color:#0a66c2}
+.social-icons .github,.social-icons .github:hover{color:#182230}
+.social-icons .email{color:#ea4335}
+.social-icons .instagram{color:#d6249f}
+.hamburger{border:0;background:transparent;color:#182230;padding:8px}
+a:focus-visible,button:focus-visible{outline:3px solid #179bff;outline-offset:5px}
+@media(max-width:1200px){.navbar{width:calc(100% - 32px)}
+.nav-inner{padding:13px 20px;gap:12px}
+.nav-links{gap:12px}
+.nav-logo{display:none}}
+@media(max-width:992px){.hamburger{display:block}
+.nav-links{display:none;position:absolute;top:calc(100% + 12px);left:0;right:0;width:100%;height:auto;padding:20px;background:white;border:1px solid #e2e8f0;border-radius:22px;box-shadow:0 12px 30px #0002;flex-direction:column;gap:0}
+.nav-links.active{display:flex;right:0}
+.nav-links a{display:block;padding:12px}}
+@media(max-width:768px){.navbar{top:12px;width:calc(100% - 24px)}
+.nav-inner{padding:10px 16px}
+.social-icons{gap:8px}}
+@media(max-width:480px){.logo h2{font-size:.86rem}
+.logo span{font-size:.56rem}
+.nav-inner{gap:7px;padding:10px 12px}
+.nav-right{gap:6px}
+.social-icons{gap:5px}
+.social-icons a{font-size:1rem;min-width:22px}
+.hamburger{font-size:1.1rem;padding:6px}}
+.navbar{top:12px;width:92%;max-width:1180px;box-shadow:0 6px 24px #0002}
+.nav-inner{padding:8px 20px;gap:14px}
+.nav-links{gap:15px}
+.nav-links a{font-size:.8rem}
+.nav-right{gap:10px}
+.social-icons{gap:10px}
+.social-icons a{font-size:1.08rem;min-height:34px}
+.nav-logo{width:30px;height:30px}
+@media(max-width:1200px){.navbar{width:92%}
+.nav-inner{padding:8px 16px}
+.nav-links{gap:11px}}
+@media(max-width:992px){.nav-inner{padding:8px 18px}
+.nav-links{gap:0}}
+@media(max-width:768px){.navbar{top:10px;width:94%}
+.nav-inner{padding:8px 14px}}
+@media(max-width:480px){.navbar{width:94%}
+.nav-inner{padding:7px 10px;gap:5px}
+.nav-right{gap:4px}
+.social-icons{gap:4px}
+.social-icons a{font-size:1rem;min-width:22px}}
+        
+.page-header{padding:145px 24px 45px}.page-header h1{font-size:clamp(2.6rem,5.5vw,4.5rem);font-weight:700;line-height:1.1;letter-spacing:-1.6px}
+.page-header h1 em{background:none;color:#49b9ef;-webkit-text-fill-color:currentColor}
+.eyebrow{letter-spacing:1.6px;font-size:.68rem}.eyebrow span{animation:none}
+.contact-typewriter{display:grid;grid-template-columns:minmax(0,1fr);max-width:720px;margin:22px auto 0;font-size:clamp(1rem,1.7vw,1.2rem);line-height:1.55;color:#49b9ef;font-weight:500}
+.contact-reserve,.contact-display{grid-area:1/1}.contact-reserve{display:grid;visibility:hidden;pointer-events:none}.contact-reserve>span{grid-area:1/1}
+.type-cursor{display:inline-block;width:2px;height:.85em;vertical-align:-.02em;margin-left:5px;background:#49b9ef;animation:cursor-blink 1s step-end infinite}
+@keyframes cursor-blink{0%,100%{opacity:1}50%{opacity:0}}
+.sr-only{position:absolute;width:1px;height:1px;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
+.main-container{max-width:1232px;padding:0 24px}.contact-methods,.contact-form-card{min-width:0}
+.method-card,.contact-form-card{background:#111d2d90;border-color:#49b9ef22;box-shadow:0 8px 25px #0002}
+.method-card:hover{transform:translateY(-3px);border-color:#49b9ef55;box-shadow:0 12px 30px #0003}
+.method-info span{overflow-wrap:anywhere}.form-group input,.form-group textarea{background:#0b111b90;border-color:#49b9ef25;color:#f5f7fb}
+.form-group input:focus,.form-group textarea:focus{border-color:#49b9ef;box-shadow:0 0 0 3px #49b9ef15}
+.send-btn{background:#007aff;border-radius:40px;letter-spacing:0;text-transform:none}.send-btn:hover{box-shadow:0 8px 25px #007aff35}
+@media(max-width:768px){.page-header{padding:125px 24px 40px}}
+@media(max-width:480px){.page-header{padding:115px 20px 35px}.page-header h1{font-size:2.6rem;letter-spacing:-1px}.main-container{padding:0 20px}.contact-typewriter{font-size:1rem}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}.type-cursor{display:none}}
+</style>
 </head>
 <body>
 
 <div class="orb orb-1"></div>
 <div class="orb orb-2"></div>
 
-<!-- NAV -->
-<nav>
-    <a href="index.html"><img src="Khurram Insights.jpeg" alt="Logo" class="logo-img"></a>
-    <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="projects.html">Projects</a>
-        <a href="skills.html">Skills</a>
-        <a href="certifications.html">Certifications</a>
-        <a href="contact.html" class="active">Contact</a>
-    </div>
-</nav>
+<!-- Shared portfolio navbar -->
+<header class="navbar">
+        <div class="container nav-inner">
+            <div class="logo">
+                <a href="index.html">
+                    <h2>Khurram Naveed</h2>
+                    <span>Data Analyst</span>
+                </a>
+            </div>
+            
+            <nav aria-label="Main navigation">
+                <ul class="nav-links" id="main-navigation">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="certifications.html">Certifications</a></li>
+                    <li><a href="contact.html" class="active" aria-current="page">Send Message</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-right">
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/khurram-naveed-0083851aa/" target="_blank" rel="noopener noreferrer" class="linkedin" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Khurramnaveed3233/Portfolio" target="_blank" rel="noopener noreferrer" class="github" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="mailto:khurramnaveed95@outlook.com" class="email" aria-label="Email Khurram"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.instagram.com/khurram_insights/" target="_blank" rel="noopener noreferrer" class="instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+                <img src="Khurram Insights.jpeg" alt="Khurram Insights Logo" class="nav-logo">
+                <button class="hamburger" type="button" aria-label="Open navigation" aria-controls="main-navigation" aria-expanded="false"><i class="fas fa-bars" aria-hidden="true"></i></button>
+            </div>
+        </div>
+    </header>
 
 <!-- REDESIGNED HEADER HERO SECTION WITH SIDE ANALYTICS VISUALS -->
 <header class="page-header">
@@ -491,8 +675,9 @@
 
     <!-- Central Content Maintained Exactly as Required -->
     <div class="eyebrow"><span></span> Let's Connect</div>
-    <h1>Get In<br><em>Touch</em></h1>
-    <p>Actively seeking opportunities to apply my data skills. Whether it's a job, collaboration, or project — I'd love to hear from you.</p>
+    <h1>Get In<br><em>Touch with Me</em></h1>
+    <div class="contact-typewriter"><span class="sr-only">Let's Talk Data &amp; Opportunities</span><span class="contact-reserve" aria-hidden="true"><span>Let&#x27;s Talk Data &amp; Opportunities<span class="type-cursor"></span></span><span>Open to Analytics Opportunities<span class="type-cursor"></span></span><span>Let&#x27;s Build Data-Driven Solutions<span class="type-cursor"></span></span><span>Have a Project? Let&#x27;s Connect<span class="type-cursor"></span></span><span>Let&#x27;s Turn Data Into Better Decisions<span class="type-cursor"></span></span></span><span class="contact-display" aria-hidden="true"><span id="typed-contact">Let's Talk Data &amp; Opportunities</span><span class="type-cursor"></span></span></div>
+    <p>Have a data challenge, analytics opportunity, or collaboration in mind? Let's connect and turn your data into clear, actionable decisions.</p>
 </header>
 
 <!-- MAIN -->
@@ -503,11 +688,11 @@
 
         <p class="methods-label">Reach me via</p>
 
-        <a href="mailto:khurramnaveed4545@gmail.com" class="method-card">
+        <a href="mailto:khurramnaveed95@outlook.com" class="method-card">
             <div class="icon-box"><i class="fa-solid fa-envelope icon-email"></i></div>
             <div class="method-info">
                 <strong>Email Address</strong>
-                <span>khurramnaveed4545@gmail.com</span>
+                <span>khurramnaveed95@outlook.com</span>
             </div>
         </a>
 
@@ -555,23 +740,23 @@
 
             <div class="form-row">
                 <div class="form-group">
-                    <label>Full Name</label>
-                    <input type="text" name="full_name" placeholder="Your name" required>
+                    <label for="contact-field-1">Full Name</label>
+                    <input id="contact-field-1" type="text" name="full_name" placeholder="Your name" required>
                 </div>
                 <div class="form-group">
-                    <label>Email Address</label>
-                    <input type="email" name="email" placeholder="your@email.com" required>
+                    <label for="contact-field-2">Email Address</label>
+                    <input id="contact-field-2" type="email" name="email" placeholder="your@email.com" required>
                 </div>
             </div>
 
             <div class="form-group">
-                <label>Subject</label>
-                <input type="text" name="subject" placeholder="What is this regarding?" required>
+                <label for="contact-field-3">Subject</label>
+                <input id="contact-field-3" type="text" name="subject" placeholder="What is this regarding?" required>
             </div>
 
             <div class="form-group">
-                <label>Message</label>
-                <textarea name="message" placeholder="Write your message here..." required></textarea>
+                <label for="contact-field-4">Message</label>
+                <textarea id="contact-field-4" name="message" placeholder="Write your message here..." required></textarea>
             </div>
 
             <button type="submit" class="send-btn">
@@ -625,7 +810,57 @@
             btn.style.opacity = '1';
         }
     });
+
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        function closeMenu() {
+            navLinks.classList.remove('active');
+            hamburger.setAttribute('aria-expanded', 'false');
+            hamburger.setAttribute('aria-label', 'Open navigation');
+        }
+        hamburger.addEventListener('click', () => {
+            const open = navLinks.classList.toggle('active');
+            hamburger.setAttribute('aria-expanded', String(open));
+            hamburger.setAttribute('aria-label', open ? 'Close navigation' : 'Open navigation');
+        });
+        document.addEventListener('keydown', event => {
+            if (event.key === 'Escape' && navLinks.classList.contains('active')) {
+                closeMenu(); hamburger.focus();
+            }
+        });
+        document.addEventListener('click', event => {
+            if (!event.target.closest('.navbar')) closeMenu();
+        });
+        navLinks.addEventListener('click', event => { if (event.target.closest('a')) closeMenu(); });
+        window.addEventListener('resize', () => { if (window.innerWidth > 992) closeMenu(); });
+
+        
+        // Same typing/deleting cadence as the hero; reusable for any phrase list.
+        function startTypewriter(element, phrases) {
+            const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
+            let timer, index = 0, count = phrases[0].length, deleting = true;
+            function tick() {
+                if (motion.matches) return;
+                const phrase = phrases[index];
+                count += deleting ? -1 : 1;
+                element.textContent = phrase.slice(0, count);
+                let delay = deleting ? 45 : 85;
+                if (!deleting && count === phrase.length) {deleting = true; delay = 1600;}
+                else if (deleting && count === 0) {deleting = false; index = (index + 1) % phrases.length; delay = 300;}
+                timer = window.setTimeout(tick, delay);
+            }
+            function reset() {
+                window.clearTimeout(timer); index = 0; count = phrases[0].length; deleting = true;
+                element.textContent = phrases[0];
+                if (!motion.matches) timer = window.setTimeout(tick, 1600);
+            }
+            motion.addEventListener('change', reset);
+            reset();
+        }
+
+startTypewriter(document.getElementById('typed-contact'), ["Let's Talk Data & Opportunities", "Open to Analytics Opportunities", "Let's Build Data-Driven Solutions", "Have a Project? Let's Connect", "Let's Turn Data Into Better Decisions"]);
 </script>
 
 </body>
 </html>
+
