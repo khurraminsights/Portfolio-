@@ -714,6 +714,63 @@
             .stat-card { min-width: 100%; }
             .skills-grid { grid-template-columns: 1fr; }
         }
+
+        /* Reference-inspired navbar, hero and business value section. */
+        .navbar { top:20px; left:50%; transform:translateX(-50%); width:calc(100% - 64px); max-width:1320px; padding:0; border:1px solid #ffffff90; border-radius:60px; background:rgba(255,255,255,.97); box-shadow:0 8px 35px #0002; color:#122034; }
+        .nav-inner { padding:14px 26px; gap:20px; }
+        .logo h2 {font-size:1.1rem;white-space:nowrap}
+        .logo span {color:#667085;font-size:.65rem}
+        .nav-links {gap:20px}
+        .nav-links a {color:#344054;font-size:.82rem;white-space:nowrap}
+        .nav-links a:hover,.nav-links a.active {color:#007aff}
+        .nav-links a::after {background:#007aff}
+        .nav-right {gap:14px}
+        .nav-logo {height:34px;width:34px;border-radius:50%;object-fit:cover}
+        .social-icons {display:flex;align-items:center;gap:13px}
+        .social-icons a {display:inline-flex;align-items:center;justify-content:center;min-width:24px;min-height:36px}
+        .social-icons .linkedin {color:#0a66c2}
+        .social-icons .github,.social-icons .github:hover {color:#182230}
+        .social-icons .email {color:#ea4335}
+        .social-icons .instagram {color:#d6249f}
+        .hamburger {border:0;background:transparent;color:#182230;padding:8px}
+        a:focus-visible,button:focus-visible {outline:3px solid #179bff;outline-offset:5px}
+        .hero {background:#101720;isolation:isolate;min-height:780px;padding:185px 0 88px;display:flex;align-items:center}
+        .hero-photo {position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center right;z-index:-2}
+        .hero::before {inset:0;width:100%;height:100%;border-radius:0;z-index:-1;background:linear-gradient(90deg,rgba(11,17,27,.97) 0%,rgba(11,17,27,.88) 30%,rgba(11,17,27,.45) 51%,rgba(11,17,27,.04) 70%)}
+        .hero-grid {width:100%;display:block}
+        .hero-content {max-width:660px}
+        .hero-intro {font-family:var(--font-heading);font-size:clamp(2.1rem,4.2vw,4rem);font-weight:700;line-height:1.12;margin-bottom:6px}
+        .hero-heading {font-size:clamp(2.6rem,4.6vw,4.5rem);letter-spacing:-2px;line-height:1.08;margin-bottom:22px}
+        .hero-heading .highlight {display:block;background:none;color:#49b9ef;-webkit-text-fill-color:currentColor}
+        .hero-role {display:block;font-size:.76em;color:white;letter-spacing:-1px;margin-top:8px}
+        .hero-desc {max-width:530px;color:#e0e4e9;font-size:1.15rem;line-height:1.65;margin-bottom:30px}
+        .hero-btns {margin-bottom:35px;flex-wrap:wrap}
+        .hero .btn {border-radius:40px;padding:15px 27px}
+        .hero .btn-primary {background:#007aff;box-shadow:0 6px 22px #007aff30}
+        .hero .btn-primary:hover {background:#168cff}
+        .hero .btn-outline {border:1px solid #ffffffb3;background:#ffffff05}
+        .hero .btn-outline:hover {background:#ffffff15;border-color:white}
+        .hero-tools {display:flex;gap:12px;flex-wrap:wrap}
+        .hero-tools li {width:88px;min-height:110px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;background:#ffffff0d;border:1px solid #ffffff12;border-radius:15px;backdrop-filter:blur(8px);transition:transform .2s,border-color .2s}
+        .hero-tools li:hover {transform:translateY(-4px);border-color:#49b9ef80}
+        .hero-tools i {font-size:2.1rem;color:#f5c936}
+        .hero-tools li:nth-child(2) i {color:#21a366}
+        .hero-tools li:nth-child(3) i {color:#29b6f6}
+        .hero-tools li:nth-child(4) i {color:#ffd343}
+        .hero-tools li:nth-child(5) i {color:#58bce9}
+        .hero-tools span {font-size:.72rem;text-align:center;line-height:1.3}
+        .process-section {padding:76px 0;background:#f8fafc;color:#152338}
+        .value-eyebrow {font-size:.75rem;font-weight:700;letter-spacing:2px;color:#007aff;margin-bottom:12px}
+        .process-header h2 {font-size:clamp(1.8rem,3vw,2.6rem);max-width:760px;margin:0 auto 14px;line-height:1.2}
+        .process-grid {gap:20px}
+        .process-grid::before {display:none}
+        .process-card {padding:28px 20px;background:white;border:1px solid #e2e8f0;border-radius:18px;box-shadow:0 8px 24px #14243a05}
+        .process-card .p-number {background:#eaf5ff;color:#007aff;border:0;box-shadow:none}
+        @media(max-width:1200px) {.navbar{width:calc(100% - 32px)}.nav-inner{padding:13px 20px;gap:12px}.nav-links{gap:12px}.nav-logo{display:none}.hero-content{max-width:58%}.hero-heading{font-size:clamp(2.6rem,4.8vw,4rem)}}
+        @media(max-width:992px) {.hamburger{display:block}.nav-links{display:none;position:absolute;top:calc(100% + 12px);left:0;right:0;width:100%;height:auto;padding:20px;background:white;border:1px solid #e2e8f0;border-radius:22px;box-shadow:0 12px 30px #0002;flex-direction:column;gap:0}.nav-links.active{display:flex;right:0}.nav-links a{display:block;padding:12px}.hero{min-height:730px;padding-top:160px}.hero-content{max-width:65%}.process-grid{grid-template-columns:repeat(2,1fr)}}
+        @media(max-width:768px) {.navbar{top:12px;width:calc(100% - 24px)}.nav-inner{padding:10px 16px}.hero-grid{text-align:left}.hero-btns{justify-content:flex-start}.hero-content{max-width:100%}.hero{padding:135px 0 0;display:block;min-height:0}.hero::before{background:linear-gradient(180deg,#0b111b 0%,#0b111bf5 54%,#0b111b20 100%)}.hero-photo{position:relative;inset:auto;z-index:-2;height:340px;object-position:80% center;margin-top:28px}.hero-grid{position:relative;z-index:1}.hero-photo{position:absolute;bottom:0}.hero{padding-bottom:355px}.hero-heading{font-size:clamp(2.5rem,7vw,3.6rem)}.hero-desc{max-width:550px}.hero-tools{gap:10px}.hero-tools li{width:82px;min-height:100px}.social-icons{gap:8px}.process-section{padding:55px 0}}
+        @media(max-width:480px) {.logo h2{font-size:.86rem}.logo span{font-size:.56rem}.nav-inner{gap:7px;padding:10px 12px}.nav-right{gap:6px}.social-icons{gap:5px}.social-icons a{font-size:1rem;min-width:22px}.hamburger{font-size:1.1rem;padding:6px}.hero .container{padding:0 20px}.hero-heading{letter-spacing:-1.2px;font-size:2.6rem}.hero-desc{font-size:1rem}.hero .btn{padding:13px 20px;font-size:.85rem}.hero-btns{gap:10px}.hero-tools{gap:8px}.hero-tools li{width:calc((100% - 32px)/5);min-height:92px;border-radius:12px}.hero-tools i{font-size:1.6rem}.hero-tools span{font-size:.62rem}.process-grid{grid-template-columns:1fr}}
+        @media(prefers-reduced-motion:reduce) {*,*::before,*::after{transition:none!important;animation:none!important;scroll-behavior:auto!important}}
     </style>
 </head>
 <body>
@@ -728,8 +785,8 @@
                 </a>
             </div>
             
-            <nav>
-                <ul class="nav-links">
+            <nav aria-label="Main navigation">
+                <ul class="nav-links" id="main-navigation">
                     <li><a href="index.html" class="active">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="projects.html">Projects</a></li>
@@ -741,142 +798,52 @@
 
             <div class="nav-right">
                 <div class="social-icons">
-                    <a href="https://www.linkedin.com/in/khurram-naveed-0083851aa/" target="_blank" class="linkedin"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/Khurramnaveed3233/Portfolio" target="_blank" class="github"><i class="fab fa-github"></i></a>
-                    <a href="mailto:khurramnaveed4545@gmail.com" class="email"><i class="fas fa-envelope"></i></a>
-                    <a href="https://www.instagram.com/khurram_insights/" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/khurram-naveed-0083851aa/" target="_blank" rel="noopener noreferrer" class="linkedin" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Khurramnaveed3233/Portfolio" target="_blank" rel="noopener noreferrer" class="github" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="mailto:khurramnaveed4545@gmail.com" class="email" aria-label="Email Khurram"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.instagram.com/khurram_insights/" target="_blank" rel="noopener noreferrer" class="instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                 </div>
                 <img src="Khurram Insights.jpeg" alt="Khurram Insights Logo" class="nav-logo">
-                <div class="hamburger"><i class="fas fa-bars"></i></div>
+                <button class="hamburger" type="button" aria-label="Open navigation" aria-controls="main-navigation" aria-expanded="false"><i class="fas fa-bars" aria-hidden="true"></i></button>
             </div>
         </div>
     </header>
 
     <!-- HERO SECTION -->
-    <section class="hero">
+    <section class="hero" aria-labelledby="hero-title">
+        <img class="hero-photo" src="hero_image.png" alt="Khurram Naveed seated at a desk in a professional office" fetchpriority="high">
         <div class="container hero-grid">
-            
-            <!-- Left Content -->
             <div class="hero-content">
-                <div class="hero-tagline">Data Analyst • SQL • Excel • Power BI • Python</div>
-                
-                <h1 class="hero-heading">
-                    Turning Data Into <br>
-                    <span class="highlight">Business Insights</span>
-                </h1>
-                
-                <p class="hero-desc">
-                    I analyze raw data, uncover meaningful patterns and create clear, actionable insights that help businesses make smarter decisions and grow.
-                </p>
-
+                <p class="hero-intro">Hi, I'm</p>
+                <h1 id="hero-title" class="hero-heading"><span class="highlight">Khurram Naveed</span><span class="hero-role">Data Analyst</span></h1>
+                <p class="hero-desc">I turn complex data into clear, actionable insights that help businesses make smarter decisions and drive growth.</p>
                 <div class="hero-btns">
-                    <a href="projects.html" class="btn btn-primary">View My Projects <i class="fas fa-arrow-right"></i></a>
-                    <a href="contact.html" class="btn btn-outline">Download Resume</a>
+                    <a href="projects.html" class="btn btn-primary">View My Projects <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                    <a href="contact.html" class="btn btn-outline">Contact Me</a>
                 </div>
-
-                <!-- Statistics -->
-                <div class="stats-row">
-                    <div class="stat-card">
-                        <div class="stat-icon"><i class="fas fa-folder-open"></i></div>
-                        <div class="stat-info">
-                            <h4>19</h4>
-                            <p>Projects</p>
-                        </div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-icon"><i class="fas fa-database"></i></div>
-                        <div class="stat-info">
-                            <h4>9</h4>
-                            <p>SQL Projects</p>
-                        </div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-icon"><i class="fas fa-chart-bar"></i></div>
-                        <div class="stat-info">
-                            <h4>10</h4>
-                            <p>Power BI Projects</p>
-                        </div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-icon"><i class="fas fa-tools"></i></div>
-                        <div class="stat-info">
-                            <h4>4</h4>
-                            <p>Tools</p>
-                        </div>
-                    </div>
-                </div>
+                <ul class="hero-tools" aria-label="Data analysis tools">
+                    <li><i class="fas fa-chart-simple" aria-hidden="true"></i><span>Power BI</span></li>
+                    <li><i class="fas fa-file-excel" aria-hidden="true"></i><span>Excel</span></li>
+                    <li><i class="fas fa-database" aria-hidden="true"></i><span>SQL</span></li>
+                    <li><i class="fab fa-python" aria-hidden="true"></i><span>Python</span></li>
+                    <li><i class="fas fa-chart-column" aria-hidden="true"></i><span>Data<br>Visualization</span></li>
+                </ul>
             </div>
-
-            <!-- Right Image & Floating Cards -->
-            <div class="hero-image-wrapper">
-                <div class="profile-ring">
-                    <img src="profile_photo.png" alt="Khurram Naveed" class="profile-img">
-                </div>
-
-                <!-- Decorative Floating Cards -->
-                <div class="float-card fc-sql">
-                    <div class="fc-title"><i class="fas fa-database"></i> SQL Queries</div>
-                    <div class="fc-content">
-                        SELECT insights<br>FROM data<br>WHERE growth > 1;
-                    </div>
-                </div>
-
-                <div class="float-card fc-powerbi">
-                    <div class="fc-title"><i class="fas fa-chart-line"></i> Power BI</div>
-                    <div class="fc-content">
-                        Sales<br>
-                        <span style="color:#4ade80">↑ 18.4%</span>
-                    </div>
-                </div>
-
-                <div class="float-card fc-decisions">
-                    <div class="fc-title"><i class="fas fa-lightbulb"></i> Data to Decisions</div>
-                    <ul class="fc-list">
-                        <li><i class="fas fa-check-circle"></i> Analyze</li>
-                        <li><i class="fas fa-check-circle"></i> Visualize</li>
-                        <li><i class="fas fa-check-circle"></i> Solve</li>
-                        <li><i class="fas fa-check-circle"></i> Grow</li>
-                    </ul>
-                </div>
-
-                <div class="float-card fc-excel">
-                    <div class="fc-title"><i class="fas fa-file-excel"></i> Excel</div>
-                    <div class="fc-content">Clean Data<br>Better Insights</div>
-                </div>
-            </div>
-
         </div>
     </section>
 
-    <!-- PROCESS SECTION -->
-    <section class="process-section">
+    <section class="process-section" aria-labelledby="value-title">
         <div class="container">
             <div class="process-header">
-                <h2>From Raw Data to Real Impact</h2>
-                <p class="section-subtitle" style="margin: 0 auto; color: #64748B;">A simple process I follow to turn data into meaningful results.</p>
+                <p class="value-eyebrow">WHAT I CAN DO FOR YOU</p>
+                <h2 id="value-title">Turn Your Data Into Better Business Decisions</h2>
+                <p class="section-subtitle" style="margin:0 auto;color:#64748B">Clear insights. Intuitive dashboards. A stronger understanding of your business.</p>
             </div>
-
             <div class="process-grid">
-                <div class="process-card">
-                    <div class="p-number">01</div>
-                    <h3>Understand the Problem</h3>
-                    <p>Define the business question and key objectives.</p>
-                </div>
-                <div class="process-card">
-                    <div class="p-number">02</div>
-                    <h3>Clean & Analyze Data</h3>
-                    <p>Prepare and explore data to find patterns and insights.</p>
-                </div>
-                <div class="process-card">
-                    <div class="p-number">03</div>
-                    <h3>Build Visualizations</h3>
-                    <p>Create clear and interactive dashboards.</p>
-                </div>
-                <div class="process-card">
-                    <div class="p-number">04</div>
-                    <h3>Deliver Insights</h3>
-                    <p>Translate findings into actionable recommendations.</p>
-                </div>
+                <div class="process-card"><div class="p-number"><i class="fas fa-magnifying-glass-chart" aria-hidden="true"></i></div><h3>Data Analysis &amp; Insights</h3><p>Uncover trends, identify opportunities and turn complex data into actionable answers.</p></div>
+                <div class="process-card"><div class="p-number"><i class="fas fa-chart-pie" aria-hidden="true"></i></div><h3>Interactive Dashboards</h3><p>Make KPIs and performance easy to explore with intuitive Power BI dashboards.</p></div>
+                <div class="process-card"><div class="p-number"><i class="fas fa-database" aria-hidden="true"></i></div><h3>SQL &amp; Data Exploration</h3><p>Query, clean and connect structured data to reveal the story behind the numbers.</p></div>
+                <div class="process-card"><div class="p-number"><i class="fas fa-lightbulb" aria-hidden="true"></i></div><h3>Business Intelligence</h3><p>Translate findings into clear reports and recommendations for smarter decisions.</p></div>
             </div>
         </div>
     </section>
@@ -985,25 +952,39 @@
                 <span>Aspiring Data Analyst</span>
             </div>
             <div class="footer-socials">
-                <a href="https://www.linkedin.com/in/khurram-naveed-0083851aa/" target="_blank" class="linkedin"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/Khurramnaveed3233/Portfolio" target="_blank" class="github"><i class="fab fa-github"></i></a>
-                <a href="mailto:khurramnaveed4545@gmail.com" class="email"><i class="fas fa-envelope"></i></a>
-                <a href="https://www.instagram.com/khurram_insights/" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/khurram-naveed-0083851aa/" target="_blank" rel="noopener noreferrer" class="linkedin" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Khurramnaveed3233/Portfolio" target="_blank" rel="noopener noreferrer" class="github" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="mailto:khurramnaveed4545@gmail.com" class="email" aria-label="Email Khurram"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.instagram.com/khurram_insights/" target="_blank" rel="noopener noreferrer" class="instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
             </div>
         </div>
     </footer>
 
     <script>
-        // Simple script to toggle mobile menu
         const hamburger = document.querySelector('.hamburger');
         const navLinks = document.querySelector('.nav-links');
-
-        if(hamburger) {
-            hamburger.addEventListener('click', () => {
-                navLinks.classList.toggle('active');
-            });
+        function closeMenu() {
+            navLinks.classList.remove('active');
+            hamburger.setAttribute('aria-expanded', 'false');
+            hamburger.setAttribute('aria-label', 'Open navigation');
         }
+        hamburger.addEventListener('click', () => {
+            const open = navLinks.classList.toggle('active');
+            hamburger.setAttribute('aria-expanded', String(open));
+            hamburger.setAttribute('aria-label', open ? 'Close navigation' : 'Open navigation');
+        });
+        document.addEventListener('keydown', event => {
+            if (event.key === 'Escape' && navLinks.classList.contains('active')) {
+                closeMenu(); hamburger.focus();
+            }
+        });
+        document.addEventListener('click', event => {
+            if (!event.target.closest('.navbar')) closeMenu();
+        });
+        navLinks.addEventListener('click', event => { if (event.target.closest('a')) closeMenu(); });
+        window.addEventListener('resize', () => { if (window.innerWidth > 992) closeMenu(); });
     </script>
 
 </body>
 </html>
+
