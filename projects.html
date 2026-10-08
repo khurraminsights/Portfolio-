@@ -928,6 +928,52 @@ a:focus-visible,button:focus-visible{outline:3px solid #179bff;outline-offset:5p
 .hero-scroll-arrow {display:block;font-size:1.8rem;line-height:1;animation:hero-scroll-cue 1.8s ease-in-out infinite}
 @keyframes hero-scroll-cue {0%,100%{transform:translateY(0);opacity:1}50%{transform:translateY(8px);opacity:.45}}
 @media(prefers-reduced-motion:reduce) {.hero-project-scroll .hero-scroll-arrow{animation:none;transform:none;opacity:1}.hero-project-scroll{transition:none}}
+
+/* COMPACT FIRST-SCREEN HERO — navigation styles untouched */
+.hero{padding:116px 24px 12px; min-height:0; overflow:visible}
+.hero .eyebrow{padding:7px 17px;margin-bottom:13px;font-size:11px}
+.hero h1{font-size:clamp(2.7rem,5vw,4.8rem);line-height:1.01;letter-spacing:-1.8px;margin-bottom:12px}
+.hero p.sub{max-width:660px;margin:13px auto 10px;font-size:clamp(.89rem,1.15vw,1rem);line-height:1.5}
+.hero .project-typewriter{margin:0 auto 19px;font-size:clamp(.91rem,1.25vw,1.1rem);line-height:1.4}
+.hero .stats{margin:0 auto 12px;gap:10px}
+.hero .stats>div{min-width:130px;padding:10px 17px;border-radius:13px}
+.hero .stat-num{font-size:clamp(1.35rem,2.4vw,2rem)}
+.hero .stat-label{margin-top:4px;letter-spacing:.8px;font-size:10px}
+.filters{padding-bottom:30px;gap:10px}
+.filter-btn{padding:9px 21px}
+/* Animated, keyboard-accessible robot acts as the existing scroll link. */
+.hero > .hero-project-scroll{
+  position:absolute;right:max(20px,calc((100vw - 1420px)/2));top:195px;
+  z-index:5;width:140px;height:225px;margin:0;
+  display:flex;flex-direction:column;align-items:center;justify-content:flex-end;
+  gap:5px;background:transparent;border:0;color:#49b9ef;
+  text-decoration:none;isolation:isolate;
+}
+.hero > .hero-project-scroll:hover{background:transparent;transform:none}
+.scroll-robot{width:99px;height:130px;position:relative;display:block;animation:robot-float 2.8s ease-in-out infinite;filter:drop-shadow(0 10px 17px rgba(23,155,255,.27))}
+.robot-head{position:absolute;top:18px;left:9px;width:81px;height:65px;border:3px solid #8cddff;border-radius:24px 24px 22px 22px;background:linear-gradient(150deg,#27a5e7,#1267b9);box-shadow:inset 0 4px 12px #baf4ff48}
+.robot-eye{position:absolute;top:22px;width:11px;height:15px;background:#e9fdff;border-radius:50%;box-shadow:0 0 9px #b1f3ff}
+.robot-eye:first-child{left:20px}.robot-eye:nth-child(2){right:20px}
+.robot-smile{position:absolute;left:32px;top:38px;width:15px;height:9px;border-bottom:3px solid #e9fdff;border-radius:0 0 50% 50%}
+.robot-antenna{position:absolute;left:47px;top:4px;width:5px;height:20px;background:#83ddff;border-radius:6px}
+.robot-antenna:before{content:'';position:absolute;left:-4px;top:-7px;width:13px;height:13px;border-radius:50%;background:#6ef4f4;box-shadow:0 0 13px #59d9ff}
+.robot-body{position:absolute;top:86px;left:22px;width:56px;height:32px;background:linear-gradient(135deg,#3cbde8,#166bb0);border:2px solid #8cddff;border-radius:12px}
+.robot-heart{position:absolute;left:18px;top:1px;color:#fff;font-size:20px}
+.robot-arm{position:absolute;top:91px;width:16px;height:29px;border:3px solid #83dfff;background:#1177bf;border-radius:12px}
+.robot-arm-left{left:5px;transform:rotate(23deg)}.robot-arm-right{right:4px;transform-origin:top center;animation:robot-wave 1.8s ease-in-out infinite}
+.robot-feet{position:absolute;top:115px;left:30px;display:flex;gap:17px}.robot-feet span{width:12px;height:10px;background:#67c6ed;border-radius:0 0 7px 7px}
+.robot-speech{position:relative;display:block;white-space:nowrap;padding:8px 11px;color:#e7faff;background:#102b43;border:1px solid #4bc3f1;border-radius:14px;font-size:12px;font-weight:800;box-shadow:0 7px 22px #0005}
+.robot-speech:before{content:'';position:absolute;top:-7px;left:calc(50% - 6px);width:11px;height:11px;border-top:1px solid #4bc3f1;border-left:1px solid #4bc3f1;background:#102b43;transform:rotate(45deg)}
+.hero > .hero-project-scroll .hero-scroll-arrow{font-size:1.3rem;line-height:1.1}
+@keyframes robot-float{0%,100%{transform:translateY(0) rotate(-2deg)}50%{transform:translateY(-9px) rotate(2deg)}}
+@keyframes robot-wave{0%,100%{transform:rotate(-20deg)}50%{transform:rotate(-65deg)}}
+@media(max-width:1250px){.hero>.hero-project-scroll{right:8px;top:208px;transform:scale(.83);transform-origin:top right}}
+@media(max-width:1050px){.hero>.hero-project-scroll{position:relative;right:auto;top:auto;transform:none;margin:2px auto 12px;width:132px;height:209px}.hero{padding-top:116px}}
+@media(max-width:768px){.hero{padding:112px 18px 13px}.hero h1{font-size:clamp(2.6rem,9vw,4rem)}.hero .stats{gap:8px}.hero .stats>div{min-width:0;padding:10px 12px}}
+@media(max-width:480px){.hero{padding:103px 15px 12px}.hero h1{font-size:clamp(2.35rem,10vw,3.1rem)}.hero .eyebrow{font-size:10px}.hero .stats>div{padding:9px 5px}.hero .stat-label{font-size:9px}.hero>.hero-project-scroll{height:201px}}
+@media(max-height:730px) and (min-width:1051px){.hero{padding-top:94px}.hero h1{font-size:clamp(2.6rem,4vw,3.7rem)}.hero>.hero-project-scroll{top:165px;transform:scale(.8);transform-origin:top right}}
+@media(prefers-reduced-motion:reduce){.scroll-robot,.robot-arm-right{animation:none!important}}
+
 </style>
 </head>
 <body>
@@ -1077,7 +1123,15 @@ a:focus-visible,button:focus-visible{outline:3px solid #179bff;outline-offset:5p
     </div>
 
     <!-- Scroll cue for the project content below -->
-    <a class="hero-project-scroll" href="#featured-projects-grid" aria-label="Scroll to view projects">
+    <a class="hero-project-scroll" href="#featured-projects-grid" aria-label="Scroll down to explore projects">
+      <span class="scroll-robot" aria-hidden="true">
+        <span class="robot-antenna"></span>
+        <span class="robot-head"><span class="robot-eye"></span><span class="robot-eye"></span><span class="robot-smile"></span></span>
+        <span class="robot-body"><span class="robot-heart">♥</span></span>
+        <span class="robot-arm robot-arm-left"></span><span class="robot-arm robot-arm-right"></span>
+        <span class="robot-feet"><span></span><span></span></span>
+      </span>
+      <span class="robot-speech">Scroll down! <span aria-hidden="true">👇</span></span>
       <span class="hero-scroll-arrow" aria-hidden="true">↓</span>
     </a>
   </section>
@@ -1936,5 +1990,6 @@ startTypewriter(document.getElementById('typed-projects'), ['Turning Raw Data in
 
 </body>
 </html>
+
 
 
