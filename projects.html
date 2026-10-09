@@ -22,6 +22,48 @@
 @media(max-width:700px){.navbar{width:calc(100% - 20px);margin-top:9px}.nav-inner{padding:10px 14px}.logo h2{font-size:1rem}.logo span{font-size:.58rem}.social-icons{gap:10px}.social-icons a{font-size:1rem}.hero{padding:20px 15px 0}.hero-inner{display:flex;flex-direction:column;min-height:0}.hero-copy{padding:5px 0 0}.hero h1{font-size:clamp(2.75rem,10vw,4rem)}.sub{font-size:.91rem}.stats{gap:8px}.stat{flex:1 1 30%;padding:10px 8px;gap:7px}.stat:last-child{flex-basis:30%}.stat-icon{width:31px;height:31px;font-size:14px}.stat strong{font-size:1.36rem}.stat small{font-size:.48rem;white-space:normal}.filters{gap:8px}.filter-btn{padding:9px 15px;font-size:.8rem}.hero-visual{height:310px;align-self:stretch;margin-top:0}.welcome-photo{right:8%;height:100%}.portrait-orbit{right:13%;top:18px;width:275px}.welcome-bubble{top:36px;left:7%;font-size:.73rem}.graph-left,.graph-right{display:none}.projects-section{padding:12px 14px 55px}.grid{grid-template-columns:1fr;gap:16px}.cta{padding-bottom:55px}.lightbox{padding:16px}}
 @media(max-width:400px){.social-icons .instagram,.social-icons .email{display:none}.stat{flex:1 1 31%;flex-direction:column;align-items:center;text-align:center}.stat small{font-size:.49rem}.filter-btn{padding:9px 12px}.welcome-photo{right:0}.hero-visual{height:275px}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+
+/* 2026 portfolio reference match: compact certifications-style navbar */
+:root{--max:1480px}
+.navbar{width:min(92%,1440px);margin:18px auto 0;border-radius:999px;box-shadow:0 7px 23px rgba(0,0,0,.19)}
+.nav-inner{min-height:63px;padding:9px 27px;gap:16px}
+.logo h2{font-size:1.17rem;line-height:1.14;letter-spacing:-.45px}
+.logo span{font-size:.60rem;letter-spacing:1.7px}
+.nav-links{gap:21px}
+.nav-links a{font-size:.82rem;font-weight:600}
+.nav-links a.active{padding-bottom:5px}
+.nav-right{gap:10px}
+.social-icons{gap:17px}
+.social-icons a{font-size:1.15rem}
+/* Hero follows reference image with portrait on right and no circular mask */
+.hero{padding:24px 28px 0;overflow:hidden}
+.hero-inner{max-width:1480px;grid-template-columns:minmax(0,60%) minmax(0,40%);height:552px;min-height:0;isolation:isolate}
+.hero-copy{padding:19px 0 12px 11px;align-self:start;z-index:5}
+.eyebrow{font-size:.72rem;padding:9px 17px}
+.hero h1{font-size:clamp(3.5rem,5.2vw,5.35rem);letter-spacing:-2.7px;line-height:1.03;margin:15px 0 14px}
+.sub{max-width:810px;line-height:1.5;font-size:clamp(.98rem,1.35vw,1.12rem);margin-bottom:21px}
+.stats{gap:14px;margin-bottom:20px;max-width:845px}
+.stat{padding:13px 14px;gap:15px;min-height:91px}
+.stat strong{font-size:1.9rem}
+.stat small{font-size:.67rem}
+.filters{gap:14px}
+.filter-btn{padding:10px 27px}
+.explore-link{margin-top:15px}
+.hero-visual{position:relative;align-self:stretch;height:552px;overflow:visible;pointer-events:none}
+.portrait-glow{right:-12%;top:4%;height:93%;width:115%;background:radial-gradient(ellipse,#0955a132,transparent 70%);filter:blur(25px)}
+.welcome-photo{position:absolute;bottom:0;right:0;height:555px;width:auto;max-width:none;object-fit:contain;object-position:bottom center;z-index:3;filter:drop-shadow(0 12px 18px rgba(0,0,0,.28))}
+.welcome-bubble{top:76px;left:-25px;padding:12px 17px;z-index:4;transform:rotate(-5deg);font-size:.84rem}
+.floating-graph{z-index:2;font-size:2.2rem;background:#082c5077}
+.graph-left{width:94px;height:94px;top:205px;left:8%}
+.graph-right{width:96px;height:82px;right:-1%;top:144px}
+.projects-section{padding:0 28px 90px;position:relative;z-index:5}
+.grid{max-width:1480px;gap:19px}
+.card{border-radius:20px}
+/* Stop any unwanted masking of the presenter by project cards: image ends at hero bottom */
+@media(max-width:1200px){.nav-links{gap:12px}.nav-links a{font-size:.77rem}.hero-inner{grid-template-columns:minmax(0,59%) minmax(0,41%)}.welcome-photo{height:520px}.hero h1{font-size:clamp(3.1rem,5.1vw,4.6rem)}.stat{padding:11px 9px;gap:9px}.stat small{font-size:.57rem}}
+@media(max-width:1000px){.nav-inner{padding:9px 19px}.nav-links{display:none}.nav-links.active{display:flex}.hero-inner{grid-template-columns:minmax(0,57%) minmax(0,43%);height:520px}.hero-visual{height:520px}.welcome-photo{height:500px;right:-12px}.welcome-bubble{left:-25px;top:60px}.hero-copy{padding-left:0}.hero h1{font-size:clamp(2.85rem,5vw,4.25rem)}.stats{gap:8px}.stat{min-height:78px}.stat strong{font-size:1.45rem}.stat small{font-size:.55rem}.filter-btn{padding:9px 17px}}
+@media(max-width:700px){.navbar{margin-top:9px;width:calc(100% - 22px)}.nav-inner{padding:9px 15px;min-height:57px}.logo h2{font-size:1rem}.hero{padding:20px 15px 0}.hero-inner{display:flex;flex-direction:column;height:auto;min-height:0}.hero-copy{padding:4px 0 0}.hero h1{font-size:clamp(2.7rem,10vw,4rem)}.sub{font-size:.94rem}.stats{gap:8px}.stat{min-height:75px}.stat small{white-space:normal}.filters{gap:8px}.filter-btn{padding:9px 14px}.hero-visual{height:350px;min-height:350px;width:100%;overflow:hidden}.welcome-photo{height:350px;right:3%;max-width:none}.welcome-bubble{top:20px;left:7%;font-size:.72rem}.graph-left,.graph-right{display:none}.projects-section{padding:9px 14px 60px}}
+@media(max-width:400px){.hero-visual{height:305px;min-height:305px}.welcome-photo{height:305px;right:0}.welcome-bubble{left:1%;top:20px}.stat{flex-direction:column;text-align:center}.filters{gap:7px}}
 </style>
 </head>
 <body>
@@ -71,7 +113,7 @@
 <div aria-label="Filter projects by category" class="filters" role="group"><button aria-pressed="true" class="filter-btn active" data-filter="all">All</button><button aria-pressed="false" class="filter-btn" data-filter="sql">SQL</button><button aria-pressed="false" class="filter-btn" data-filter="powerbi">Power BI</button><button aria-pressed="false" class="filter-btn" data-filter="excel">Excel / Sheets</button></div>
 <a class="explore-link" href="#featured-projects-grid">Explore the work <i aria-hidden="true" class="fas fa-arrow-down"></i></a>
 </div>
-<div class="hero-visual"><div class="portrait-orbit"></div><div class="portrait-glow"></div><div aria-hidden="true" class="floating-graph graph-left"><i class="fas fa-chart-simple"></i></div><div aria-hidden="true" class="floating-graph graph-right"><i class="fas fa-chart-line"></i></div><div class="welcome-bubble"><strong>Welcome!</strong><span>Explore my work</span></div><img alt="Khurram Naveed welcoming visitors to his data analytics projects" class="welcome-photo" fetchpriority="high" src="welcome.png"/></div></div></section>
+<div class="hero-visual"><div class="portrait-glow"></div><div aria-hidden="true" class="floating-graph graph-left"><i class="fas fa-chart-simple"></i></div><div aria-hidden="true" class="floating-graph graph-right"><i class="fas fa-chart-line"></i></div><div class="welcome-bubble"><strong>Welcome!</strong><span>Explore my work</span></div><img alt="Khurram Naveed welcoming visitors to his data analytics projects" class="welcome-photo" fetchpriority="high" src="welcome.png"/></div></div></section>
 
 <section class="projects-section" id="featured-projects-grid">
 <div class="grid" id="projectGrid">
@@ -291,7 +333,7 @@
 <section class="cta">
 <h2>Want to see more?</h2>
 <p>Explore the full source code, SQL scripts, and dashboard files for every project on GitHub.</p>
-<a class="btn-primary" href="https://github.com/Khurramnaveed3233" rel="noopener" target="_blank">
+<a class="btn-primary" href="https://github.com/khurraminsights" rel="noopener" target="_blank">
       Visit GitHub
       <svg fill="none" height="16" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="16"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
 </a>
