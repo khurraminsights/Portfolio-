@@ -64,6 +64,10 @@
 @media(max-width:1000px){.nav-inner{padding:9px 19px}.nav-links{display:none}.nav-links.active{display:flex}.hero-inner{grid-template-columns:minmax(0,57%) minmax(0,43%);height:520px}.hero-visual{height:520px}.welcome-photo{height:500px;right:-12px}.welcome-bubble{left:-25px;top:60px}.hero-copy{padding-left:0}.hero h1{font-size:clamp(2.85rem,5vw,4.25rem)}.stats{gap:8px}.stat{min-height:78px}.stat strong{font-size:1.45rem}.stat small{font-size:.55rem}.filter-btn{padding:9px 17px}}
 @media(max-width:700px){.navbar{margin-top:9px;width:calc(100% - 22px)}.nav-inner{padding:9px 15px;min-height:57px}.logo h2{font-size:1rem}.hero{padding:20px 15px 0}.hero-inner{display:flex;flex-direction:column;height:auto;min-height:0}.hero-copy{padding:4px 0 0}.hero h1{font-size:clamp(2.7rem,10vw,4rem)}.sub{font-size:.94rem}.stats{gap:8px}.stat{min-height:75px}.stat small{white-space:normal}.filters{gap:8px}.filter-btn{padding:9px 14px}.hero-visual{height:350px;min-height:350px;width:100%;overflow:hidden}.welcome-photo{height:350px;right:3%;max-width:none}.welcome-bubble{top:20px;left:7%;font-size:.72rem}.graph-left,.graph-right{display:none}.projects-section{padding:9px 14px 60px}}
 @media(max-width:400px){.hero-visual{height:305px;min-height:305px}.welcome-photo{height:305px;right:0}.welcome-bubble{left:1%;top:20px}.stat{flex-direction:column;text-align:center}.filters{gap:7px}}
+
+/* Live result count and reliable filtered card visibility. */
+.filter-count{margin:12px 0 0;color:#8fe2ff;font-size:.85rem;font-weight:700}
+#projectGrid .card[hidden]{display:none!important}
 </style>
 </head>
 <body>
@@ -106,11 +110,12 @@
 <h1 id="welcome-title">Welcome to<br/><span class="gradient">My Projects</span></h1>
 <p class="sub">Explore SQL, Power BI, and Excel projects built to solve business problems and turn data into actionable insights.</p>
 <div aria-label="Project portfolio categories" class="stats">
-<div class="stat"><span class="stat-icon database"><i aria-hidden="true" class="fas fa-database"></i></span><span><strong>24</strong><small>SQL PROJECTS</small></span></div>
-<div class="stat"><span class="stat-icon power"><i aria-hidden="true" class="fas fa-chart-column"></i></span><span><strong>19</strong><small>POWER BI PROJECTS</small></span></div>
+<div class="stat"><span class="stat-icon database"><i aria-hidden="true" class="fas fa-database"></i></span><span><strong>9</strong><small>SQL PROJECTS</small></span></div>
+<div class="stat"><span class="stat-icon power"><i aria-hidden="true" class="fas fa-chart-column"></i></span><span><strong>10</strong><small>POWER BI PROJECTS</small></span></div>
 <div class="stat"><span class="stat-icon excel"><i aria-hidden="true" class="fas fa-file-excel"></i></span><span><strong>3</strong><small>EXCEL PROJECTS SHOWN</small></span></div>
 </div>
 <div aria-label="Filter projects by category" class="filters" role="group"><button aria-pressed="true" class="filter-btn active" data-filter="all">All</button><button aria-pressed="false" class="filter-btn" data-filter="sql">SQL</button><button aria-pressed="false" class="filter-btn" data-filter="powerbi">Power BI</button><button aria-pressed="false" class="filter-btn" data-filter="excel">Excel / Sheets</button></div>
+<p id="filterCount" class="filter-count" role="status" aria-live="polite">Showing all 22 projects</p>
 <a class="explore-link" href="#featured-projects-grid">Explore the work <i aria-hidden="true" class="fas fa-arrow-down"></i></a>
 </div>
 <div class="hero-visual"><div class="portrait-glow"></div><div aria-hidden="true" class="floating-graph graph-left"><i class="fas fa-chart-simple"></i></div><div aria-hidden="true" class="floating-graph graph-right"><i class="fas fa-chart-line"></i></div><div class="welcome-bubble"><strong>Welcome!</strong><span>Explore my work</span></div><img alt="Khurram Naveed welcoming visitors to his data analytics projects" class="welcome-photo" fetchpriority="high" src="khurram.png"/></div></div></section>
@@ -128,9 +133,9 @@
 <div class="card-body"><div class="card-topline"><h3 class="card-title">Stylo Retail Operations Dashboard</h3><span aria-hidden="true" class="arrow-mark">↗</span></div><p class="card-description">Built a star-schema Power BI model (FactSales + 7 dimension tables) with Power Query ETL and DAX measures across Executive Overview and Store Performance pages.</p><div class="tags"><span class="tag">Power BI</span><span class="tag">Power Query</span><span class="tag">DAX</span></div><details class="project-details"><summary>Project details <i aria-hidden="true" class="fas fa-chevron-down"></i></summary><div class="detail-content"><strong>Business challenge</strong><p>Stylo Pakistan (fashion footwear retailer) needed a single source of truth to track store, product, and channel performance across thousands of daily transactions.</p><strong>Findings</strong><p>Total sales of 286M with a 47% profit margin across 26K orders. Women's Shoes was the top category; in-store sales contributed ~80% of revenue vs. 20% online.</p></div></details><a class="card-link" href="https://github.com/khurraminsights/Stylo-Retail-Operations-Dashboard-Power-BI-" rel="noopener noreferrer" target="_blank">View project on GitHub <i aria-hidden="true" class="fas fa-arrow-up-right-from-square"></i></a></div>
 </article>
 <!-- ============ POWER BI PROJECT 7 (MOVED TO 2ND) ============ -->
-<article class="card" data-category="powerbi sql">
+<article class="card" data-category="powerbi">
 <div class="card-media">
-<span class="card-badge">SQL + Power BI</span>
+<span class="card-badge">Power BI</span>
 <img alt="The Cookie Lab retail analytics and business intelligence dashboard" loading="lazy" src="TheCookieLab.png"/>
 <span aria-hidden="true" class="view-hint">
 <svg fill="none" height="18" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="18"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3"></path><path d="M11 8v6M8 11h6"></path></svg>
@@ -150,9 +155,9 @@
 <div class="card-body"><div class="card-topline"><h3 class="card-title">Zomato — Restaurant &amp; Customer Data Analysis</h3><span aria-hidden="true" class="arrow-mark">↗</span></div><p class="card-description">Used SQL (joins, CTEs, window functions, ranking) to analyze orders, ratings, cuisines, delivery times, and referral chains across the customer/restaurant dataset.</p><div class="tags"><span class="tag">SQL</span></div><details class="project-details"><summary>Project details <i aria-hidden="true" class="fas fa-chevron-down"></i></summary><div class="detail-content"><strong>Business challenge</strong><p>Zomato needed to understand customer behavior, restaurant performance, and referral program impact to guide growth decisions.</p><strong>Findings</strong><p>Chinese cuisine generated the highest revenue; several users showed 6-month inactivity (churn risk); top-rated restaurants were ranked by revenue within each city.</p></div></details><a class="card-link" href="https://github.com/khurraminsights/Comprehensive-Analysis-of-Zomato-s-Restaurant-and-Customer-Data-to-Drive-Business-Growth" rel="noopener noreferrer" target="_blank">View project on GitHub <i aria-hidden="true" class="fas fa-arrow-up-right-from-square"></i></a></div>
 </article>
 <!-- ============ NEW PROJECT: SAMSUNG PAKISTAN ============ -->
-<article class="card" data-category="powerbi sql">
+<article class="card" data-category="powerbi">
 <div class="card-media">
-<span class="card-badge">SQL + Power BI</span>
+<span class="card-badge">Power BI</span>
 <img alt="Samsung Pakistan Retail Sales Channel Performance Analytics Dashboard" loading="lazy" src="samsung_pakistan.png"/>
 <span aria-hidden="true" class="view-hint">
 <svg fill="none" height="18" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="18"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3"></path><path d="M11 8v6M8 11h6"></path></svg>
@@ -162,9 +167,9 @@
 <div class="card-body"><div class="card-topline"><h3 class="card-title">Samsung Pakistan Retail Sales Channel Performance</h3><span aria-hidden="true" class="arrow-mark">↗</span></div><p class="card-description">Built an interactive Power BI dashboard using KPIs, city-wise and monthly sales analysis, channel/product comparisons, cumulative growth, return rates, and repeat-customer metrics, with filters for date, city, and channel.</p><div class="tags"><span class="tag">Power BI</span><span class="tag">DAX</span></div><details class="project-details"><summary>Project details <i aria-hidden="true" class="fas fa-chevron-down"></i></summary><div class="detail-content"><strong>Business challenge</strong><p>Evaluate Samsung Pakistan's retail sales performance across cities, sales channels, products, categories, and customer behavior to identify revenue drivers, growth trends, and areas requiring improvement.</p><strong>Findings</strong><p>Karachi shows the highest city-level revenue, while the Experience Store contributes the largest channel share (45%). Mobile products dominate category revenue (60%), with Galaxy Z Fold 5 as the top revenue-generating product. The overall return rate is 3.1%, while repeat customers account for 18.5%, indicating an opportunity to improve customer retention and repeat purchases.</p></div></details><a class="card-link" href="https://github.com/khurraminsights/Samsung-Pakistan-Retail-Sales-Channel-Performance-Analytics-SQL-Project-" rel="noopener noreferrer" target="_blank">View project on GitHub <i aria-hidden="true" class="fas fa-arrow-up-right-from-square"></i></a></div>
 </article>
 <!-- ============ EXISTING PROJECT: XEVEN SOLUTIONS ============ -->
-<article class="card" data-category="sql powerbi">
+<article class="card" data-category="sql">
 <div class="card-media">
-<span class="card-badge">SQL + Power BI</span>
+<span class="card-badge">SQL</span>
 <img alt="Business Insights for Xeven Solutions dashboard showing resource utilization and AI adoption" loading="lazy" src="xeven.jpg"/>
 <span aria-hidden="true" class="view-hint">
 <svg fill="none" height="18" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="18"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3"></path><path d="M11 8v6M8 11h6"></path></svg>
@@ -173,9 +178,9 @@
 <div class="card-body"><div class="card-topline"><h3 class="card-title">Business Insights for Xeven Solutions Using SQL</h3><span aria-hidden="true" class="arrow-mark">↗</span></div><p class="card-description">Used SQL Server to join and analyze 5 normalized tables using JOINs, aggregations, CTEs, window functions, and conditional logic, then built a Power BI dashboard with a star schema and DAX measures for utilization, margins, cost per FTE, and AI penetration.</p><div class="tags"><span class="tag">SQL Server</span></div><details class="project-details"><summary>Project details <i aria-hidden="true" class="fas fa-chevron-down"></i></summary><div class="detail-content"><strong>Business challenge</strong><p>Xeven Solutions lacked a centralized analytics view to identify project delivery issues, resource utilization gaps, client profitability, and AI product adoption opportunities.</p><strong>Findings</strong><p>Identified 15 paused projects locking ₹6.7M in idle budget, 8 projects that could restart within 30 days, and an opportunity to redeploy 6 idle engineers to rescue ₹8M in at-risk revenue. Healthcare generated 41% of total revenue but had only 44% AI-tool penetration, while the project recommendations projected ₹9.3M EBIT uplift within 180 days.</p></div></details><a class="card-link" href="https://github.com/khurraminsights/Business-Insights-for-Xeven-Solutions-Using-SQL" rel="noopener noreferrer" target="_blank">View project on GitHub <i aria-hidden="true" class="fas fa-arrow-up-right-from-square"></i></a></div>
 </article>
 <!-- ============ SQL PROJECT 1 ============ -->
-<article class="card" data-category="sql">
+<article class="card" data-category="powerbi">
 <div class="card-media">
-<span class="card-badge">SQL</span>
+<span class="card-badge">Power BI</span>
 <img alt="Amazon E-Commerce Power BI dashboard showing revenue, profit, and category performance" loading="lazy" src="AmazonPowerBI.png"/>
 <span aria-hidden="true" class="view-hint">
 <svg fill="none" height="18" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="18"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3"></path><path d="M11 8v6M8 11h6"></path></svg>
@@ -239,9 +244,9 @@
 <div class="card-body"><div class="card-topline"><h3 class="card-title">Kap's Café — SQL Analytics Project</h3><span aria-hidden="true" class="arrow-mark">↗</span></div><p class="card-description">Used SQL Server's LAG() window function for month-over-month (MoM) comparative analysis across revenue, order count, and quantity sold.</p><div class="tags"><span class="tag">SQL Server</span></div><details class="project-details"><summary>Project details <i aria-hidden="true" class="fas fa-chevron-down"></i></summary><div class="detail-content"><strong>Business challenge</strong><p>Café management was making decisions with zero visibility into monthly revenue, order volume trends, or product demand shifts, despite having raw transaction data.</p><strong>Findings</strong><p>Some months held steady revenue despite fewer orders — a premium-pricing effect — while other months showed sharp order/revenue volatility tied to seasonality, informing promotion timing.</p></div></details><a class="card-link" href="https://github.com/khurraminsights/Kap-s-Caf-SQL-Analytics-Project" rel="noopener noreferrer" target="_blank">View project on GitHub <i aria-hidden="true" class="fas fa-arrow-up-right-from-square"></i></a></div>
 </article>
 <!-- ============ SQL PROJECT 7 ============ -->
-<article class="card" data-category="sql powerbi">
+<article class="card" data-category="sql">
 <div class="card-media">
-<span class="card-badge">SQL + Power BI</span>
+<span class="card-badge">SQL</span>
 <img alt="Ola NZ ride-hailing performance SQL and Power BI analysis" loading="lazy" src="ola_sql.jpg"/>
 <span aria-hidden="true" class="view-hint">
 <svg fill="none" height="18" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="18"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3"></path><path d="M11 8v6M8 11h6"></path></svg>
@@ -294,9 +299,9 @@
 <div class="card-body"><div class="card-topline"><h3 class="card-title">EdTech Online Courses Analysis</h3><span aria-hidden="true" class="arrow-mark">↗</span></div><p class="card-description">Built a Power BI dashboard analyzing course type distribution, views by category/language, subtitle impact, and course duration vs. viewership.</p><div class="tags"><span class="tag">Power BI</span></div><details class="project-details"><summary>Project details <i aria-hidden="true" class="fas fa-chevron-down"></i></summary><div class="detail-content"><strong>Business challenge</strong><p>An EdTech platform needed to understand which course formats, languages, and content types actually drive engagement to guide content strategy.</p><strong>Findings</strong><p>Courses dominated at 746 instances; English made up 95.91% of content; courses with 1–2 subtitles and 200–400 hours of content saw the highest engagement.</p></div></details><a class="card-link" href="https://github.com/khurraminsights/EdTech-Online-Courses-Analysis" rel="noopener noreferrer" target="_blank">View project on GitHub <i aria-hidden="true" class="fas fa-arrow-up-right-from-square"></i></a></div>
 </article>
 <!-- ============ POWER BI PROJECT 5 ============ -->
-<article class="card" data-category="sql powerbi">
+<article class="card" data-category="powerbi">
 <div class="card-media">
-<span class="card-badge">SQL + Power BI</span>
+<span class="card-badge">Power BI</span>
 <img alt="Pakistan e-commerce analytics dashboard 2022 to 2024" loading="lazy" src="pakistan_ecommerce.png"/>
 <span aria-hidden="true" class="view-hint">
 <svg fill="none" height="18" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="18"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3"></path><path d="M11 8v6M8 11h6"></path></svg>
@@ -398,8 +403,19 @@ const empty=document.getElementById('noResults');
 buttons.forEach(btn=>btn.addEventListener('click',()=>{
  buttons.forEach(b=>{b.classList.remove('active');b.setAttribute('aria-pressed','false')});
  btn.classList.add('active');btn.setAttribute('aria-pressed','true');
- let visible=0;cards.forEach(card=>{const show=btn.dataset.filter==='all'||card.dataset.category.split(/\s+/).includes(btn.dataset.filter);card.hidden=!show;card.style.display=show?'':'none';if(show)visible++});
- if(empty)empty.style.display=visible?'none':'block';
+ const selected=btn.dataset.filter;
+ let visible=0;
+ cards.forEach(card=>{
+   const show=selected==='all'||card.dataset.category===selected;
+   card.hidden=!show;
+   card.style.display=show?'flex':'none';
+   if(show) visible++;
+ });
+ const resultCounter=document.getElementById('filterCount');
+ if(resultCounter) resultCounter.textContent=selected==='all'
+   ? `Showing all ${visible} projects`
+   : `Showing ${visible} ${selected==='powerbi'?'Power BI':selected==='sql'?'SQL':'Excel / Sheets'} projects`;
+ if(empty) empty.style.display=visible?'none':'block';
 }));
 const hamburger=document.querySelector('.hamburger'),nav=document.querySelector('.nav-links');
 function closeMenu(){nav.classList.remove('active');hamburger.setAttribute('aria-expanded','false');hamburger.setAttribute('aria-label','Open navigation')}
