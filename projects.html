@@ -49,6 +49,32 @@
 @media(max-width:1000px){.nav-inner{padding:9px 18px}.hero-inner{grid-template-columns:minmax(0,1.07fr) minmax(240px,.93fr);min-height:510px}.hero-visual{height:475px}.portrait-frame{top:65px;width:min(100%,355px);right:0}.welcome-bubble{left:-8%;top:36px}.graph-left,.graph-right{display:none}}
 @media(max-width:700px){.navbar{width:94%;margin-top:10px}.nav-inner{padding:8px 14px}.hero{padding:25px 15px 24px}.hero-inner{display:flex;flex-direction:column;min-height:0}.hero-copy{padding:5px 0 10px}.hero-visual{height:310px;max-width:420px;width:100%;margin:15px auto 0;align-self:center}.portrait-frame{width:min(83%,296px);top:8px;right:8%;}.welcome-bubble{top:30px;left:1%}.projects-section{padding-top:0}.stats{flex-wrap:wrap}}
 @media(max-width:400px){.nav-inner{padding:7px 10px;gap:6px}.social-icons{gap:5px}.hero-visual{height:274px}.portrait-frame{width:250px;max-width:84%;right:5%;top:9px}.welcome-bubble{font-size:.7rem;top:18px;left:0;padding:9px 12px}}
+
+/* Portrait positioning correction: fit the ENTIRE cutout within the blue circle. */
+.portrait-frame {
+  display: block;
+  overflow: hidden;
+  isolation: isolate;
+}
+.portrait-frame .welcome-photo {
+  position: absolute;
+  left: 50%;
+  right: auto;
+  bottom: 0;
+  top: auto;
+  transform: translateX(-50%);
+  display: block;
+  width: auto;
+  height: 94%;
+  max-width: none;
+  max-height: none;
+  object-fit: contain;
+  object-position: center bottom;
+  filter: drop-shadow(0 8px 14px rgba(0,0,0,.28));
+}
+@media (max-width: 700px) {
+  .portrait-frame .welcome-photo { height: 92%; }
+}
 </style>
 </head>
 <body>
