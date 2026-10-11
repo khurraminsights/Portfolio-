@@ -651,20 +651,10 @@ body::before { background-size: 76px 76px; background-image:linear-gradient(rgba
 .page-header p {margin-top:12px;line-height:1.55;font-size:clamp(.9rem,1.13vw,1rem)}
 .cert-overview {scroll-margin-top:115px;margin-bottom:34px}
 .cert-overview-inner {padding:20px 28px}
-/* Friendly hand-crafted robot and animated down arrow; no external assets required. */
-.scroll-companion {position:fixed;right:clamp(12px,2.8vw,52px);top:51%;z-index:15;display:flex;flex-direction:column;align-items:center;gap:7px;text-decoration:none;filter:drop-shadow(0 12px 16px rgba(0,0,0,.3));transition:opacity .25s,transform .25s}
-.scroll-companion:hover {transform:translateY(-5px)}
-.scroll-companion .robot-art {width:92px;height:104px;animation:robot-float 3.2s ease-in-out infinite}
-.scroll-companion .scroll-speech {font-size:11px;font-weight:800;letter-spacing:.02em;white-space:nowrap;background:#f3fbff;color:#0c3553;padding:8px 11px;border-radius:14px;border:2px solid #77d6ff;box-shadow:0 5px 14px rgba(6,101,160,.2)}
-.scroll-companion .scroll-chevron {width:36px;height:36px;display:grid;place-items:center;border-radius:50%;background:linear-gradient(160deg,#75d9ff,#198ddd);color:#031928;border:1px solid #c3edff;font-size:18px;animation:scroll-bounce 1.6s infinite}
-.scroll-companion.is-scrolled {opacity:0;pointer-events:none}
-@keyframes robot-float {0%,100%{transform:translateY(0) rotate(-3deg)}50%{transform:translateY(-11px) rotate(3deg)}}
-@keyframes scroll-bounce {0%,100%{transform:translateY(0)}50%{transform:translateY(7px)}}
-@media(max-width:1200px){.page-header{padding-top:112px}.scroll-companion{right:10px}.scroll-companion .robot-art{width:70px;height:80px}.scroll-companion .scroll-speech{font-size:10px}}
-@media(max-width:850px){.page-header{padding-top:108px}.scroll-companion{top:auto;bottom:22px;right:14px}.scroll-companion .robot-art{width:58px;height:67px}.scroll-companion .scroll-speech{font-size:9px;padding:5px 7px}.scroll-companion .scroll-chevron{width:29px;height:29px}}
-@media(max-width:600px){.page-header{padding:105px 19px 26px}.page-header h1{font-size:clamp(2.45rem,10vw,3.45rem)}.page-header p{margin-top:12px}.cert-typewriter{margin-top:13px}.cert-overview-inner{padding:19px 17px}.scroll-companion .robot-art{width:49px;height:57px}}
-@media(max-width:380px){.scroll-companion{display:none}}
-@media(prefers-reduced-motion:reduce){.scroll-companion .robot-art,.scroll-companion .scroll-chevron{animation:none}}
+/* Compact hero responsive refinements (scroll helper removed). */
+@media(max-width:1200px){.page-header{padding-top:112px}}
+@media(max-width:850px){.page-header{padding-top:108px}}
+@media(max-width:600px){.page-header{padding:105px 19px 26px}.page-header h1{font-size:clamp(2.45rem,10vw,3.45rem)}.page-header p{margin-top:12px}.cert-typewriter{margin-top:13px}.cert-overview-inner{padding:19px 17px}}
 
 </style>
 </head>
@@ -782,25 +772,7 @@ body::before { background-size: 76px 76px; background-image:linear-gradient(rgba
     <p>Industry-recognized credentials from Google, Cisco, PwC, JPMorgan, and more — validating a full-stack analytics skill set.</p>
 </header>
 
-<!-- Animated scroll helper, separate from the unchanged navigation -->
-<a class="scroll-companion" href="#cert-overview" aria-label="Scroll down to view certification overview">
-  <span class="scroll-speech">Scroll down! 👇</span>
-  <svg class="robot-art" viewBox="0 0 120 135" role="img" aria-label="Friendly waving blue robot">
-    <defs><linearGradient id="robotBlue" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#b0ecff"/><stop offset="1" stop-color="#3aa7ee"/></linearGradient></defs>
-    <path d="M57 17V7" stroke="#7fdbff" stroke-width="5" stroke-linecap="round"/><circle cx="57" cy="7" r="6" fill="#65ceff"/>
-    <path d="M24 61Q6 48 12 31" fill="none" stroke="#61bdf1" stroke-width="11" stroke-linecap="round"/><circle cx="12" cy="29" r="8" fill="#b4f2ff"/>
-    <path d="M97 61Q116 45 105 27" fill="none" stroke="#61bdf1" stroke-width="11" stroke-linecap="round"/><path d="M99 27L103 15M105 27L116 21" stroke="#b4f2ff" stroke-width="5" stroke-linecap="round"/>
-    <rect x="18" y="21" width="82" height="69" rx="25" fill="url(#robotBlue)" stroke="#b8efff" stroke-width="3"/>
-    <rect x="27" y="37" width="64" height="35" rx="14" fill="#102b4c"/>
-    <ellipse cx="46" cy="52" rx="6" ry="8" fill="#82f0ff"/><ellipse cx="73" cy="52" rx="6" ry="8" fill="#82f0ff"/>
-    <path d="M52 64Q60 71 68 64" fill="none" stroke="#9cefff" stroke-width="3" stroke-linecap="round"/>
-    <rect x="35" y="88" width="48" height="34" rx="13" fill="#409cdb" stroke="#b8efff" stroke-width="3"/>
-    <path d="M47 120V128M72 120V128" stroke="#85d9ff" stroke-width="9" stroke-linecap="round"/>
-    <path d="M53 103L60 111L67 103" stroke="#d5f7ff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-    <circle cx="24" cy="58" r="5" fill="#ff94b9" opacity=".8"/><circle cx="96" cy="58" r="5" fill="#ff94b9" opacity=".8"/>
-  </svg>
-  <span class="scroll-chevron" aria-hidden="true"><i class="fa-solid fa-arrow-down"></i></span>
-</a>
+
 
 <!-- Credential overview: totals are calculated from existing certificates, not hard-coded -->
 <section class="cert-overview" id="cert-overview" aria-label="Certification overview">
@@ -822,7 +794,7 @@ body::before { background-size: 76px 76px; background-image:linear-gradient(rgba
 <section class="certs-section">
     <div class="gallery-heading">
       <div><div class="gallery-kicker">Explore the collection</div><h2>Certification Gallery</h2></div>
-      <div class="gallery-count"><strong id="visible-count">20</strong> credentials displayed</div>
+      <div class="gallery-count"><strong id="visible-count">21</strong> credentials displayed</div>
     </div>
     <div class="filter-row" aria-label="Filter certifications by issuer">
         <button class="filter-btn active" onclick="filterCards('all',this)">All</button>
@@ -836,8 +808,22 @@ body::before { background-size: 76px 76px; background-image:linear-gradient(rgba
     </div>
 
     <div class="cert-grid">
-        <!-- 1. Meta Data Analyst Professional Certificate -->
-        <div class="cert-card" data-cat="meta" style="--i:1">
+        <!-- 1. AI Skills Passport Certification -->
+        <div class="cert-card" data-cat="other" style="--i:1">
+            <div class="cert-img-box" onclick="openModal('AI Skills Passport certification.jpg','AI Skills Passport Certification')">
+                <img src="AI Skills Passport certification.jpg" alt="AI Skills Passport Certification">
+                <div class="overlay"><i class="fa-solid fa-magnifying-glass"></i> View</div>
+            </div>
+            <div class="cert-body">
+                <span class="issuer-badge badge-other">Microsoft / EY</span>
+                <div class="cert-title">AI Skills Passport Certification</div>
+                <span class="btn-no-link"><i class="fa-solid fa-certificate"></i> Certificate</span>
+            </div>
+        </div>
+
+
+        <!-- 2. Meta Data Analyst Professional Certificate -->
+        <div class="cert-card" data-cat="meta" style="--i:2">
             <div class="cert-img-box" onclick="openModal('Meta Data Analyst Professional Certificate.jpg','Meta Data Analyst Professional Certificate')">
                 <img src="Meta Data Analyst Professional Certificate.jpg" alt="Meta Data Analyst Professional Certificate">
                 <div class="overlay"><i class="fa-solid fa-magnifying-glass"></i> View</div>
@@ -851,8 +837,8 @@ body::before { background-size: 76px 76px; background-image:linear-gradient(rgba
             </div>
         </div>
 
-        <!-- 2. Google Business Intelligence Professional Certificate -->
-        <div class="cert-card" data-cat="google" style="--i:2">
+        <!-- 3. Google Business Intelligence Professional Certificate -->
+        <div class="cert-card" data-cat="google" style="--i:3">
             <div class="cert-img-box" onclick="openModal('google_bi.jpg','Google Business Intelligence Professional Certificate')">
                 <img src="google_bi.jpg" alt="Google BI">
                 <div class="overlay"><i class="fa-solid fa-magnifying-glass"></i> View</div>
@@ -866,8 +852,8 @@ body::before { background-size: 76px 76px; background-image:linear-gradient(rgba
             </div>
         </div>
 
-        <!-- 3. Google Data Analytics Professional Certificate -->
-        <div class="cert-card" data-cat="google" style="--i:3">
+        <!-- 4. Google Data Analytics Professional Certificate -->
+        <div class="cert-card" data-cat="google" style="--i:4">
             <div class="cert-img-box" onclick="openModal('google_pro.jpg','Google Data Analytics Professional Certificate')">
                 <img src="google_pro.jpg" alt="Google Data Analytics">
                 <div class="overlay"><i class="fa-solid fa-magnifying-glass"></i> View</div>
@@ -881,8 +867,8 @@ body::before { background-size: 76px 76px; background-image:linear-gradient(rgba
             </div>
         </div>
 
-        <!-- 4. OpenAI Academy Certificate -->
-        <div class="cert-card" data-cat="other" style="--i:4">
+        <!-- 5. OpenAI Academy Certificate -->
+        <div class="cert-card" data-cat="other" style="--i:5">
             <div class="cert-img-box" onclick="openModal('OpenAI Certificate.jpg','OpenAI Academy Certificate')">
                 <img src="OpenAI Certificate.jpg" alt="OpenAI Academy Certificate">
                 <div class="overlay"><i class="fa-solid fa-magnifying-glass"></i> View</div>
@@ -896,8 +882,8 @@ body::before { background-size: 76px 76px; background-image:linear-gradient(rgba
             </div>
         </div>
 
-        <!-- 5. Quantium Data Analytics -->
-        <div class="cert-card" data-cat="other" style="--i:5">
+        <!-- 6. Quantium Data Analytics -->
+        <div class="cert-card" data-cat="other" style="--i:6">
             <div class="cert-img-box" onclick="openModal('Quantium Data Analytics Virtual Experience.png','Quantium Data Analytics Virtual Experience')">
                 <img src="Quantium Data Analytics Virtual Experience.png" alt="Quantium Data Analytics Virtual Experience">
                 <div class="overlay"><i class="fa-solid fa-magnifying-glass"></i> View</div>
@@ -909,8 +895,8 @@ body::before { background-size: 76px 76px; background-image:linear-gradient(rgba
             </div>
         </div>
 
-        <!-- 6. One Million Prompters -->
-        <div class="cert-card" data-cat="other" style="--i:6">
+        <!-- 7. One Million Prompters -->
+        <div class="cert-card" data-cat="other" style="--i:7">
             <div class="cert-img-box" onclick="openModal('One Million Prompters Certificate.jpg','One Million Prompters Certificate')">
                 <img src="One Million Prompters Certificate.jpg" alt="One Million Prompters Certificate">
                 <div class="overlay"><i class="fa-solid fa-magnifying-glass"></i> View</div>
@@ -924,8 +910,8 @@ body::before { background-size: 76px 76px; background-image:linear-gradient(rgba
             </div>
         </div>
 
-        <!-- 7. Critical Thinking in the AI Era -->
-        <div class="cert-card" data-cat="other" style="--i:7">
+        <!-- 8. Critical Thinking in the AI Era -->
+        <div class="cert-card" data-cat="other" style="--i:8">
             <div class="cert-img-box" onclick="openModal('Critical Thinking in the AI Era.jpg','Critical Thinking in the AI Era')">
                 <img src="Critical Thinking in the AI Era.jpg" alt="Critical Thinking AI">
                 <div class="overlay"><i class="fa-solid fa-magnifying-glass"></i> View</div>
@@ -937,8 +923,8 @@ body::before { background-size: 76px 76px; background-image:linear-gradient(rgba
             </div>
         </div>
 
-        <!-- 8. Power Query -->
-        <div class="cert-card" data-cat="other" style="--i:8">
+        <!-- 9. Power Query -->
+        <div class="cert-card" data-cat="other" style="--i:9">
             <div class="cert-img-box" onclick="openModal('power_query.png','Power Query Training Masterclass Certificate')">
                 <img src="power_query.png" alt="Power Query">
                 <div class="overlay"><i class="fa-solid fa-magnifying-glass"></i> View</div>
@@ -950,8 +936,8 @@ body::before { background-size: 76px 76px; background-image:linear-gradient(rgba
             </div>
         </div>
 
-        <!-- 9. Cisco Data Science -->
-        <div class="cert-card" data-cat="cisco" style="--i:9">
+        <!-- 10. Cisco Data Science -->
+        <div class="cert-card" data-cat="cisco" style="--i:10">
             <div class="cert-img-box" onclick="openModal('DataScience.jpg','Introduction to Data Science – Cisco')">
                 <img src="DataScience.jpg" alt="Data Science Cisco">
                 <div class="overlay"><i class="fa-solid fa-magnifying-glass"></i> View</div>
@@ -965,8 +951,8 @@ body::before { background-size: 76px 76px; background-image:linear-gradient(rgba
             </div>
         </div>
 
-        <!-- 10. Cisco C++ -->
-        <div class="cert-card" data-cat="cisco" style="--i:10">
+        <!-- 11. Cisco C++ -->
+        <div class="cert-card" data-cat="cisco" style="--i:11">
             <div class="cert-img-box" onclick="openModal('Cisco%20C%2B%2B%20Essentials%20Certificate.jpg','Cisco C++ Essentials Certificate')">
                 <img src="Cisco%20C%2B%2B%20Essentials%20Certificate.jpg" alt="Cisco C++">
                 <div class="overlay"><i class="fa-solid fa-magnifying-glass"></i> View</div>
@@ -980,8 +966,8 @@ body::before { background-size: 76px 76px; background-image:linear-gradient(rgba
             </div>
         </div>
 
-        <!-- 11. PwC Power BI -->
-        <div class="cert-card" data-cat="pwc" style="--i:11">
+        <!-- 12. PwC Power BI -->
+        <div class="cert-card" data-cat="pwc" style="--i:12">
             <div class="cert-img-box" onclick="openModal('Power%20Bi%20by%20PwC.jpg','Power BI Corporate Training – PwC')">
                 <img src="Power%20Bi%20by%20PwC.jpg" alt="PwC Power BI">
                 <div class="overlay"><i class="fa-solid fa-magnifying-glass"></i> View</div>
@@ -993,8 +979,8 @@ body::before { background-size: 76px 76px; background-image:linear-gradient(rgba
             </div>
         </div>
 
-        <!-- 12. Google AI -->
-        <div class="cert-card" data-cat="google" style="--i:12">
+        <!-- 13. Google AI -->
+        <div class="cert-card" data-cat="google" style="--i:13">
             <div class="cert-img-box" onclick="openModal('Google%20AI%20Essentials%20Professional%20Certificate.jpg','Google AI Essentials Professional')">
                 <img src="Google%20AI%20Essentials%20Professional%20Certificate.jpg" alt="Google AI">
                 <div class="overlay"><i class="fa-solid fa-magnifying-glass"></i> View</div>
@@ -1006,8 +992,8 @@ body::before { background-size: 76px 76px; background-image:linear-gradient(rgba
             </div>
         </div>
 
-        <!-- 13. Cisco Data Analytics -->
-        <div class="cert-card" data-cat="cisco" style="--i:13">
+        <!-- 14. Cisco Data Analytics -->
+        <div class="cert-card" data-cat="cisco" style="--i:14">
             <div class="cert-img-box" onclick="openModal('cisco.jpg','CISCO Data Analytics Essentials')">
                 <img src="cisco.jpg" alt="Cisco Data Analytics">
                 <div class="overlay"><i class="fa-solid fa-magnifying-glass"></i> View</div>
@@ -1021,8 +1007,8 @@ body::before { background-size: 76px 76px; background-image:linear-gradient(rgba
             </div>
         </div>
 
-        <!-- 14. JPMorgan -->
-        <div class="cert-card" data-cat="jpmorgan" style="--i:14">
+        <!-- 15. JPMorgan -->
+        <div class="cert-card" data-cat="jpmorgan" style="--i:15">
             <div class="cert-img-box" onclick="openModal('JPMorgan%20Chase%20%26%20Co.%20completion_certificate.jpg','JPMorgan Chase Virtual Experience')">
                 <img src="JPMorgan%20Chase%20%26%20Co.%20completion_certificate.jpg" alt="JPMorgan">
                 <div class="overlay"><i class="fa-solid fa-magnifying-glass"></i> View</div>
@@ -1034,8 +1020,8 @@ body::before { background-size: 76px 76px; background-image:linear-gradient(rgba
             </div>
         </div>
 
-        <!-- 15. HP Life -->
-        <div class="cert-card" data-cat="other" style="--i:15">
+        <!-- 16. HP Life -->
+        <div class="cert-card" data-cat="other" style="--i:16">
             <div class="cert-img-box" onclick="openModal('hplife.jpg','Diploma in Data Analytics – HP Life')">
                 <img src="hplife.jpg" alt="HP Life">
                 <div class="overlay"><i class="fa-solid fa-magnifying-glass"></i> View</div>
@@ -1047,8 +1033,8 @@ body::before { background-size: 76px 76px; background-image:linear-gradient(rgba
             </div>
         </div>
 
-        <!-- 16. NSW -->
-        <div class="cert-card" data-cat="other" style="--i:16">
+        <!-- 17. NSW -->
+        <div class="cert-card" data-cat="other" style="--i:17">
             <div class="cert-img-box" onclick="openModal('nsw.jpg','NSW Data Analytics Certificate')">
                 <img src="nsw.jpg" alt="NSW">
                 <div class="overlay"><i class="fa-solid fa-magnifying-glass"></i> View</div>
@@ -1060,8 +1046,8 @@ body::before { background-size: 76px 76px; background-image:linear-gradient(rgba
             </div>
         </div>
 
-        <!-- 17. DigiSkills Old -->
-        <div class="cert-card" data-cat="digi" style="--i:17">
+        <!-- 18. DigiSkills Old -->
+        <div class="cert-card" data-cat="digi" style="--i:18">
             <div class="cert-img-box" onclick="openModal('digiskills.jpg','DigiSkills Data Analytics & BI')">
                 <img src="digiskills.jpg" alt="DigiSkills">
                 <div class="overlay"><i class="fa-solid fa-magnifying-glass"></i> View</div>
@@ -1075,8 +1061,8 @@ body::before { background-size: 76px 76px; background-image:linear-gradient(rgba
             </div>
         </div>
 
-        <!-- 18. DigiSkills New -->
-        <div class="cert-card" data-cat="digi" style="--i:18">
+        <!-- 19. DigiSkills New -->
+        <div class="cert-card" data-cat="digi" style="--i:19">
             <div class="cert-img-box" onclick="openModal('DigiSkills New.jpg','DigiSkills Data Analytics & Business Intelligence – DSTP 3.0')">
                 <img src="DigiSkills New.jpg" alt="DigiSkills New">
                 <div class="overlay"><i class="fa-solid fa-magnifying-glass"></i> View</div>
@@ -1090,8 +1076,8 @@ body::before { background-size: 76px 76px; background-image:linear-gradient(rgba
             </div>
         </div>
 
-        <!-- 19. C++ Essentials Veriifiable Certificate -->
-        <div class="cert-card" data-cat="cisco" style="--i:19">
+        <!-- 20. C++ Essentials Veriifiable Certificate -->
+        <div class="cert-card" data-cat="cisco" style="--i:20">
             <div class="cert-img-box" onclick="openModal('C++ Essentials Veriifiable Certificate.jpg','C++ Essentials Veriifiable Certificate')">
                 <img src="C++ Essentials Veriifiable Certificate.jpg" alt="C++ Essentials Veriifiable Certificate">
                 <div class="overlay"><i class="fa-solid fa-magnifying-glass"></i> View</div>
@@ -1105,8 +1091,8 @@ body::before { background-size: 76px 76px; background-image:linear-gradient(rgba
             </div>
         </div>
 
-        <!-- 20. Intro to DataScience Veriifiable Certificate -->
-        <div class="cert-card" data-cat="cisco" style="--i:20">
+        <!-- 21. Intro to DataScience Veriifiable Certificate -->
+        <div class="cert-card" data-cat="cisco" style="--i:21">
             <div class="cert-img-box" onclick="openModal('Intro to DataScience Veriifiable Certificate.jpg','Intro to DataScience Veriifiable Certificate')">
                 <img src="Intro to DataScience Veriifiable Certificate.jpg" alt="Intro to DataScience Veriifiable Certificate">
                 <div class="overlay"><i class="fa-solid fa-magnifying-glass"></i> View</div>
@@ -1215,19 +1201,9 @@ body::before { background-size: 76px 76px; background-image:linear-gradient(rgba
 startTypewriter(document.getElementById('typed-certifications'), ['Validating My Analytics Expertise', 'Learning. Applying. Growing.', 'Building Skills That Drive Better Decisions', 'Turning Knowledge into Practical Analytics', 'Credentials Backed by Real-World Projects']);
 </script>
 
-<script>
-  // Hide the scroll guide after visitors reach the certification overview.
-  (function () {
-    const guide = document.querySelector('.scroll-companion');
-    const target = document.getElementById('cert-overview');
-    if (!guide || !target) return;
-    const update = () => guide.classList.toggle('is-scrolled', target.getBoundingClientRect().top < window.innerHeight * .56);
-    window.addEventListener('scroll', update, {passive:true});
-    window.addEventListener('resize', update);
-    update();
-  })();
-</script>
+
 </body>
 </html>
+
 
 
