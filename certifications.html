@@ -656,6 +656,39 @@ body::before { background-size: 76px 76px; background-image:linear-gradient(rgba
 @media(max-width:850px){.page-header{padding-top:108px}}
 @media(max-width:600px){.page-header{padding:105px 19px 26px}.page-header h1{font-size:clamp(2.45rem,10vw,3.45rem)}.page-header p{margin-top:12px}.cert-typewriter{margin-top:13px}.cert-overview-inner{padding:19px 17px}}
 
+
+        /* Innovista Learn Easy course certificate */
+        .badge-innovista {
+            color:#ffb087;
+            border:1px solid rgba(255,144,84,.34);
+            background:rgba(255,144,84,.09);
+        }
+        .btn-view {
+            display:inline-flex;
+            align-items:center;
+            justify-content:center;
+            gap:7px;
+            width:100%;
+            min-height:41px;
+            margin-top:auto;
+            padding:10px 12px;
+            background:rgba(73,185,239,.10);
+            border:1px solid rgba(73,185,239,.32);
+            border-radius:11px;
+            color:#83d7ff;
+            font:700 .68rem 'Inter',sans-serif;
+            letter-spacing:.025em;
+            text-transform:uppercase;
+            cursor:pointer;
+            transition:background .2s,border-color .2s,color .2s;
+        }
+        .btn-view:hover {
+            background:rgba(73,185,239,.2);
+            border-color:rgba(73,185,239,.62);
+            color:#fff;
+        }
+        .btn-view:focus-visible {outline:3px solid #179bff;outline-offset:4px}
+
 </style>
 </head>
 <body>
@@ -794,7 +827,7 @@ body::before { background-size: 76px 76px; background-image:linear-gradient(rgba
 <section class="certs-section">
     <div class="gallery-heading">
       <div><div class="gallery-kicker">Explore the collection</div><h2>Certification Gallery</h2></div>
-      <div class="gallery-count"><strong id="visible-count">21</strong> credentials displayed</div>
+      <div class="gallery-count"><strong id="visible-count">23</strong> credentials displayed</div>
     </div>
     <div class="filter-row" aria-label="Filter certifications by issuer">
         <button class="filter-btn active" onclick="filterCards('all',this)">All</button>
@@ -808,6 +841,21 @@ body::before { background-size: 76px 76px; background-image:linear-gradient(rgba
     </div>
 
     <div class="cert-grid">
+        <!-- 1. Learn Claude AI in 30 Days — Innovista Learn Easy (27 October 2026) -->
+        <div class="cert-card" data-cat="other" style="--i:1">
+            <div class="cert-img-box" onclick="openModal('C10.jpg','Learn Claude AI in 30 Days — Innovista Learn Easy')">
+                <img src="C10.jpg" alt="Learn Claude AI in 30 Days certificate of achievement from Innovista Learn Easy" loading="lazy" decoding="async">
+                <div class="overlay"><i class="fa-solid fa-magnifying-glass"></i> View</div>
+            </div>
+            <div class="cert-body">
+                <span class="issuer-badge badge-innovista">Innovista Learn Easy</span>
+                <div class="cert-title">Learn Claude AI in 30 Days</div>
+                <button class="btn-view" type="button" onclick="openModal('C10.jpg','Learn Claude AI in 30 Days — Innovista Learn Easy')">
+                    <i class="fa-solid fa-eye" aria-hidden="true"></i> View Certificate
+                </button>
+            </div>
+        </div>
+
         <!-- AI Skills Passport Digital Badge -->
         <div class="cert-card" data-cat="other" style="--i:1">
             <div class="cert-img-box" onclick="openModal('ai-skills-passport.png','AI Skills Passport Digital Badge')">
@@ -1217,6 +1265,7 @@ startTypewriter(document.getElementById('typed-certifications'), ['Validating My
 
 </body>
 </html>
+
 
 
 
