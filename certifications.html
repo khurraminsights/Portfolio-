@@ -311,6 +311,7 @@
             text-transform:uppercase; padding:3px 10px; border-radius:50px;
             width:fit-content;
         }
+        .badge-microsoft { color:#69b5ff; border:1px solid rgba(105,181,255,0.35); background:rgba(105,181,255,0.09); }
         .badge-google   { color:#4ade80; border:1px solid rgba(74,222,128,0.3);  background:rgba(74,222,128,0.06); }
         .badge-meta     { color:#0064E0; border:1px solid rgba(0,100,224,0.3);  background:rgba(0,100,224,0.06); }
         .badge-cisco    { color:#38bdf8; border:1px solid rgba(56,189,248,0.3);  background:rgba(56,189,248,0.06); }
@@ -802,7 +803,7 @@ body::before { background-size: 76px 76px; background-image:linear-gradient(rgba
     <div class="eyebrow"><span></span> Verified Credentials</div>
     <h1>Professional<br><em>Certifications</em></h1>
     <div class="cert-typewriter"><span class="sr-only">Validating My Analytics Expertise</span><span class="cert-reserve" aria-hidden="true"><span>Validating My Analytics Expertise<span class="type-cursor"></span></span><span>Learning. Applying. Growing.<span class="type-cursor"></span></span><span>Building Skills That Drive Better Decisions<span class="type-cursor"></span></span><span>Turning Knowledge into Practical Analytics<span class="type-cursor"></span></span><span>Credentials Backed by Real-World Projects<span class="type-cursor"></span></span></span><span class="cert-display" aria-hidden="true"><span id="typed-certifications">Validating My Analytics Expertise</span><span class="type-cursor"></span></span></div>
-    <p>Industry-recognized credentials from Google, Cisco, PwC, JPMorgan, and more — validating a full-stack analytics skill set.</p>
+    <p>Industry-recognized credentials from Microsoft, Google, Cisco, PwC, JPMorgan, and more — validating a full-stack analytics skill set.</p>
 </header>
 
 
@@ -827,10 +828,11 @@ body::before { background-size: 76px 76px; background-image:linear-gradient(rgba
 <section class="certs-section">
     <div class="gallery-heading">
       <div><div class="gallery-kicker">Explore the collection</div><h2>Certification Gallery</h2></div>
-      <div class="gallery-count"><strong id="visible-count">23</strong> credentials displayed</div>
+      <div class="gallery-count"><strong id="visible-count">24</strong> credentials displayed</div>
     </div>
     <div class="filter-row" aria-label="Filter certifications by issuer">
         <button class="filter-btn active" onclick="filterCards('all',this)">All</button>
+        <button class="filter-btn" onclick="filterCards('microsoft',this)">Microsoft</button>
         <button class="filter-btn" onclick="filterCards('google',this)">Google</button>
         <button class="filter-btn" onclick="filterCards('meta',this)">Meta</button>
         <button class="filter-btn" onclick="filterCards('cisco',this)">Cisco</button>
@@ -841,6 +843,21 @@ body::before { background-size: 76px 76px; background-image:linear-gradient(rgba
     </div>
 
     <div class="cert-grid">
+        <!-- Featured: Microsoft Power BI Data Analyst Professional Certificate — 30 October 2026 -->
+        <div class="cert-card" data-cat="microsoft" style="--i:1">
+            <div class="cert-img-box" onclick="openModal('Microsoft Power BI Data Analyst.jpg','Microsoft Power BI Data Analyst Professional Certificate')">
+                <img src="Microsoft Power BI Data Analyst.jpg" alt="Microsoft Power BI Data Analyst Professional Certificate issued through Coursera" loading="eager" decoding="async">
+                <div class="overlay"><i class="fa-solid fa-magnifying-glass"></i> View</div>
+            </div>
+            <div class="cert-body">
+                <span class="issuer-badge badge-microsoft">Microsoft · Coursera</span>
+                <div class="cert-title">Microsoft Power BI Data Analyst Professional Certificate</div>
+                <a href="https://coursera.org/share/e872b10136702eede959ef8291fb5a03" class="btn-verify" target="_blank" rel="noopener noreferrer" aria-label="Verify Microsoft Power BI Data Analyst Professional Certificate on Coursera">
+                    <i class="fa-solid fa-circle-check" aria-hidden="true"></i> Verify on Coursera
+                </a>
+            </div>
+        </div>
+
         <!-- 1. Learn Claude AI in 30 Days — Innovista Learn Easy (27 October 2026) -->
         <div class="cert-card" data-cat="other" style="--i:1">
             <div class="cert-img-box" onclick="openModal('C10.jpg','Learn Claude AI in 30 Days — Innovista Learn Easy')">
@@ -1265,6 +1282,7 @@ startTypewriter(document.getElementById('typed-certifications'), ['Validating My
 
 </body>
 </html>
+
 
 
 
