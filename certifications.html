@@ -843,6 +843,21 @@ body::before { background-size: 76px 76px; background-image:linear-gradient(rgba
     </div>
 
     <div class="cert-grid">
+        <!-- Claude Academy — Claude Code 101 completion badge -->
+        <div class="cert-card" data-cat="other" style="--i:1">
+            <div class="cert-img-box" onclick="openModal('claude-code-101.jpg','Claude Code 101 — Claude Academy')">
+                <img src="claude-code-101.jpg" alt="Claude Academy Claude Code 101 course completion badge" loading="eager" decoding="async">
+                <div class="overlay"><i class="fa-solid fa-magnifying-glass"></i> View</div>
+            </div>
+            <div class="cert-body">
+                <span class="issuer-badge badge-other">Claude Academy · Anthropic</span>
+                <div class="cert-title">Claude Code 101 — Course Completion Badge</div>
+                <a href="https://academy.claude.com/verify/52e375e5622a0d1125342cfc75391d5a" class="btn-verify" target="_blank" rel="noopener noreferrer" aria-label="Verify Claude Code 101 badge on Claude Academy">
+                    <i class="fa-solid fa-circle-check" aria-hidden="true"></i> Verify on Claude Academy
+                </a>
+            </div>
+        </div>
+
         <!-- Featured: Microsoft Power BI Data Analyst Professional Certificate — 30 October 2026 -->
         <div class="cert-card" data-cat="microsoft" style="--i:1">
             <div class="cert-img-box" onclick="openModal('Microsoft Power BI Data Analyst.jpg','Microsoft Power BI Data Analyst Professional Certificate')">
@@ -1282,6 +1297,7 @@ startTypewriter(document.getElementById('typed-certifications'), ['Validating My
 
 </body>
 </html>
+
 
 
 
