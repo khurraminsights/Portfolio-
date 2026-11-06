@@ -115,12 +115,33 @@
 <div class="stat"><span class="stat-icon excel"><i aria-hidden="true" class="fas fa-file-excel"></i></span><span><strong>2</strong><small>EXCEL PROJECTS SHOWN</small></span></div>
 </div>
 <div aria-label="Filter projects by category" class="filters" role="group"><button aria-pressed="true" class="filter-btn active" data-filter="all">All</button><button aria-pressed="false" class="filter-btn" data-filter="sql">SQL</button><button aria-pressed="false" class="filter-btn" data-filter="powerbi">Power BI</button><button aria-pressed="false" class="filter-btn" data-filter="excel">Excel / Sheets</button></div>
-<p id="filterCount" class="filter-count" role="status" aria-live="polite">Showing all 23 projects</p>
+<p id="filterCount" class="filter-count" role="status" aria-live="polite">Showing all 24 projects</p>
 <a class="explore-link" href="#featured-projects-grid">Explore the work <i aria-hidden="true" class="fas fa-arrow-down"></i></a>
 </div>
 <div class="hero-visual"><div class="portrait-glow"></div><div aria-hidden="true" class="floating-graph graph-left"><i class="fas fa-chart-simple"></i></div><div aria-hidden="true" class="floating-graph graph-right"><i class="fas fa-chart-line"></i></div><div class="welcome-bubble"><strong>Welcome!</strong><span>Explore my work</span></div><img alt="Khurram Naveed welcoming visitors to his data analytics projects" class="welcome-photo" fetchpriority="high" src="khurram.png"/></div></div></section>
 <section class="projects-section" id="featured-projects-grid">
 <div class="grid" id="projectGrid">
+<!-- ============ FEATURED PROJECT: CHARCOAL PAKISTAN RETAIL ANALYTICS ============ -->
+<article class="card" data-category="powerbi">
+<div class="card-media">
+<span class="card-badge">Power BI</span>
+<img alt="Charcoal Pakistan retail sales and inventory analytics portfolio cover featuring executive, sales and inventory dashboards" loading="lazy" src="Charcoal.png"/>
+<span aria-hidden="true" class="view-hint"><i class="fas fa-magnifying-glass-plus"></i> View Full Size</span>
+</div>
+<div class="card-body">
+<div class="card-topline"><h3 class="card-title">Charcoal Pakistan — Retail Sales &amp; Inventory Analytics</h3><span aria-hidden="true" class="arrow-mark">↗</span></div>
+<p class="card-description">Developed an end-to-end SQL Server and Power BI retail analytics case study, connecting sales, supplier delivery, product performance and inventory health through three interactive dashboard pages and validated DAX KPIs.</p>
+<div class="tags"><span class="tag">Power BI</span><span class="tag">SQL Server</span><span class="tag">DAX</span><span class="tag">Retail Analytics</span></div>
+<details class="project-details"><summary>Project details <i aria-hidden="true" class="fas fa-chevron-down"></i></summary>
+<div class="detail-content">
+<strong>Business challenge</strong><p>Bring together simulated apparel retail sales, purchasing, supplier delivery and stock data to help decision-makers understand revenue performance, availability risks and inventory accuracy.</p>
+<strong>Analytical approach</strong><p>Used SQL Server for relational analysis and reconciliation, then built three Power BI pages: Executive Overview, Sales &amp; Product Performance, and Inventory Health &amp; Stock Availability. Created DAX measures and validated location-level filter behavior.</p>
+<strong>Findings &amp; recommendations</strong><p>The simulated dataset shows PKR 58.42M net sales, 13,154 units sold, a 47.44% supplier on-time delivery rate, 152 stockout SKU-location combinations and 375 low-stock combinations at the latest snapshot. Recommended investigating supplier delays, prioritizing replenishment and monitoring inventory discrepancies.</p>
+<strong>Project scope</strong><p>Independent portfolio project using simulated data; figures do not represent actual company performance.</p>
+</div></details>
+<a class="card-link" href="https://github.com/khurraminsights/charcoal-retail-sales-inventory-analytics/blob/main/README.md" rel="noopener noreferrer" target="_blank">View project on GitHub <i aria-hidden="true" class="fas fa-arrow-up-right-from-square"></i></a>
+</div>
+</article>
 <!-- ============ FEATURED PROJECT: ITEL PAKISTAN ANALYTICS ============ -->
 <article class="card" data-category="powerbi">
 <div class="card-media">
@@ -442,6 +463,7 @@ close.addEventListener('click',dismiss);lightbox.addEventListener('click',e=>{if
 </script>
 </body>
 </html>
+
 
 
 
