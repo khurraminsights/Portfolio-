@@ -695,11 +695,11 @@ body::before { background-size: 76px 76px; background-image:linear-gradient(rgba
     // Try common GitHub Pages asset locations if the certificate was uploaded to a subfolder.
     function tryPowerBICertificatePath(img) {
         const candidates = [
-            'images/Power%20BI%20Certification%20365%20Data%20Science.jpg',
-            'Images/Power%20BI%20Certification%20365%20Data%20Science.jpg',
-            'assets/Power%20BI%20Certification%20365%20Data%20Science.jpg',
-            'certificates/Power%20BI%20Certification%20365%20Data%20Science.jpg',
-            'Certificates/Power%20BI%20Certification%20365%20Data%20Science.jpg'
+            'images/Power%20BI%20Certification%20%20365%20Data%20Science.jpg',
+            'Images/Power%20BI%20Certification%20%20365%20Data%20Science.jpg',
+            'assets/Power%20BI%20Certification%20%20365%20Data%20Science.jpg',
+            'certificates/Power%20BI%20Certification%20%20365%20Data%20Science.jpg',
+            'Certificates/Power%20BI%20Certification%20%20365%20Data%20Science.jpg'
         ];
         const next = Number(img.dataset.pathAttempt || 0);
         if (next < candidates.length) {
@@ -866,7 +866,7 @@ body::before { background-size: 76px 76px; background-image:linear-gradient(rgba
         <!-- Power BI Certification — 365 Data Science -->
         <div class="cert-card" data-cat="other" style="--i:1">
             <div class="cert-img-box" onclick="openModal(document.getElementById('power-bi-365-certificate').currentSrc || document.getElementById('power-bi-365-certificate').src,'Power BI Certification — 365 Data Science')">
-                <img id="power-bi-365-certificate" src="Power%20BI%20Certification%20365%20Data%20Science.jpg" alt="Power BI Certification from 365 Data Science" loading="eager" decoding="async" onerror="tryPowerBICertificatePath(this)">
+                <img id="power-bi-365-certificate" src="Power%20BI%20Certification%20%20365%20Data%20Science.jpg" alt="Power BI Certification from 365 Data Science" loading="eager" decoding="async" onerror="tryPowerBICertificatePath(this)">
                 <div class="overlay"><i class="fa-solid fa-magnifying-glass"></i> View</div>
             </div>
             <div class="cert-body">
