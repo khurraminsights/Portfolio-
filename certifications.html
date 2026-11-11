@@ -690,6 +690,77 @@ body::before { background-size: 76px 76px; background-image:linear-gradient(rgba
         }
         .btn-view:focus-visible {outline:3px solid #179bff;outline-offset:4px}
 
+
+/* Soft peach and cream redesign — original content and interactions preserved. */
+:root {
+  --bg:#fbf5ef; --surface:#fffaf6; --border:rgba(171,103,91,.20);
+  --accent:#ae665b; --accent2:#c88879; --white:#2b201d; --muted:#77645e;
+  --primary:#ae665b; --text-main:#2b201d; --text-muted:#77645e;
+  --bg-dark:#fbf5ef; --border-glass:rgba(171,103,91,.20);
+  --font-heading:'Playfair Display',Georgia,serif;
+  --font-body:'Lora',Georgia,serif;
+}
+html {background:#fbf5ef}
+body {font-family:'Lora',Georgia,serif;background:#fbf5ef;color:#2b201d}
+body::before {background-image:none!important;background:none!important}
+.orb {display:none}
+.navbar {background:rgba(255,250,246,.97);border:1px solid #e8d4cb;box-shadow:0 7px 28px rgba(91,48,37,.09);color:#2b201d}
+.logo h2 {font-family:'Playfair Display',Georgia,serif;color:#35241e;font-weight:600}
+.logo span {font-family:'Lora',Georgia,serif;color:#97756b}
+.nav-links a {font-family:'Lora',Georgia,serif;color:#59463e}
+.nav-links a:hover,.nav-links a.active {color:#ae665b}
+.nav-links a::after {background:#ae665b}
+.social-icons a,.social-icons .github,.social-icons .github:hover,.social-icons .linkedin,.social-icons .email,.social-icons .instagram {color:#ae665b}
+.social-icons a:hover,.social-icons .github:hover {color:#82463d}
+.hamburger {color:#ae665b}
+a:focus-visible,button:focus-visible {outline-color:#ae665b}
+@media(max-width:992px){.nav-links{background:#fffaf6;border-color:#e8d4cb;box-shadow:0 12px 30px rgba(91,48,37,.12)}}
+.page-header {background:linear-gradient(110deg,#f8e9df 0%,#fff8f1 53%,#fcead9 100%);padding-top:120px;padding-bottom:48px}
+.page-header::before {background:radial-gradient(ellipse,rgba(218,151,131,.14),transparent 70%)}
+.hero-analytics-bg {display:none!important}
+.eyebrow,.page-header .eyebrow {font-family:'Lora',Georgia,serif;font-size:.74rem;letter-spacing:3px;font-weight:600;color:#a65e51;background:transparent;border:0;padding:0}
+.eyebrow span {background:#b66c60}
+.page-header h1,.overview-copy h2,.gallery-heading h2,.cert-title {font-family:'Playfair Display',Georgia,serif;letter-spacing:-.025em;color:#2c211d}
+.page-header h1 {font-weight:500;line-height:1.16}
+.page-header h1 em,.page-header h1 em {color:#ad665a;-webkit-text-fill-color:#ad665a;font-style:italic}
+.page-header p {color:#715b53;line-height:1.75}
+.cert-typewriter {font-family:'Lora',Georgia,serif;color:#a65e51;font-weight:500}
+.type-cursor {background:#ae665b}
+.cert-overview {margin-top:30px}
+.cert-overview-inner {background:#fffaf6;border:1px solid #ead6cc;box-shadow:0 12px 36px rgba(109,66,48,.07);border-radius:20px}
+.overview-copy .section-kicker,.gallery-kicker {font-family:'Lora',Georgia,serif;color:#ae665b;letter-spacing:3px}
+.overview-copy h2 {font-weight:500}
+.overview-copy p {color:#78645d}
+.overview-stat {background:#faeee7;border:1px solid #edd7ca}
+.overview-stat strong {font-family:'Playfair Display',Georgia,serif;color:#a65e51}
+.overview-stat span {font-family:'Lora',Georgia,serif;color:#80685e}
+.gallery-heading h2 {font-weight:500}
+.gallery-count {color:#80685e}
+.gallery-count strong {color:#ae665b}
+.filter-btn {font-family:'Lora',Georgia,serif;font-size:.78rem;font-weight:500;text-transform:none;letter-spacing:0;background:#f5eae3;border:1px solid #ebdcd4;color:#715a52;box-shadow:none}
+.filter-btn:hover {background:#f0ddd5;border-color:#c98e7f;color:#8c4b40}
+.filter-btn.active {background:#ac675c;border-color:#ac675c;color:#fffaf6;box-shadow:none}
+.cert-card {background:#fffaf6;border:1px solid #ead8ce;box-shadow:0 9px 28px rgba(91,48,37,.08);backdrop-filter:none}
+.cert-card::before {background:linear-gradient(90deg,transparent,#b87466,transparent)}
+.cert-card:hover {border-color:#d4a69b;box-shadow:0 17px 40px rgba(91,48,37,.15)}
+.cert-img-box {background:#f3e5dc}
+.cert-img-box img {background:transparent}
+.cert-img-box .overlay {font-family:'Lora',Georgia,serif;background:rgba(89,48,39,.55)}
+.cert-title {font-size:1.06rem;font-weight:600;line-height:1.5}
+.issuer-badge {font-family:'Lora',Georgia,serif;font-weight:600;letter-spacing:.04em;color:#9d5d50!important;background:#f7e8df!important;border:1px solid #e6c6b9!important}
+.btn-verify,.btn-no-link,.btn-view {font-family:'Lora',Georgia,serif;font-weight:600;letter-spacing:0;text-transform:none}
+.btn-verify {background:#f2e0d7;border:1px solid #d8a99a;color:#8f4e43}
+.btn-verify:hover {background:#ac675c;border-color:#ac675c;color:#fff}
+.btn-view {background:#f2e0d7;border-color:#d8a99a;color:#8f4e43}
+.btn-view:hover {background:#ac675c;border-color:#ac675c;color:#fff}
+.btn-no-link {background:#f5eae3;border-color:#e8d7ce;color:#91786e}
+.modal {background:rgba(45,27,23,.92)}
+.modal-img {border-color:#d7a89a;box-shadow:0 0 75px rgba(55,25,20,.26)}
+.modal-caption {font-family:'Playfair Display',Georgia,serif;color:#f5ded1}
+.modal-close {background:rgba(255,250,246,.14)}
+.footer-brand {background:#f8eee7;border-color:#e8d6cb}
+@media(max-width:600px){.page-header{padding-top:112px;padding-bottom:32px}.cert-overview{margin-top:20px}}
+
 </style>
     <script>
     // Try common GitHub Pages asset locations if the certificate was uploaded to a subfolder.
@@ -711,6 +782,7 @@ body::before { background-size: 76px 76px; background-image:linear-gradient(rgba
         }
     }
     </script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
