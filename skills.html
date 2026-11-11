@@ -11,6 +11,7 @@
 <style>
         :root {
             --bg:           #0b111b;
+            --surface:      #111d2d;
             --border:       rgba(73,185,239,0.12);
             --accent:       #49b9ef;
             --accent2:      #007aff;
@@ -732,10 +733,75 @@ body::before{background:radial-gradient(circle at 85% 8%,#f7ded154,transparent 3
 @media(max-width:560px){.container{width:calc(100% - 30px)}.topbar .brand strong{font-size:14px}.topbar .monogram{font-size:27px}.topbar .nav-actions{gap:10px}.topbar .nav-actions .social-icon{display:none}}
 @media(max-width:1200px){.skills-expertise-section{padding-top:65px}}
 @media(max-width:600px){.skills-expertise-section{padding-top:48px}}
-</style><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Playfair+Display:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/><meta content="#fbf6f1" name="theme-color"/></head>
+<!-- certification-matched style -->
+/* Exact certification page typography and navigation styling. */
+:root {
+  --bg:#fbf5ef; --surface:#fffaf6; --border:rgba(171,103,91,.20);
+  --accent:#ae665b; --accent2:#c88879; --white:#2b201d; --muted:#77645e;
+  --primary:#ae665b; --text-main:#2b201d; --text-muted:#77645e;
+  --bg-dark:#fbf5ef; --border-glass:rgba(171,103,91,.20);
+  --font-heading:'Playfair Display',Georgia,serif;
+  --font-body:'Lora',Georgia,serif;
+}
+html {background:#fbf5ef}
+body {font-family:'Lora',Georgia,serif;background:#fbf5ef;color:#2b201d}
+body::before {background-image:none!important;background:none!important}
+.orb {display:none}
+.navbar {background:rgba(255,250,246,.97);border:1px solid #e8d4cb;box-shadow:0 7px 28px rgba(91,48,37,.09);color:#2b201d}
+.logo h2 {font-family:'Playfair Display',Georgia,serif;color:#35241e;font-weight:600}
+.logo span {font-family:'Lora',Georgia,serif;color:#97756b}
+.nav-links a {font-family:'Lora',Georgia,serif;color:#59463e}
+.nav-links a:hover,.nav-links a.active {color:#ae665b}
+.nav-links a::after {background:#ae665b}
+.social-icons a,.social-icons .github,.social-icons .github:hover,.social-icons .linkedin,.social-icons .email,.social-icons .instagram {color:#ae665b}
+.social-icons a:hover,.social-icons .github:hover {color:#82463d}
+.hamburger {color:#ae665b}
+a:focus-visible,button:focus-visible {outline-color:#ae665b}
+@media(max-width:992px){.nav-links{background:#fffaf6;border-color:#e8d4cb;box-shadow:0 12px 30px rgba(91,48,37,.12)}}
+
+/* Align skill typography and accent colors with certification page. */
+:root{--font-heading:'Playfair Display',Georgia,serif;--font-body:'Lora',Georgia,serif;--accent:#ae665b;--primary:#ae665b;--muted:#77645e;--text-muted:#77645e}
+body,.card-content p,.tag,.pill-badge{font-family:'Lora',Georgia,serif}
+.skills-main-title,.card-content h3{font-family:'Playfair Display',Georgia,serif!important}
+.skills-expertise-section{padding-top:clamp(140px,16vh,185px)}
+@media(max-width:1200px){.skills-expertise-section{padding-top:140px}}
+@media(max-width:600px){.skills-expertise-section{padding-top:125px}}
+
+</style><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&amp;family=Lora:wght@400;500;600&amp;display=swap" rel="stylesheet"/><meta content="#fbf6f1" name="theme-color"/></head>
 <body>
 <!-- Shared portfolio navbar -->
-<header class="topbar"><div class="container nav"><a aria-label="Khurram Naveed homepage" class="brand" href="index.html"><span class="monogram">KN</span><span><strong>Khurram Naveed</strong><small>DATA ANALYST</small></span></a><nav aria-label="Main navigation"><ul class="nav-links" id="site-nav"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="projects.html">Projects</a></li><li><a aria-current="page" class="active" href="skills.html">Skills</a></li><li><a href="certifications.html">Certifications</a></li><li><a href="contact.html">Contact</a></li></ul></nav><div class="nav-actions"><a aria-label="LinkedIn" class="social-icon" href="https://www.linkedin.com/in/khurram-naveed-0083851aa/" rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-linkedin"></i></a><a aria-label="GitHub" class="social-icon" href="https://github.com/Khurramnaveed3233/Portfolio" rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-github"></i></a><a aria-label="Email" class="social-icon" href="mailto:khurramnaveed4545@gmail.com"><i class="fa-solid fa-envelope"></i></a><a aria-label="Instagram" class="social-icon" href="https://www.instagram.com/khurram_insights/" rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-instagram"></i></a><a class="nav-cta" href="contact.html">Let's Connect   <i class="fa-solid fa-arrow-right"></i></a><button aria-controls="site-nav" aria-expanded="false" aria-label="Open menu" class="menu-btn" id="menu-btn" type="button"><i class="fa-solid fa-bars"></i></button></div></div></header>
+<header class="navbar">
+        <div class="container nav-inner">
+            <div class="logo">
+                <a href="index.html">
+                    <h2>Khurram Naveed</h2>
+                    <span>Data Analyst</span>
+                </a>
+            </div>
+            
+            <nav aria-label="Main navigation">
+                <ul class="nav-links" id="main-navigation">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="skills.html" class="active" aria-current="page">Skills</a></li>
+                    <li><a href="certifications.html">Certifications</a></li>
+                    <li><a href="contact.html">Send Message</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-right">
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/khurram-naveed-0083851aa/" target="_blank" rel="noopener noreferrer" class="linkedin" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Khurramnaveed3233/Portfolio" target="_blank" rel="noopener noreferrer" class="github" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="mailto:khurramnaveed4545@gmail.com" class="email" aria-label="Email Khurram"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.instagram.com/khurram_insights/" target="_blank" rel="noopener noreferrer" class="instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+                <img src="Khurram Insights.jpeg" alt="Khurram Insights Logo" class="nav-logo">
+                <button class="hamburger" type="button" aria-label="Open navigation" aria-controls="main-navigation" aria-expanded="false"><i class="fas fa-bars" aria-hidden="true"></i></button>
+            </div>
+        </div>
+    </header>
 <!-- NEW REDESIGNED SKILLS SECTION -->
 <section class="skills-expertise-section">
 <!-- Background Analytics Decorations (Side Areas) -->
@@ -938,12 +1004,14 @@ body::before{background:radial-gradient(circle at 85% 8%,#f7ded154,transparent 3
 </section>
 </div>
 <script>
-const toggle=document.getElementById('menu-btn'),links=document.getElementById('site-nav');
-function closeMenu(){links.classList.remove('open');toggle.setAttribute('aria-expanded','false');toggle.setAttribute('aria-label','Open menu');toggle.querySelector('i').className='fa-solid fa-bars'}
-toggle.addEventListener('click',()=>{const open=links.classList.toggle('open');toggle.setAttribute('aria-expanded',String(open));toggle.setAttribute('aria-label',open?'Close menu':'Open menu');toggle.querySelector('i').className=open?'fa-solid fa-xmark':'fa-solid fa-bars'});
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.navbar .nav-links');
+function closeMenu() {navLinks.classList.remove('active');hamburger.setAttribute('aria-expanded','false');hamburger.setAttribute('aria-label','Open navigation');}
+hamburger.addEventListener('click', () => {const open=navLinks.classList.toggle('active');hamburger.setAttribute('aria-expanded',String(open));hamburger.setAttribute('aria-label',open?'Close navigation':'Open navigation');});
 document.addEventListener('keydown',e=>{if(e.key==='Escape')closeMenu()});
-document.addEventListener('click',e=>{if(!e.target.closest('.topbar'))closeMenu()});
-links.addEventListener('click',e=>{if(e.target.closest('a'))closeMenu()});
+document.addEventListener('click',e=>{if(!e.target.closest('.navbar'))closeMenu()});
+navLinks.addEventListener('click',e=>{if(e.target.closest('a'))closeMenu()});
+window.addEventListener('resize',()=>{if(window.innerWidth>992)closeMenu()});
 // Same typing/deleting cadence as the hero; reusable for any phrase list.
         function startTypewriter(element, phrases) {
             const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
