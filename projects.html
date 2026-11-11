@@ -68,7 +68,71 @@
 /* Live result count and reliable filtered card visibility. */
 .filter-count{margin:12px 0 0;color:#8fe2ff;font-size:.85rem;font-weight:700}
 #projectGrid .card[hidden]{display:none!important}
+
+/* Projects page — same soft peach / cream typography and navigation as Certifications. */
+:root{--bg:#fbf5ef;--bg2:#fffaf6;--blue:#ae665b;--blue2:#c88879;--line:rgba(171,103,91,.20);--text:#2b201d;--muted:#77645e}
+html,body{background:#fbf5ef;color:#2b201d}
+body{font-family:'Lora',Georgia,serif}
+h1,h2,h3,.card-title,.stat strong{font-family:'Playfair Display',Georgia,serif}
+.bg-grid{display:none}.bg-glow{background:radial-gradient(ellipse at 66% 28%,rgba(218,151,131,.15),transparent 63%)}
+/* Certifications navbar: fonts, background, active underline and social icons. */
+.navbar{background:rgba(255,250,246,.97);border:1px solid #e8d4cb;box-shadow:0 7px 28px rgba(91,48,37,.09);color:#2b201d}
+.nav-inner{font-family:'Lora',Georgia,serif}
+.logo h2{font-family:'Playfair Display',Georgia,serif;color:#35241e;font-weight:600}
+.logo span{font-family:'Lora',Georgia,serif;color:#97756b}
+.nav-links a{font-family:'Lora',Georgia,serif;color:#59463e;font-weight:600}
+.nav-links a:hover,.nav-links a.active{color:#ae665b}
+.nav-links a.active{border-bottom:2px solid #ae665b}
+.social-icons a,.social-icons .github,.social-icons .linkedin,.social-icons .email,.social-icons .instagram{color:#ae665b}
+.social-icons a:hover,.social-icons .github:hover{color:#82463d}
+.hamburger{color:#ae665b}
+.nav-links{background:transparent}
+@media(max-width:1000px){.nav-links{background:#fffaf6;border:1px solid #e8d4cb;box-shadow:0 12px 30px rgba(91,48,37,.12)}}
+/* Warm hero, keeping portrait, project totals and filter functionality. */
+.hero{background:linear-gradient(110deg,#f8e9df 0%,#fff8f1 53%,#fcead9 100%)}
+.eyebrow{font-family:'Lora',Georgia,serif;background:#f7e8df;border:1px solid #e6c6b9;color:#a65e51}
+.live-dot{background:#b66c60;box-shadow:0 0 9px rgba(174,102,91,.25)}
+.hero h1{color:#2b201d}
+.gradient{background:none;color:#ae665b;-webkit-text-fill-color:#ae665b}
+.sub{color:#715b53}
+.stat{background:#fffaf6;border:1px solid #ead6cc;box-shadow:0 6px 18px rgba(91,48,37,.05)}
+.stat strong{color:#a65e51}.stat small{color:#80685e}
+.stat-icon.database,.stat-icon.power,.stat-icon.excel{background:#f3dfd5;color:#ae665b}
+.filter-btn{font-family:'Lora',Georgia,serif;font-size:.78rem;font-weight:500;background:#f5eae3;border:1px solid #ebdcd4;color:#715a52;box-shadow:none}
+.filter-btn:hover{background:#f0ddd5;border-color:#c98e7f;color:#8c4b40;box-shadow:none}
+.filter-btn.active{background:#ac675c;border-color:#ac675c;color:#fffaf6;box-shadow:none}
+.explore-link,.filter-count{color:#a65e51}.explore-link:hover{color:#82463d}
+.portrait-glow{background:radial-gradient(ellipse,rgba(218,151,131,.20),transparent 70%)}
+.portrait-orbit{border-color:#e4bdb0;background:radial-gradient(circle at 55% 50%,#f4d8cb 0,#f9e8dc 65%,#fff8f1 100%);box-shadow:0 0 0 42px rgba(218,151,131,.06)}
+.welcome-photo{filter:drop-shadow(0 12px 18px rgba(91,48,37,.18))}
+.welcome-bubble{background:#fffaf6;border:1px solid #d8a99a;color:#70463d;box-shadow:0 10px 28px rgba(91,48,37,.10)}
+.floating-graph{background:rgba(255,250,246,.83);border:1px solid #d8a99a;color:#ae665b}
+/* Project gallery cards */
+.projects-section{background:#fbf5ef}
+.card{background:#fffaf6;border:1px solid #ead8ce;box-shadow:0 9px 28px rgba(91,48,37,.08)}
+.card:hover{border-color:#d4a69b;box-shadow:0 17px 40px rgba(91,48,37,.15)}
+.card-media{background:#f3e5dc}
+.card-badge{background:#f7e8dfeb;border:1px solid #e6c6b9;color:#9d5d50;font-family:'Lora',Georgia,serif}
+.view-hint{background:rgba(89,48,39,.65);font-family:'Lora',Georgia,serif}
+.card-title{color:#2c211d;font-weight:600}
+.arrow-mark{color:#ae665b}
+.card-description,.detail-content{color:#77645e}
+.tag{background:#f7e8df;border:1px solid #e6c6b9;color:#9d5d50;font-family:'Lora',Georgia,serif}
+.project-details{border-top:1px solid #ead8ce}
+.project-details summary,.detail-content strong,.card-link{color:#9d5d50}
+.card-link:hover{color:#82463d}
+.no-results{color:#77645e}
+.cta{background:#fbf5ef}.cta h2{color:#2b201d}.cta p{color:#77645e}
+.btn-primary{font-family:'Lora',Georgia,serif;background:#ac675c;color:#fffaf6}
+.btn-primary:hover{background:#8f4e43}
+footer{background:#f8eee7;border-top:1px solid #e8d6cb;color:#77645e}
+footer a{color:#ae665b}
+.lightbox{background:rgba(45,27,23,.92)}
+.lightbox-caption{color:#f5ded1}.lightbox-close{background:#ae665b;border-color:#d7a89a}
+:focus-visible{outline-color:#ae665b}
+
 </style>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet"/>
 </head>
 <body>
 <div aria-hidden="true" class="bg-grid"></div>
@@ -463,6 +527,7 @@ close.addEventListener('click',dismiss);lightbox.addEventListener('click',e=>{if
 </script>
 </body>
 </html>
+
 
 
 
