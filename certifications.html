@@ -900,22 +900,6 @@ a:focus-visible,button:focus-visible {outline-color:#ae665b}
 
 
 
-<!-- Credential overview: totals are calculated from existing certificates, not hard-coded -->
-<section class="cert-overview" id="cert-overview" aria-label="Certification overview">
-  <div class="cert-overview-inner">
-    <div class="overview-copy">
-      <div class="section-kicker">Continuous learning</div>
-      <h2>Credentials that strengthen practical analytics skills.</h2>
-      <p>A growing collection of professional coursework, industry certifications and hands-on learning experiences.</p>
-    </div>
-    <div class="overview-stats">
-      <div class="overview-stat"><strong id="total-credentials">—</strong><span>Credentials</span></div>
-      <div class="overview-stat"><strong id="issuer-total">—</strong><span>Categories</span></div>
-      <div class="overview-stat"><strong id="verification-total">—</strong><span>Verification links</span></div>
-    </div>
-  </div>
-</section>
-
 <!-- CERTIFICATIONS SECTION -->
 <section class="certs-section">
     <div class="gallery-heading">
@@ -1320,11 +1304,8 @@ a:focus-visible,button:focus-visible {outline-color:#ae665b}
 </div>
 
 <script>
-    // Keep overview figures synchronized with original certificates and links.
+    // Keep gallery count synchronized with certificate cards.
     const credentialCards = [...document.querySelectorAll('.cert-card')];
-    document.getElementById('total-credentials').textContent = credentialCards.length;
-    document.getElementById('issuer-total').textContent = new Set(credentialCards.map(card => card.dataset.cat)).size;
-    document.getElementById('verification-total').textContent = credentialCards.filter(card => card.querySelector('a.btn-verify[href]')).length;
     document.getElementById('visible-count').textContent = credentialCards.length;
 
     function openModal(src, title) {
