@@ -691,6 +691,26 @@ body::before { background-size: 76px 76px; background-image:linear-gradient(rgba
         .btn-view:focus-visible {outline:3px solid #179bff;outline-offset:4px}
 
 </style>
+    <script>
+    // Try common GitHub Pages asset locations if the certificate was uploaded to a subfolder.
+    function tryPowerBICertificatePath(img) {
+        const candidates = [
+            'images/Power%20BI%20Certification%20365%20Data%20Science.jpg',
+            'Images/Power%20BI%20Certification%20365%20Data%20Science.jpg',
+            'assets/Power%20BI%20Certification%20365%20Data%20Science.jpg',
+            'certificates/Power%20BI%20Certification%20365%20Data%20Science.jpg',
+            'Certificates/Power%20BI%20Certification%20365%20Data%20Science.jpg'
+        ];
+        const next = Number(img.dataset.pathAttempt || 0);
+        if (next < candidates.length) {
+            img.dataset.pathAttempt = String(next + 1);
+            img.src = candidates[next];
+        } else {
+            img.onerror = null;
+            img.alt = 'Power BI certificate image unavailable — check the filename and GitHub folder';
+        }
+    }
+    </script>
 </head>
 <body>
 
@@ -845,8 +865,8 @@ body::before { background-size: 76px 76px; background-image:linear-gradient(rgba
     <div class="cert-grid">
         <!-- Power BI Certification — 365 Data Science -->
         <div class="cert-card" data-cat="other" style="--i:1">
-            <div class="cert-img-box" onclick="openModal('Power BI Certification 365 Data Science.jpg','Power BI Certification — 365 Data Science')">
-                <img src="Power BI Certification 365 Data Science.jpg" alt="Power BI Certification from 365 Data Science" loading="eager" decoding="async">
+            <div class="cert-img-box" onclick="openModal(document.getElementById('power-bi-365-certificate').currentSrc || document.getElementById('power-bi-365-certificate').src,'Power BI Certification — 365 Data Science')">
+                <img id="power-bi-365-certificate" src="Power%20BI%20Certification%20365%20Data%20Science.jpg" alt="Power BI Certification from 365 Data Science" loading="eager" decoding="async" onerror="tryPowerBICertificatePath(this)">
                 <div class="overlay"><i class="fa-solid fa-magnifying-glass"></i> View</div>
             </div>
             <div class="cert-body">
