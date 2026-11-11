@@ -171,6 +171,45 @@ footer a{color:#ae665b}
 @media(max-width:1200px){.hero-inner{grid-template-columns:58% 42%}.hero h1{font-size:clamp(3.5rem,5.5vw,5.4rem)}.stat{padding:11px 10px;gap:9px}.stat-icon.database,.stat-icon.power,.stat-icon.excel{width:42px;height:42px;font-size:19px}.stat strong{font-size:1.8rem}.stat small{font-size:.57rem}.hero-visual{height:490px}.tech-tile{width:80px;height:80px;font-size:39px}}
 @media(max-width:850px){.hero-inner{display:flex;flex-direction:column;min-height:0}.hero-copy{padding:15px 0}.hero-visual{width:min(100%,650px);height:490px;align-self:center}.hero h1{font-size:clamp(3.6rem,8vw,5rem)}}
 @media(max-width:600px){.hero{padding:25px 15px 20px}.hero h1{font-size:clamp(3.3rem,11vw,4.6rem)}.sub{font-size:1rem}.stats{gap:7px}.stat{min-height:90px;flex:1 1 30%;flex-direction:column;text-align:center;padding:10px 5px}.stat:last-child{flex-basis:30%}.stat strong{font-size:1.55rem}.stat small{font-size:.53rem}.stat-icon.database,.stat-icon.power,.stat-icon.excel{width:34px;height:34px;font-size:16px}.filter-btn{font-size:.82rem;padding:9px 15px}.hero-visual{height:330px;min-height:0;margin-top:0}.tech-tile{width:58px;height:58px;border-radius:15px;font-size:28px}.tile-sql{font-size:24px}.tile-sql small{font-size:11px;margin-top:-15px}.laptop-screen{border-width:9px}.donut{width:43px;height:43px}.donut:after{inset:10px}.art-pedestal{height:65px}.orbit{border-width:6px}}
+</style><style>
+/* Minimal three-column portfolio gallery — original peach/cream palette */
+.hero{padding:65px 28px 55px;background:linear-gradient(115deg,#fff7f1,#fbf0e8)}
+.hero-inner{display:block;max-width:1180px;min-height:0;height:auto;text-align:center}
+.hero-copy{padding:0;max-width:1050px;margin:auto}
+.hero h1{font-size:clamp(2.8rem,5vw,4.7rem);letter-spacing:-1.6px;line-height:1.13;margin:20px 0 18px}
+.hero h1 .gradient{font-style:normal;display:inline;color:#ae665b;-webkit-text-fill-color:#ae665b}
+.hero h1 .gradient::after{display:none}
+.sub{margin:0 auto 28px;max-width:740px;font-size:1.12rem;color:#715b53}
+.stats{max-width:780px;margin:0 auto 27px;justify-content:center}
+.stat{min-height:78px;padding:12px 17px;border-radius:12px;box-shadow:none}
+.stat-icon.database,.stat-icon.power,.stat-icon.excel{width:43px;height:43px;font-size:19px}
+.stat strong{font-size:1.75rem}.stat small{font-size:.65rem}
+.filters{justify-content:center;gap:10px}
+.filter-btn{font-size:.88rem;padding:9px 23px}
+.filter-count{margin-top:17px;font-size:.91rem}
+.explore-link{margin-top:15px;font-size:.95rem;border:0;background:none;padding:0}
+.hero-visual{display:none!important}
+.projects-section{padding:52px 28px 100px}
+.grid{max-width:1290px;grid-template-columns:repeat(3,minmax(0,1fr));gap:55px 34px;align-items:start}
+.card{background:transparent;border:0;border-radius:0;box-shadow:none;overflow:visible;transition:none;text-align:center}
+.card:hover{transform:none;border:0;box-shadow:none}
+.card-media{aspect-ratio:16/9;border-radius:3px;background:#f0e0d7;overflow:hidden;box-shadow:0 3px 13px rgba(91,48,37,.08)}
+.card-media img{object-fit:cover}
+.card:hover .card-media img{transform:scale(1.025)}
+.card-badge{display:none}
+.card-body{padding:15px 3px 0;align-items:stretch}
+.card-topline{display:block}
+.card-title{font-size:1.34rem;line-height:1.35;margin:0 0 12px;font-weight:600;color:#35241e}
+.arrow-mark{display:none}
+.card-description{font-size:.91rem;line-height:1.65;margin:0 auto 13px;max-width:390px;-webkit-line-clamp:3;color:#76625a}
+.tags{justify-content:center;gap:6px;margin:0 0 12px}
+.tag{font-size:.68rem;padding:3px 10px}
+.project-details{margin:0 0 13px;border:0;padding:0;text-align:center}
+.project-details summary{font-size:.85rem}
+.detail-content{text-align:left;background:#fffaf6;border:1px solid #ead8ce;border-radius:8px;padding:14px;margin-top:10px}
+.card-link{justify-content:center;gap:9px;margin-top:auto;font-size:.78rem;letter-spacing:.3px}
+@media(max-width:950px){.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:43px 25px}.hero{padding:48px 22px 42px}}
+@media(max-width:600px){.hero{padding:35px 16px 38px}.hero h1{font-size:clamp(2.5rem,10vw,3.7rem)}.stats{gap:8px}.stat{padding:9px 6px;flex:1 1 30%;flex-direction:column;text-align:center}.stat:last-child{flex-basis:30%}.stat strong{font-size:1.35rem}.stat small{font-size:.52rem}.stat-icon.database,.stat-icon.power,.stat-icon.excel{width:33px;height:33px;font-size:15px}.projects-section{padding:35px 18px 65px}.grid{grid-template-columns:1fr;gap:40px}.card-title{font-size:1.3rem}.sub{font-size:1rem}}
 </style></head>
 <body>
 <div aria-hidden="true" class="bg-grid"></div>
@@ -326,7 +365,7 @@ footer a{color:#ae665b}
 <article class="card" data-category="sql">
 <div class="card-media">
 <span class="card-badge">SQL</span>
-<img alt="Netflix movies and TV shows SQL data analysis project cover" loading="lazy" src="Netflix.png"/>
+<img alt="Netflix movies and TV shows SQL data analysis project cover" loading="lazy" src="netflix.jpg"/>
 <span aria-hidden="true" class="view-hint">
 <svg fill="none" height="18" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="18"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3"></path><path d="M11 8v6M8 11h6"></path></svg>
             View Full Size
