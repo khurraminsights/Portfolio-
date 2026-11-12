@@ -3,101 +3,606 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
-<meta content="width=device-width,initial-scale=1" name="viewport"/>
-<meta content="#fbf6f1" name="theme-color"/>
-<meta content="Khurram Naveed — Data Analyst. Explore data analytics projects, Power BI dashboards, SQL analysis, technical skills and certifications." name="description"/>
-<title>Khurram Naveed | Data Analyst Portfolio</title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <link href="Khurram Insights.jpeg" rel="icon" type="image/jpeg"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet"/>
+<title>Projects — Khurram Naveed | Data Analyst Portfolio</title>
+<meta content="Explore Khurram Naveed’s SQL, Power BI, Excel and Google Sheets data analytics portfolio, with project previews, methods, and GitHub repositories." name="description"/>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Playfair+Display:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Space+Grotesk:wght@500;700&amp;display=swap" rel="stylesheet"/>
 <style>
-:root{--bg:#061426;--bg2:#081b30;--panel:#0b213a;--line:rgba(73,168,242,.22);--blue:#087cff;--cyan:#40c9f5;--text:#f3f8ff;--muted:#a8bed7;--green:#29d6a0;--gold:#eac34a;--radius:16px;--width:1480px}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--text);background:var(--bg);font-family:'DM Sans',sans-serif;line-height:1.55;overflow-x:hidden}body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;background:radial-gradient(circle at 85% 8%,#0a377554,transparent 30%),radial-gradient(circle at 3% 50%,#087cff20,transparent 33%),linear-gradient(#ffffff03 1px,transparent 1px),linear-gradient(90deg,#ffffff03 1px,transparent 1px);background-size:auto,auto,70px 70px,70px 70px}a{color:inherit;text-decoration:none}button{font:inherit}img{max-width:100%;display:block}.container{width:min(var(--width),calc(100% - 84px));margin-inline:auto}.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}.accent{color:var(--cyan)}:focus-visible{outline:3px solid var(--cyan);outline-offset:4px}.topbar{position:sticky;top:0;z-index:100;background:rgba(4,18,34,.93);border-bottom:1px solid var(--line);backdrop-filter:blur(20px)}.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:25px}.brand{display:flex;align-items:center;gap:12px;flex-shrink:0}.monogram{font:800 32px/1 Manrope,sans-serif;letter-spacing:-.12em;color:var(--cyan);padding-right:4px}.brand strong{font:800 17px Manrope,sans-serif;display:block;line-height:1.25}.brand small{display:block;font-size:9px;letter-spacing:3px;color:#91b8dd}.nav-links{display:flex;align-items:center;gap:clamp(13px,2vw,32px);list-style:none;margin:0;padding:0}.nav-links a{font-size:13px;font-weight:700;color:#c1d0e1;position:relative;white-space:nowrap}.nav-links a:hover,.nav-links a.active{color:#fff}.nav-links a.active:after,.nav-links a:hover:after{content:"";position:absolute;left:0;bottom:-12px;height:2px;width:100%;background:var(--cyan)}.nav-actions{display:flex;align-items:center;gap:17px}.social-icon{font-size:16px;color:#dfecfa;transition:.2s}.social-icon:hover{color:var(--cyan);transform:translateY(-2px)}.nav-cta,.outline-small{border:1px solid #138fe8;border-radius:30px;padding:10px 18px;font-size:12px;font-weight:800;white-space:nowrap}.nav-cta:hover,.outline-small:hover{background:#0a6cbd50}.menu-btn{display:none;align-items:center;justify-content:center;background:#092543;border:1px solid var(--line);border-radius:10px;color:white;width:42px;height:42px;cursor:pointer}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:11px;border-radius:28px;padding:13px 24px;font-weight:800;font-size:14px;transition:.2s;white-space:nowrap}.btn-primary{background:linear-gradient(115deg,#0787ff,#075df1);box-shadow:0 7px 25px #007cff40;border:1px solid #329bff}.btn-primary:hover{transform:translateY(-2px);box-shadow:0 10px 28px #007cff70}.btn-secondary{border:1px solid #9cb9d3;background:#05152973}.btn-secondary:hover{background:#153a5b}.hero{position:relative;min-height:520px;overflow:hidden;border-bottom:1px solid var(--line);background:radial-gradient(ellipse at 87% 0%,#123a70 0%,transparent 46%)}.hero:after{content:"";pointer-events:none;position:absolute;inset:0;background:linear-gradient(90deg,#061426 0%,#061426f5 26%,#061426b8 48%,#06142618 72%,#06142660 100%)}.hero-portrait{position:absolute;right:8%;bottom:0;width:min(760px,58vw);height:100%;object-fit:cover;object-position:70% center;mask-image:linear-gradient(90deg,transparent 0%,black 32%,black 85%,transparent 100%);opacity:.92}.hero .container{position:relative;z-index:2}.hero-layout{display:grid;grid-template-columns:53% 47%;align-items:center;min-height:520px;padding-block:38px 28px}.hero-copy{max-width:710px}.eyebrow{display:inline-flex;align-items:center;gap:10px;letter-spacing:2px;border:1px solid #3e749a76;background:#0a29446b;border-radius:100px;padding:7px 14px;font-size:10px;font-weight:800;color:#b4d2ef;text-transform:uppercase}.live-dot{height:8px;width:8px;background:var(--green);border-radius:50%;box-shadow:0 0 0 4px #26d6a02a}.hero h1{font:800 clamp(37px,4.1vw,67px)/1.08 Manrope,sans-serif;letter-spacing:-2.7px;margin:19px 0 14px;max-width:800px}.hero h1 span{display:block;color:#3ebdf2}.lead{font-size:clamp(14px,1.3vw,18px);color:#d1e0f0;max-width:560px;margin:0 0 23px}.hero-buttons{display:flex;gap:13px;flex-wrap:wrap}.hero-points{display:flex;gap:0;margin-top:26px;flex-wrap:wrap}.hero-point{display:flex;gap:11px;align-items:center;padding:0 15px;border-right:1px solid #30618b99}.hero-point:first-child{padding-left:0}.hero-point:last-child{border-right:0}.hero-point i{font-size:19px;color:var(--cyan)}.hero-point strong{display:block;font-size:12px}.hero-point span{display:block;font-size:10px;color:#a7bfd8}.hero-art{height:435px;position:relative;pointer-events:none}.float-metric{position:absolute;padding:13px 16px;border-radius:13px;border:1px solid #258be978;background:#071e3ac9;box-shadow:0 15px 30px #00132a88;backdrop-filter:blur(10px);width:158px}.float-metric small{font-size:11px;color:#bcd5eb;display:block}.float-metric strong{font:800 24px Manrope,sans-serif;line-height:1.4}.float-metric em{font-style:normal;color:var(--green);font-size:11px;font-weight:800}.metric-one{top:9px;left:10%}.metric-two{top:145px;left:3%}.metric-three{top:16px;right:2%;width:160px}.metric-four{right:0;bottom:15px;width:205px}.sparkline{width:100%;height:47px;margin-top:2px}.sparkline polyline{fill:none;stroke:var(--cyan);stroke-width:3;stroke-linejoin:round;stroke-linecap:round}.bars{height:43px;display:flex;align-items:flex-end;gap:5px;margin-top:5px}.bars b{flex:1;background:linear-gradient(#50c6ff,#086bdf);border-radius:2px 2px 0 0}.donut{width:62px;height:62px;flex:none;border-radius:50%;background:conic-gradient(#35baff 0 36%,#1155e2 36% 68%,#f1ab5b 68% 85%,#806ee8 85%);display:grid;place-items:center}.donut:after{content:"";height:36px;width:36px;background:#08203a;border-radius:50%}.category-flex{display:flex;align-items:center;gap:10px}.mini-legend{font-size:9px;color:#bdd4e9;line-height:2}.mini-legend span{display:block}.mini-legend b{display:inline-block;width:7px;height:7px;margin-right:5px;border-radius:2px;background:#36b5ef}.mini-legend span:nth-child(2) b{background:#716cf4}.mini-legend span:nth-child(3) b{background:#f3a76c}.mini-legend span:nth-child(4) b{background:#89a8c9}.mini-map{width:100%;height:74px;display:grid;place-items:center;color:#1e99ef;font-size:64px;text-shadow:0 0 22px #078cff}
-.section{padding:40px 0}.section-heading{display:flex;align-items:end;justify-content:space-between;gap:18px;margin-bottom:20px}.section-name{display:flex;align-items:baseline;gap:15px;flex-wrap:wrap}.section-name h2{font:800 clamp(19px,2vw,28px)/1.2 Manrope,sans-serif;margin:0;padding-left:14px;position:relative;letter-spacing:-.5px}.section-name h2:before{content:"";position:absolute;left:0;top:3px;bottom:3px;width:4px;border-radius:4px;background:var(--cyan)}.section-name p,.heading-sub{font-size:12px;color:#aec3db;margin:0}.projects-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.project-card,.cert-card,.value-card,.skill-card{background:linear-gradient(145deg,#0b223d,#061a2f);border:1px solid var(--line);border-radius:15px;transition:transform .25s,border-color .25s,box-shadow .25s;overflow:hidden}.project-card:hover,.skill-card:hover,.cert-card:hover,.value-card:hover{transform:translateY(-4px);border-color:#3baaf3a6;box-shadow:0 10px 28px #020b19bb}.project-thumb{height:190px;padding:13px;background:#051324;position:relative;overflow:hidden}.dash{border:1px solid #235477;background:#05172b;border-radius:9px;width:100%;height:100%;padding:11px;overflow:hidden}.dash-head{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:8px;font:800 10px Manrope,sans-serif;letter-spacing:.8px}.dash-name{color:#fff}.dash-name .itel{background:#e12435;color:white;border-radius:5px;padding:2px 7px;font-size:17px;letter-spacing:-1px;font-style:italic}.dash-label{color:#9ab9d9;font-size:9px}.dash-kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:5px;margin-bottom:8px}.dash-kpis div{border:1px solid #244a71;background:#091f38;border-radius:4px;padding:5px 3px;text-align:center}.dash-kpis strong{display:block;font-size:11px}.dash-kpis small{display:block;font-size:7px;color:#9ab9d8}.dash-bottom{display:grid;grid-template-columns:1.5fr 1fr;gap:7px;height:89px}.dash-chart{border:1px solid #173d64;background:#081b30;border-radius:4px;padding:7px}.dash-chart label{display:block;font-size:8px;color:#a8d3ee}.dash-bars{height:62px;display:flex;align-items:end;gap:4px}.dash-bars i{flex:1;display:block;background:linear-gradient(#4acbfa,#085cc7);border-radius:2px 2px 0 0}.dash-ring{width:65px;height:65px;border-radius:50%;margin:5px auto;background:conic-gradient(#37baf0 0 42%,#744dde 42% 68%,#16c2b3 68% 90%,#ecac59 90%)}.dash-ring:after{content:"";display:block;position:relative;top:18px;left:18px;width:29px;height:29px;background:#081b30;border-radius:50%}.dash-row{display:flex;gap:5px;align-items:center;margin-top:8px}.dash-row span{display:block;width:42%;height:6px;background:#23567e;border-radius:5px}.dash-row b{display:block;height:6px;background:#39bafa;border-radius:5px}.project-body{padding:17px 18px 19px}.project-titleline{display:flex;gap:12px;align-items:start;justify-content:space-between}.project-body h3{font:800 16px/1.35 Manrope,sans-serif;margin:0 0 7px}.project-body p{font-size:12px;color:#b3c6da;line-height:1.55;margin:0 0 12px;min-height:55px}.arrow-link{height:35px;width:35px;border-radius:50%;border:1px solid #248ded;background:#092d50;display:grid;place-items:center;flex:none;color:white}.arrow-link:hover{background:#0a7bdf}.tags{display:flex;gap:6px;flex-wrap:wrap}.tag{font-size:10px;line-height:1.2;border:1px solid #396b98;border-radius:5px;color:#a1cfff;padding:5px 8px;background:#0b2c4a}.tag.excel{color:#52e2a6;border-color:#217953;background:#063d2a}.tag.power{color:#e8d36f;border-color:#836828;background:#3e3009}.tag.sql{color:#5acbfa}.tag.dax{color:#c5a3ff;border-color:#7052a2;background:#2d1c4e}
-.lower{display:grid;grid-template-columns:1.22fr 1fr .92fr;gap:20px;padding-bottom:36px}.lower .section-heading{margin-bottom:14px;min-height:46px}.lower .section-name{gap:8px}.lower .section-name h2{font-size:20px}.lower .section-name p{font-size:10px}.skills-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px}.skill-card{min-height:111px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;padding:12px 5px}.skill-card i{font-size:28px;color:#2ebdf7}.skill-card .excel-icon{color:#22c78a}.skill-card .power-icon{color:#f1c72f}.skill-card .python-icon{color:#ffd14d}.skill-card strong{font-size:11px;text-align:center}.skill-card small{font-size:9px;color:#a4bed7;text-align:center}.cert-card{padding:17px;min-height:219px;display:flex;flex-direction:column;justify-content:space-between}.cert-head{display:flex;gap:12px;align-items:flex-start}.cert-logo{height:54px;width:54px;border-radius:50%;border:2px solid #2eaae6;display:grid;place-items:center;flex:none;background:#d8eefe;color:#097ac3;font-size:24px}.cert-head small{font-size:10px;color:#d3e3f3;display:block}.cert-head h3{font:800 14px/1.42 Manrope,sans-serif;margin:5px 0}.cert-head p{font-size:10px;color:#abc2db;line-height:1.4;margin:0}.cert-link{font-size:12px;color:#59cefc;font-weight:800;align-self:flex-end}.values-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.value-card{display:flex;gap:10px;align-items:flex-start;padding:13px 12px;min-height:105px}.value-card i{font-size:18px;color:#41bff4}.value-card h3{font-size:11px;margin:0 0 5px;line-height:1.3}.value-card p{font-size:10px;color:#b8c9dc;margin:0;line-height:1.45}.footer{border-top:1px solid var(--line);background:#061323}.footer-content{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-block:23px}.footer-content h2{font:800 19px Manrope,sans-serif;margin:0 0 3px}.footer-content p{font-size:11px;color:#a9c1da;margin:0}.footer-actions{display:flex;align-items:center;gap:16px}.footer-socials{display:flex;gap:16px}.copyright{text-align:center;color:#7896b3;font-size:10px;padding:0 12px 15px}
-@media(max-width:1320px){.container{width:min(var(--width),calc(100% - 48px))}.hero-art .metric-four{display:none}.hero-points{gap:8px}.hero-point{padding:0 9px}.lower{grid-template-columns:1fr 1fr}.lower>div:last-child{grid-column:1/-1}.values-grid{grid-template-columns:repeat(4,1fr)}}
-@media(max-width:1050px){.nav-actions .nav-cta{display:none}.nav-links{gap:13px}.nav-links a{font-size:12px}.hero-layout{grid-template-columns:65% 35%}.hero-art{opacity:.8}.metric-one,.metric-two{left:0}.metric-three{right:-5%}.hero-portrait{right:0;width:67vw}.hero h1{font-size:clamp(34px,5vw,54px)}.projects-grid{gap:12px}.project-thumb{height:165px}.dash-bottom{height:66px}.dash-bars{height:42px}.dash-ring{width:48px;height:48px}.dash-ring:after{width:23px;height:23px;top:13px;left:13px}.project-body{padding:14px}}
-@media(max-width:820px){.menu-btn{display:flex}.topbar .nav{min-height:66px}.nav-links{display:none;position:absolute;top:66px;left:0;right:0;padding:20px 7%;background:#071a30;border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;gap:0}.nav-links.open{display:flex}.nav-links li a{display:block;padding:11px 0}.nav-links a.active:after,.nav-links a:hover:after{bottom:4px;width:40px}.nav-actions{margin-left:auto}.hero-layout{grid-template-columns:1fr;min-height:610px;align-items:start;padding-top:46px}.hero-copy{max-width:600px}.hero-art{display:none}.hero-portrait{height:480px;width:100%;object-position:right center;right:-22%;bottom:0;opacity:.45}.hero:after{background:linear-gradient(90deg,#061426f7 0%,#061426d8 60%,#0614268a 100%)}.projects-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.lower{grid-template-columns:1fr}.lower>div:last-child{grid-column:auto}.values-grid{grid-template-columns:repeat(2,1fr)}.skills-grid{grid-template-columns:repeat(4,1fr)}}
-@media(max-width:560px){.container{width:calc(100% - 30px)}.brand strong{font-size:14px}.monogram{font-size:27px}.nav-actions{gap:10px}.nav-actions .social-icon{display:none}.hero-layout{min-height:670px;padding-top:35px}.hero h1{font-size:clamp(35px,9.1vw,48px);letter-spacing:-1.8px}.eyebrow{font-size:8px;letter-spacing:1px}.lead{font-size:15px}.hero-buttons .btn{font-size:12px;padding:12px 15px}.hero-portrait{height:410px;right:-8%;bottom:0;opacity:.34}.hero-points{display:grid;grid-template-columns:1fr 1fr;row-gap:14px}.hero-point{border-right:0;padding:0}.projects-grid{grid-template-columns:1fr}.project-thumb{height:204px}.dash-bottom{height:89px}.dash-bars{height:62px}.dash-ring{width:65px;height:65px}.dash-ring:after{width:29px;height:29px;top:18px;left:18px}.section{padding:30px 0}.section-heading{align-items:flex-start}.section-name{display:block}.section-name p{margin:7px 0 0}.outline-small{padding:8px 10px;font-size:10px}.skills-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.values-grid{grid-template-columns:1fr 1fr}.footer-content{flex-direction:column;text-align:center}.footer-actions{flex-direction:column}.footer-content h2{font-size:17px}}
-@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important}}
+:root{--bg:#061321;--bg2:#091e34;--blue:#39b8ff;--blue2:#078df4;--line:rgba(74,181,255,.26);--text:#f5f9ff;--muted:#a9bdd5;--max:1430px}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:110px}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,sans-serif;line-height:1.55;overflow-x:hidden}h1,h2,h3{font-family:'Space Grotesk',Inter,sans-serif}a{color:inherit;text-decoration:none}button{font:inherit}img{max-width:100%;display:block}:focus-visible{outline:3px solid var(--blue);outline-offset:3px}.container{max-width:var(--max);padding:0 28px;margin:auto}.bg-grid{position:fixed;inset:0;z-index:-2;pointer-events:none;background-image:linear-gradient(rgba(35,145,235,.055) 1px,transparent 1px),linear-gradient(90deg,rgba(35,145,235,.055) 1px,transparent 1px);background-size:52px 52px}.bg-glow{position:absolute;inset:0 0 auto;height:720px;z-index:-1;pointer-events:none;background:radial-gradient(ellipse at 66% 28%,rgba(0,111,220,.16),transparent 63%)}
+.navbar{position:relative;z-index:100;margin:14px auto 0;width:min(calc(100% - 60px),1430px);background:#f9fbff;border-radius:100px;box-shadow:0 10px 36px #0004;color:#19263b}.nav-inner{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:13px 27px}.logo h2{font-size:1.36rem;margin:0;line-height:1.15}.logo span{font-size:.7rem;color:#7c8ca8;letter-spacing:2px}.nav-links{display:flex;align-items:center;list-style:none;gap:24px;margin:0;padding:0}.nav-links a{color:#354259;font-weight:600;font-size:.9rem;white-space:nowrap}.nav-links a:hover,.nav-links a.active{color:#007fff}.nav-links a.active{border-bottom:2px solid #007fff;padding-bottom:6px}.nav-right{display:flex;align-items:center;gap:16px}.social-icons{display:flex;align-items:center;gap:17px}.social-icons a{font-size:1.3rem}.linkedin{color:#0877bf}.github{color:#162338}.email{color:#ee413b}.instagram{color:#da2db0}.nav-logo{display:none}.hamburger{display:none;border:0;background:transparent;color:#12243b;font-size:1.3rem;padding:8px;cursor:pointer}
+.hero{position:relative;padding:28px 28px 0;overflow:hidden}.hero-inner{max-width:var(--max);margin:auto;display:grid;grid-template-columns:minmax(0,1.2fr) minmax(310px,.8fr);position:relative;min-height:490px}.hero-copy{position:relative;z-index:4;padding:14px 0 22px}.eyebrow{display:inline-flex;align-items:center;gap:11px;border:1px solid #1070b9;background:#061c30;border-radius:40px;padding:8px 17px;font-size:.73rem;font-weight:800;letter-spacing:2px;color:#47c8ff}.live-dot{width:8px;height:8px;background:#36c4ff;border-radius:50%;box-shadow:0 0 14px #32afff}.hero h1{font-size:clamp(3.1rem,5.7vw,5.6rem);letter-spacing:-2.8px;line-height:.99;margin:18px 0}.gradient{color:#35b5fa;background:linear-gradient(110deg,#69d3ff,#078ded);background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent}.sub{color:#c0cee0;font-size:clamp(.95rem,1.3vw,1.1rem);max-width:710px;margin:0 0 20px}.stats{display:flex;gap:13px;margin-bottom:20px}.stat{min-width:0;flex:1;display:flex;align-items:center;gap:14px;border:1px solid #215b87;background:linear-gradient(135deg,#0a2b48b0,#071627b0);border-radius:17px;padding:13px 15px}.stat-icon{flex-shrink:0;width:44px;height:44px;display:grid;place-items:center;border-radius:50%;font-size:21px}.database{background:#045c97;color:#3cd2ff}.power{background:#514311;color:#ffcc27}.excel{background:#075d43;color:#30e694}.stat strong{display:block;font-size:1.8rem;line-height:1.1;color:#51c7ff}.stat small{display:block;font-size:.61rem;letter-spacing:.8px;color:#bdd1e7;white-space:nowrap;margin-top:6px}.filters{display:flex;gap:11px;flex-wrap:wrap}.filter-btn{border:1px solid #155581;background:#071a2e;color:#b4c6db;cursor:pointer;border-radius:32px;padding:10px 24px;font-weight:700;transition:.2s}.filter-btn:hover,.filter-btn.active{color:#fff;border-color:#30bafb;background:#0767ad;box-shadow:0 0 19px #097ff74a}.explore-link{display:inline-flex;align-items:center;gap:10px;margin-top:18px;color:#8fe2ff;font-weight:700;font-size:.87rem}.explore-link:hover{color:#fff}.hero-visual{position:relative;min-width:0;align-self:stretch;isolation:isolate}.portrait-orbit{position:absolute;width:min(87%,460px);aspect-ratio:1;top:38px;right:4%;border-radius:50%;border:1px solid #205e9d;background:radial-gradient(circle at 55% 50%,#0c5aad77 0,#082947c9 56%,#071a2d 70%);box-shadow:0 0 0 42px rgba(10,88,157,.07)}.portrait-glow{position:absolute;right:-9%;top:12%;width:94%;height:82%;background:radial-gradient(ellipse,#047fec46,transparent 67%);filter:blur(20px)}.welcome-photo{position:absolute;right:0;bottom:0;height:100%;max-width:100%;width:auto;object-fit:contain;object-position:bottom right;filter:drop-shadow(0 16px 25px #0008);z-index:3}.welcome-bubble{position:absolute;left:0;top:60px;padding:12px 18px;border-radius:16px 16px 4px 16px;background:#09284d;border:1px solid #65bbff;z-index:4;box-shadow:0 10px 28px #0005;transform:rotate(-4deg);font-size:.85rem}.welcome-bubble strong,.welcome-bubble span{display:block}.welcome-bubble span{font-size:.76rem}.floating-graph{position:absolute;border:1px solid #3473ad;border-radius:14px;background:#0a31577f;color:#47b8ff;display:grid;place-items:center;z-index:1;font-size:2.4rem}.graph-left{width:100px;height:100px;top:160px;left:-6%}.graph-right{width:94px;height:76px;right:-2%;top:95px}
+.projects-section{padding:0 28px 95px;position:relative;z-index:5}.grid{display:grid;max-width:var(--max);margin:auto;grid-template-columns:repeat(3,minmax(0,1fr));gap:19px}.card{background:linear-gradient(180deg,#092039,#071525);border:1px solid #174a70;border-radius:20px;overflow:hidden;display:flex;flex-direction:column;transition:transform .25s,border-color .25s,box-shadow .25s}.card:hover{transform:translateY(-5px);border-color:#38b6fa;box-shadow:0 15px 45px #0007}.card-media{position:relative;aspect-ratio:16/9;background:linear-gradient(135deg,#123456,#081626);overflow:hidden;cursor:zoom-in}.card-media img{width:100%;height:100%;object-fit:cover;transition:transform .3s}.card:hover .card-media img{transform:scale(1.04)}.card-badge{position:absolute;top:12px;left:12px;z-index:2;background:#061c33de;border:1px solid #3684b7;color:#4ac5ff;border-radius:30px;font-weight:800;font-size:.69rem;letter-spacing:.8px;text-transform:uppercase;padding:7px 12px}.view-hint{position:absolute;inset:0;display:flex;gap:8px;justify-content:center;align-items:center;color:#fff;font-weight:700;text-transform:uppercase;font-size:.8rem;background:#041225ad;opacity:0;transition:.2s}.card-media:hover .view-hint,.card-media:focus-visible .view-hint{opacity:1}.card-body{padding:16px 18px 20px;display:flex;flex-direction:column;flex:1}.card-topline{display:flex;justify-content:space-between;gap:10px;align-items:start}.card-title{font-size:1.1rem;line-height:1.3;margin:0 0 7px}.arrow-mark{color:#58c4ff;font-size:1.4rem}.card-description{color:#b6c9db;font-size:.83rem;margin:0 0 12px;line-height:1.55;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;overflow:hidden}.tags{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:12px}.tag{border:1px solid #28577a;border-radius:30px;font-size:.67rem;padding:4px 9px;color:#9bcef2}.project-details{margin-bottom:15px;border-top:1px solid #234561;padding-top:10px}.project-details summary{list-style:none;cursor:pointer;color:#73ceff;font-size:.8rem;font-weight:700}.project-details summary::-webkit-details-marker{display:none}.project-details summary i{margin-left:7px}.detail-content{padding:10px 2px;color:#b5c8d9;font-size:.79rem}.detail-content strong{color:#d7ecff}.detail-content p{margin:3px 0 10px}.card-link{margin-top:auto;display:flex;gap:10px;align-items:center;justify-content:space-between;color:#5ccaff;font-size:.79rem;font-weight:800;text-transform:uppercase;letter-spacing:.5px}.card-link:hover{color:#fff}.no-results{display:none;grid-column:1/-1;text-align:center;padding:65px 20px;color:#a2bcd4}.cta{text-align:center;padding:0 24px 90px}.cta h2{font-size:2.1rem;margin:0 0 10px}.cta p{color:var(--muted);max-width:590px;margin:0 auto 25px}.btn-primary{display:inline-flex;gap:10px;align-items:center;background:#0989d9;color:#fff;padding:13px 27px;border-radius:30px;font-weight:700}.btn-primary:hover{background:#31b2f1}footer{text-align:center;border-top:1px solid #16436a;color:#9eb2c9;padding:30px 18px;font-size:.8rem}footer a{color:#63cbff}
+.lightbox{display:none;position:fixed;inset:0;background:#020913ed;z-index:1000;align-items:center;justify-content:center;padding:30px}.lightbox.open{display:flex}.lightbox-inner{position:relative;max-width:min(1140px,95vw);text-align:center}.lightbox-inner img{max-height:83vh;width:auto;border-radius:12px}.lightbox-caption{margin-top:12px;color:#d0e5fa}.lightbox-close{position:absolute;top:-17px;right:-17px;background:#0c3252;color:white;border:1px solid #59bfff;border-radius:50%;height:42px;width:42px;cursor:pointer}
+@media(max-width:1200px){.nav-links{gap:12px}.nav-links a{font-size:.8rem}.stat{gap:8px;padding:12px 9px}.stat-icon{width:35px;height:35px;font-size:17px}.stat strong{font-size:1.4rem}.hero-inner{grid-template-columns:minmax(0,1.15fr) minmax(270px,.85fr)}}
+@media(max-width:1000px){.hamburger{display:block}.nav-links{display:none;position:absolute;top:calc(100% + 8px);left:0;right:0;padding:18px;background:#fff;border-radius:22px;box-shadow:0 18px 35px #0004;flex-direction:column;align-items:stretch;gap:0}.nav-links.active{display:flex}.nav-links a{display:block;padding:10px}.hero-inner{grid-template-columns:minmax(0,1.05fr) minmax(250px,.95fr)}.hero h1{font-size:clamp(2.7rem,6vw,4rem)}.stats{flex-wrap:wrap}.stat{flex:1 1 42%}.stat:last-child{flex-basis:100%}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.welcome-bubble{top:35px;left:-15px}}
+@media(max-width:700px){.navbar{width:calc(100% - 20px);margin-top:9px}.nav-inner{padding:10px 14px}.logo h2{font-size:1rem}.logo span{font-size:.58rem}.social-icons{gap:10px}.social-icons a{font-size:1rem}.hero{padding:20px 15px 0}.hero-inner{display:flex;flex-direction:column;min-height:0}.hero-copy{padding:5px 0 0}.hero h1{font-size:clamp(2.75rem,10vw,4rem)}.sub{font-size:.91rem}.stats{gap:8px}.stat{flex:1 1 30%;padding:10px 8px;gap:7px}.stat:last-child{flex-basis:30%}.stat-icon{width:31px;height:31px;font-size:14px}.stat strong{font-size:1.36rem}.stat small{font-size:.48rem;white-space:normal}.filters{gap:8px}.filter-btn{padding:9px 15px;font-size:.8rem}.hero-visual{height:310px;align-self:stretch;margin-top:0}.welcome-photo{right:8%;height:100%}.portrait-orbit{right:13%;top:18px;width:275px}.welcome-bubble{top:36px;left:7%;font-size:.73rem}.graph-left,.graph-right{display:none}.projects-section{padding:12px 14px 55px}.grid{grid-template-columns:1fr;gap:16px}.cta{padding-bottom:55px}.lightbox{padding:16px}}
+@media(max-width:400px){.social-icons .instagram,.social-icons .email{display:none}.stat{flex:1 1 31%;flex-direction:column;align-items:center;text-align:center}.stat small{font-size:.49rem}.filter-btn{padding:9px 12px}.welcome-photo{right:0}.hero-visual{height:275px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+
+/* 2026 portfolio reference match: compact certifications-style navbar */
+:root{--max:1480px}
+.navbar{width:min(92%,1440px);margin:18px auto 0;border-radius:999px;box-shadow:0 7px 23px rgba(0,0,0,.19)}
+.nav-inner{min-height:63px;padding:9px 27px;gap:16px}
+.logo h2{font-size:1.17rem;line-height:1.14;letter-spacing:-.45px}
+.logo span{font-size:.60rem;letter-spacing:1.7px}
+.nav-links{gap:21px}
+.nav-links a{font-size:.82rem;font-weight:600}
+.nav-links a.active{padding-bottom:5px}
+.nav-right{gap:10px}
+.social-icons{gap:17px}
+.social-icons a{font-size:1.15rem}
+/* Hero follows reference image with portrait on right and no circular mask */
+.hero{padding:24px 28px 0;overflow:hidden}
+.hero-inner{max-width:1480px;grid-template-columns:minmax(0,60%) minmax(0,40%);height:552px;min-height:0;isolation:isolate}
+.hero-copy{padding:19px 0 12px 11px;align-self:start;z-index:5}
+.eyebrow{font-size:.72rem;padding:9px 17px}
+.hero h1{font-size:clamp(3.5rem,5.2vw,5.35rem);letter-spacing:-2.7px;line-height:1.03;margin:15px 0 14px}
+.sub{max-width:810px;line-height:1.5;font-size:clamp(.98rem,1.35vw,1.12rem);margin-bottom:21px}
+.stats{gap:14px;margin-bottom:20px;max-width:845px}
+.stat{padding:13px 14px;gap:15px;min-height:91px}
+.stat strong{font-size:1.9rem}
+.stat small{font-size:.67rem}
+.filters{gap:14px}
+.filter-btn{padding:10px 27px}
+.explore-link{margin-top:15px}
+.hero-visual{position:relative;align-self:stretch;height:552px;overflow:visible;pointer-events:none}
+.portrait-glow{right:-12%;top:4%;height:93%;width:115%;background:radial-gradient(ellipse,#0955a132,transparent 70%);filter:blur(25px)}
+.welcome-photo{position:absolute;bottom:0;right:0;height:555px;width:auto;max-width:none;object-fit:contain;object-position:bottom center;z-index:3;filter:drop-shadow(0 12px 18px rgba(0,0,0,.28))}
+.welcome-bubble{top:76px;left:-25px;padding:12px 17px;z-index:4;transform:rotate(-5deg);font-size:.84rem}
+.floating-graph{z-index:2;font-size:2.2rem;background:#082c5077}
+.graph-left{width:94px;height:94px;top:205px;left:8%}
+.graph-right{width:96px;height:82px;right:-1%;top:144px}
+.projects-section{padding:0 28px 90px;position:relative;z-index:5}
+.grid{max-width:1480px;gap:19px}
+.card{border-radius:20px}
+/* Stop any unwanted masking of the presenter by project cards: image ends at hero bottom */
+@media(max-width:1200px){.nav-links{gap:12px}.nav-links a{font-size:.77rem}.hero-inner{grid-template-columns:minmax(0,59%) minmax(0,41%)}.welcome-photo{height:520px}.hero h1{font-size:clamp(3.1rem,5.1vw,4.6rem)}.stat{padding:11px 9px;gap:9px}.stat small{font-size:.57rem}}
+@media(max-width:1000px){.nav-inner{padding:9px 19px}.nav-links{display:none}.nav-links.active{display:flex}.hero-inner{grid-template-columns:minmax(0,57%) minmax(0,43%);height:520px}.hero-visual{height:520px}.welcome-photo{height:500px;right:-12px}.welcome-bubble{left:-25px;top:60px}.hero-copy{padding-left:0}.hero h1{font-size:clamp(2.85rem,5vw,4.25rem)}.stats{gap:8px}.stat{min-height:78px}.stat strong{font-size:1.45rem}.stat small{font-size:.55rem}.filter-btn{padding:9px 17px}}
+@media(max-width:700px){.navbar{margin-top:9px;width:calc(100% - 22px)}.nav-inner{padding:9px 15px;min-height:57px}.logo h2{font-size:1rem}.hero{padding:20px 15px 0}.hero-inner{display:flex;flex-direction:column;height:auto;min-height:0}.hero-copy{padding:4px 0 0}.hero h1{font-size:clamp(2.7rem,10vw,4rem)}.sub{font-size:.94rem}.stats{gap:8px}.stat{min-height:75px}.stat small{white-space:normal}.filters{gap:8px}.filter-btn{padding:9px 14px}.hero-visual{height:350px;min-height:350px;width:100%;overflow:hidden}.welcome-photo{height:350px;right:3%;max-width:none}.welcome-bubble{top:20px;left:7%;font-size:.72rem}.graph-left,.graph-right{display:none}.projects-section{padding:9px 14px 60px}}
+@media(max-width:400px){.hero-visual{height:305px;min-height:305px}.welcome-photo{height:305px;right:0}.welcome-bubble{left:1%;top:20px}.stat{flex-direction:column;text-align:center}.filters{gap:7px}}
+
+/* Live result count and reliable filtered card visibility. */
+.filter-count{margin:12px 0 0;color:#8fe2ff;font-size:.85rem;font-weight:700}
+#projectGrid .card[hidden]{display:none!important}
+
+/* Projects page — same soft peach / cream typography and navigation as Certifications. */
+:root{--bg:#fbf5ef;--bg2:#fffaf6;--blue:#ae665b;--blue2:#c88879;--line:rgba(171,103,91,.20);--text:#2b201d;--muted:#77645e}
+html,body{background:#fbf5ef;color:#2b201d}
+body{font-family:'Lora',Georgia,serif}
+h1,h2,h3,.card-title,.stat strong{font-family:'Playfair Display',Georgia,serif}
+.bg-grid{display:none}.bg-glow{background:radial-gradient(ellipse at 66% 28%,rgba(218,151,131,.15),transparent 63%)}
+/* Certifications navbar: fonts, background, active underline and social icons. */
+.navbar{background:rgba(255,250,246,.97);border:1px solid #e8d4cb;box-shadow:0 7px 28px rgba(91,48,37,.09);color:#2b201d}
+.nav-inner{font-family:'Lora',Georgia,serif}
+.logo h2{font-family:'Playfair Display',Georgia,serif;color:#35241e;font-weight:600}
+.logo span{font-family:'Lora',Georgia,serif;color:#97756b}
+.nav-links a{font-family:'Lora',Georgia,serif;color:#59463e;font-weight:600}
+.nav-links a:hover,.nav-links a.active{color:#ae665b}
+.nav-links a.active{border-bottom:2px solid #ae665b}
+.social-icons a,.social-icons .github,.social-icons .linkedin,.social-icons .email,.social-icons .instagram{color:#ae665b}
+.social-icons a:hover,.social-icons .github:hover{color:#82463d}
+.hamburger{color:#ae665b}
+.nav-links{background:transparent}
+@media(max-width:1000px){.nav-links{background:#fffaf6;border:1px solid #e8d4cb;box-shadow:0 12px 30px rgba(91,48,37,.12)}}
+/* Warm hero, keeping portrait, project totals and filter functionality. */
+.hero{background:linear-gradient(110deg,#f8e9df 0%,#fff8f1 53%,#fcead9 100%)}
+.eyebrow{font-family:'Lora',Georgia,serif;background:#f7e8df;border:1px solid #e6c6b9;color:#a65e51}
+.live-dot{background:#b66c60;box-shadow:0 0 9px rgba(174,102,91,.25)}
+.hero h1{color:#2b201d}
+.gradient{background:none;color:#ae665b;-webkit-text-fill-color:#ae665b}
+.sub{color:#715b53}
+.stat{background:#fffaf6;border:1px solid #ead6cc;box-shadow:0 6px 18px rgba(91,48,37,.05)}
+.stat strong{color:#a65e51}.stat small{color:#80685e}
+.stat-icon.database,.stat-icon.power,.stat-icon.excel{background:#f3dfd5;color:#ae665b}
+.filter-btn{font-family:'Lora',Georgia,serif;font-size:.78rem;font-weight:500;background:#f5eae3;border:1px solid #ebdcd4;color:#715a52;box-shadow:none}
+.filter-btn:hover{background:#f0ddd5;border-color:#c98e7f;color:#8c4b40;box-shadow:none}
+.filter-btn.active{background:#ac675c;border-color:#ac675c;color:#fffaf6;box-shadow:none}
+.explore-link,.filter-count{color:#a65e51}.explore-link:hover{color:#82463d}
+.portrait-glow{background:radial-gradient(ellipse,rgba(218,151,131,.20),transparent 70%)}
+.portrait-orbit{border-color:#e4bdb0;background:radial-gradient(circle at 55% 50%,#f4d8cb 0,#f9e8dc 65%,#fff8f1 100%);box-shadow:0 0 0 42px rgba(218,151,131,.06)}
+.welcome-photo{filter:drop-shadow(0 12px 18px rgba(91,48,37,.18))}
+.welcome-bubble{background:#fffaf6;border:1px solid #d8a99a;color:#70463d;box-shadow:0 10px 28px rgba(91,48,37,.10)}
+.floating-graph{background:rgba(255,250,246,.83);border:1px solid #d8a99a;color:#ae665b}
+/* Project gallery cards */
+.projects-section{background:#fbf5ef}
+.card{background:#fffaf6;border:1px solid #ead8ce;box-shadow:0 9px 28px rgba(91,48,37,.08)}
+.card:hover{border-color:#d4a69b;box-shadow:0 17px 40px rgba(91,48,37,.15)}
+.card-media{background:#f3e5dc}
+.card-badge{background:#f7e8dfeb;border:1px solid #e6c6b9;color:#9d5d50;font-family:'Lora',Georgia,serif}
+.view-hint{background:rgba(89,48,39,.65);font-family:'Lora',Georgia,serif}
+.card-title{color:#2c211d;font-weight:600}
+.arrow-mark{color:#ae665b}
+.card-description,.detail-content{color:#77645e}
+.tag{background:#f7e8df;border:1px solid #e6c6b9;color:#9d5d50;font-family:'Lora',Georgia,serif}
+.project-details{border-top:1px solid #ead8ce}
+.project-details summary,.detail-content strong,.card-link{color:#9d5d50}
+.card-link:hover{color:#82463d}
+.no-results{color:#77645e}
+.cta{background:#fbf5ef}.cta h2{color:#2b201d}.cta p{color:#77645e}
+.btn-primary{font-family:'Lora',Georgia,serif;background:#ac675c;color:#fffaf6}
+.btn-primary:hover{background:#8f4e43}
+footer{background:#f8eee7;border-top:1px solid #e8d6cb;color:#77645e}
+footer a{color:#ae665b}
+.lightbox{background:rgba(45,27,23,.92)}
+.lightbox-caption{color:#f5ded1}.lightbox-close{background:#ae665b;border-color:#d7a89a}
+:focus-visible{outline-color:#ae665b}
+
 </style>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&amp;family=Lora:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
 <style>
-/* Hero portrait unobstructed; real project screenshots */
-.hero-art{display:none!important}
-.hero-layout{grid-template-columns:minmax(0,1fr);}
-.hero-copy{max-width:710px;}
-.hero-portrait{right:0;width:min(780px,60vw);object-position:center 32%;}
-.project-thumb{padding:0;background:#061426;height:205px;}
-.project-preview{display:block;width:100%;height:100%;object-fit:cover;object-position:center top;transition:transform .35s ease;}
-.project-card:hover .project-preview{transform:scale(1.035);}
-@media(max-width:850px){.hero-portrait{width:100%;opacity:.34;object-position:center}.hero:after{background:linear-gradient(90deg,#061426ef,#06142699)}}
-@media(max-width:580px){.project-thumb{height:195px}.hero-portrait{opacity:.22}}
-</style>
-<style id="peach-cream-theme">
-/* Soft peach and cream portfolio theme; content and navigation retained. */
-:root{--bg:#fbf6f1;--bg2:#fffaf6;--panel:#fffaf7;--line:#ead5c9;--blue:#ac665b;--cyan:#ae675b;--text:#30231e;--muted:#806f68;--green:#739d7f;--gold:#bd9564}
-body{font-family:'DM Sans',sans-serif;background:#fbf6f1;color:var(--text)}
-body:before{background:radial-gradient(circle at 85% 8%,#f7ded154,transparent 35%),linear-gradient(#ae675b08 1px,transparent 1px);background-size:auto,80px 80px}
-h1,h2,h3,.brand strong,.monogram,.hero h1,.section-name h2,.project-body h3,.cert-head h3,.footer-content h2{font-family:'Playfair Display',Georgia,serif!important;letter-spacing:-.025em}
-.topbar{background:rgba(255,250,246,.96);border-color:var(--line)}
-.brand strong,.nav-links a,.nav-links a.active,.nav-links a:hover{color:#33241f}.brand small{color:#98796e}.monogram{color:#ae675b}
-.nav-links a.active:after,.nav-links a:hover:after{background:#ae675b}.social-icon{color:#8d6259}.social-icon:hover{color:#ae675b}
-.nav-cta,.outline-small{border-color:#d7a99b;color:#9d5e53;background:#fff8f3}.nav-cta:hover,.outline-small:hover{background:#f6e7df}
-.menu-btn{background:#f7e8df;color:#a25d52;border-color:var(--line)}
-.hero{background:radial-gradient(ellipse at 85% 10%,#f5dacc,transparent 52%),#fbf4ee;border-color:var(--line)}
-.hero:after{background:linear-gradient(90deg,#fbf4ee 0%,#fbf4eef2 28%,#fbf4eeb8 49%,#fbf4ee16 77%,#fbf4ee40 100%)}
-.hero-portrait{opacity:.9}.hero h1{color:#30231e}.hero h1 span,.accent{color:#ae675b}
-.eyebrow{background:#f8eae2;border-color:#e9cbbd;color:#a35f53}.live-dot{background:#82a68a;box-shadow:0 0 0 4px #82a68a24}
-.lead,.hero-point span{color:#786a64}.hero-point{border-color:#e4c9bc}.hero-point i{color:#b16a5c}.hero-point strong{color:#382a25}
-.btn-primary{background:#ae675b;border-color:#ae675b;color:#fff;box-shadow:0 7px 22px #ae675b28}.btn-primary:hover{box-shadow:0 10px 26px #ae675b40}
-.btn-secondary{background:#fffaf6;border-color:#d4a99b;color:#8f564d}.btn-secondary:hover{background:#f7e7df}
-.section-name h2:before{background:#ae675b}.section-name p,.heading-sub{color:#806f68}
-.project-card,.cert-card,.value-card,.skill-card{background:#fffaf7;border-color:#ead6ca;box-shadow:0 8px 26px #65402a0a}
-.project-card:hover,.cert-card:hover,.value-card:hover,.skill-card:hover{border-color:#c98e7d;box-shadow:0 12px 28px #704b3920}
-.project-thumb{background:#f4e5dd}.project-body h3,.cert-head h3,.value-card h3,.skill-card strong{color:#362721}
-.project-body p,.cert-head p,.cert-head small,.value-card p,.skill-card small{color:#806f68}
-.arrow-link{background:#f6e6dd;border-color:#d9aa9b;color:#a65e52}.arrow-link:hover{background:#edcfc2;color:#713e37}
-.tag{background:#f8eae3;border-color:#e4c8b9;color:#9b6255}.tag.excel{background:#eaf2e9;color:#548063;border-color:#b7d4bc}.tag.power{background:#fcf0d8;color:#9b783d;border-color:#e9d2a0}.tag.sql{color:#9b6255}.tag.dax{background:#f2eafa;color:#846599;border-color:#d5c2e5}
-.skill-card i,.value-card i,.cert-link{color:#ae675b}.skill-card .excel-icon{color:#60956c}.skill-card .power-icon{color:#bb984d}.skill-card .python-icon{color:#aa7d51}
-.cert-logo{background:#f8e9e0;border-color:#d7a99b;color:#a66358}
-.footer{background:#f5eae3;border-color:#e7cfc2}.footer-content h2{color:#362721}.footer-content p,.copyright{color:#806f68}.footer-socials a{color:#a25f53}
-@media(max-width:820px){.nav-links{background:#fff9f5;border-color:#ead5c9}.hero:after{background:linear-gradient(90deg,#fbf4eef7,#fbf4eecb 65%,#fbf4ee8a)}}
-@media(max-width:850px){.hero:after{background:linear-gradient(90deg,#fbf4eef5,#fbf4ee9e)}}
-</style>
-<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&amp;family=Playfair+Display:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><style id="projects-matched-navbar">
-/* Navigation matched to projects(2).html; page sections remain untouched. */
-.topbar{position:relative;top:auto;z-index:100;width:min(92%,1440px);margin:18px auto 0;background:rgba(255,250,246,.97);border:1px solid #e8d4cb;border-radius:999px;box-shadow:0 7px 28px rgba(91,48,37,.09);backdrop-filter:none;color:#2b201d}
-.topbar .nav{width:100%;min-height:63px;padding:9px 27px;gap:16px;font-family:'Lora',Georgia,serif}
-.topbar .brand{display:block;flex-shrink:0}
-.topbar .brand strong{display:block;font-family:'Playfair Display',Georgia,serif!important;font-size:1.17rem;font-weight:600;line-height:1.14;letter-spacing:-.45px;color:#35241e}
-.topbar .brand small{display:block;font-family:'Lora',Georgia,serif;font-size:.60rem;letter-spacing:1.7px;color:#97756b}
-.topbar .nav-links{gap:21px}
-.topbar .nav-links a{font-family:'Lora',Georgia,serif;font-size:.82rem;font-weight:600;color:#59463e;white-space:nowrap}
-.topbar .nav-links a:hover,.topbar .nav-links a.active{color:#ae665b}
-.topbar .nav-links a.active{border-bottom:2px solid #ae665b;padding-bottom:5px}
-.topbar .nav-links a:after{display:none!important}
-.topbar .nav-actions{gap:17px;margin-left:0}
-.topbar .social-icon{font-size:1.15rem;color:#ae665b}
-.topbar .social-icon:hover{color:#82463d}
-.topbar .menu-btn{background:transparent;border:0;color:#ae665b}
-@media(max-width:1200px){.topbar .nav-links{gap:12px}.topbar .nav-links a{font-size:.77rem}}
-@media(max-width:1000px){.topbar .menu-btn{display:flex}.topbar .nav{padding:9px 19px}.topbar .nav-links{display:none;position:absolute;top:calc(100% + 8px);left:0;right:0;padding:18px;background:#fffaf6;border:1px solid #e8d4cb;border-radius:22px;box-shadow:0 12px 30px rgba(91,48,37,.12);flex-direction:column;align-items:stretch;gap:0}.topbar .nav-links.open{display:flex}.topbar .nav-links li a{display:block;padding:10px}.topbar .nav-links a.active{border-bottom:0;text-decoration:underline;text-decoration-color:#ae665b;text-decoration-thickness:2px;text-underline-offset:6px}}
-@media(max-width:700px){.topbar{width:calc(100% - 22px);margin-top:9px}.topbar .nav{min-height:57px;padding:9px 15px}.topbar .brand strong{font-size:1rem}.topbar .brand small{font-size:.58rem}.topbar .nav-actions{gap:10px}.topbar .social-icon{font-size:1rem}}
-@media(max-width:400px){.topbar .nav-actions .social-icon:nth-child(n+3){display:none}}
+/* 2026 playful peach project hero — gallery and navigation unchanged */
+.hero{background:radial-gradient(ellipse at 70% 58%,#ffe6d9 0%,transparent 52%),linear-gradient(115deg,#fff0e8 0%,#fff9f4 51%,#ffe9e0 100%);padding:38px 28px 20px}
+.hero-inner{max-width:1480px;grid-template-columns:minmax(0,58%) minmax(0,42%);height:auto;min-height:600px;align-items:center}
+.hero-copy{padding:12px 0 28px 10px}
+.eyebrow{font-size:.82rem;letter-spacing:1.7px;background:#fff5f0;border:1px solid #f0bdac;color:#b74f3a;box-shadow:0 3px 12px #d88e7912}
+.live-dot{background:#bd523c;box-shadow:none}
+.hero h1{font-size:clamp(4rem,6.1vw,6.2rem);line-height:1.01;letter-spacing:-3px;margin:20px 0 26px;color:#30201c}
+.hero h1 .gradient{display:inline-block;position:relative;font-style:italic;color:#c65a45;-webkit-text-fill-color:#c65a45}
+.hero h1 .gradient::after{content:'';position:absolute;left:18%;right:0;bottom:-12px;height:9px;border-radius:50%;background:#f6c5ad;transform:rotate(-2deg);opacity:.9}
+.sub{font-size:clamp(1.06rem,1.6vw,1.32rem);color:#392a25;max-width:800px;line-height:1.5;margin-bottom:25px}
+.stats{max-width:850px;gap:14px;margin-bottom:24px}
+.stat{min-height:102px;padding:16px 18px;border-radius:23px;background:#fffaf6c9;border-color:#f4d4c7;box-shadow:0 12px 21px #b85e4220;gap:15px}
+.stat-icon.database,.stat-icon.power,.stat-icon.excel{width:57px;height:57px;background:#f8ded1;color:#c65a45;font-size:24px}
+.stat strong{font-size:2.25rem;color:#bd4e38}.stat small{font-size:.72rem;letter-spacing:0;color:#30201c}
+.filter-btn{font-size:.96rem;padding:10px 26px;background:#fff5f0;border-color:#f0cdbf;color:#3e2b24;border-radius:999px}
+.filter-btn.active{background:#c95c46;border-color:#c95c46}.filter-btn:hover{background:#f7ddd1}
+.filter-count{font-size:1rem;color:#76392e;margin-top:15px}
+.explore-link{border:1px solid #d46a53;border-radius:999px;padding:10px 22px;margin-top:9px;color:#963e2e;font-size:1.08rem;background:#fff9f4;transition:transform .2s,background .2s}
+.explore-link:hover{transform:translateY(-3px);background:#fce6da;color:#963e2e}
+.hero-visual{height:570px;align-self:center;position:relative;overflow:visible;isolation:isolate;pointer-events:none}
+.art-halo{position:absolute;border-radius:50%;background:linear-gradient(135deg,#ffd4c7,#ffe7d9);opacity:.75}.halo-one{width:85%;aspect-ratio:1;top:2%;right:0}.halo-two{width:78%;aspect-ratio:1;top:17%;right:-7%;background:linear-gradient(145deg,#ffbbac,#ffe3ce)}
+.orbit{position:absolute;border:10px solid #fff8eb;border-radius:50%;width:100%;height:42%;left:0;top:43%;transform:rotate(-19deg);z-index:3;box-shadow:0 0 12px #ffad9d88}.orbit-b{border-color:#f6a4df;transform:rotate(23deg);opacity:.6;top:39%;height:38%;z-index:0}
+.art-pedestal{position:absolute;left:10%;right:6%;bottom:3%;height:100px;border-radius:50%;background:linear-gradient(#fff5c4,#ffb18f 70%,#f7a393);box-shadow:0 25px 38px #d65a4b55,0 5px 0 #fff8d4 inset;z-index:2}
+.laptop-art{position:absolute;left:14%;right:8%;top:27%;height:55%;transform:rotate(-4deg);z-index:4;filter:drop-shadow(0 16px 12px #a94d6650)}
+.laptop-screen{position:relative;height:83%;border:14px solid #493266;border-radius:19px 19px 9px 9px;background:#fff6f6;box-shadow:inset 0 0 0 3px #e7b9da;overflow:hidden}
+.screen-toolbar{display:flex;gap:6px;padding:13px 17px}.screen-toolbar span{width:10px;height:10px;border-radius:50%;background:#ffb89e}.screen-toolbar span:nth-child(2){background:#ffc9aa}.screen-toolbar span:nth-child(3){background:#f8c6d8}
+.screen-dashboard{display:flex;align-items:end;gap:10%;height:68%;padding:7% 8% 0}
+.chart-bars{display:flex;align-items:end;gap:9%;height:100%;width:70%;border-bottom:3px solid #f0c1c1}.chart-bars i{display:block;width:15%;height:var(--h);border-radius:6px 6px 0 0;background:linear-gradient(#ff8b65,#e74b80);box-shadow:0 3px 7px #ec6e8050}
+.chart-side{width:30%;height:100%;display:flex;align-items:center;flex-direction:column;gap:12px}.donut{width:75px;height:75px;border-radius:50%;background:conic-gradient(#f28b53 0 37%,#e866a3 37% 75%,#f7c0a2 75%);position:relative}.donut:after{content:'';position:absolute;inset:18px;background:#fff6f6;border-radius:50%}.fake-line{height:10px;width:85%;background:#f4c4d6;border-radius:20px}.fake-line.short{width:55%}
+.trend-line{position:absolute;left:8%;top:14%;width:65%;height:36%;filter:drop-shadow(0 2px 3px #ff985d88)}
+.laptop-base{height:16%;margin:-2px -9% 0;background:linear-gradient(160deg,#c9a5f2,#8964b7);clip-path:polygon(9% 0,91% 0,100% 85%,95% 100%,5% 100%,0 85%);border-radius:0 0 28px 28px;box-shadow:0 9px 10px #63417a55;position:relative}.trackpad{position:absolute;left:39%;width:22%;height:14%;bottom:9%;border:2px solid #e7c8ff;border-radius:0 0 8px 8px}
+.tech-tile{position:absolute;width:100px;height:100px;border-radius:24px;display:grid;place-items:center;font-size:50px;z-index:6;border:3px solid #fff8ee;box-shadow:0 10px 24px #a65a5050;transform:rotate(12deg)}
+.tile-power{left:18%;top:12%;background:linear-gradient(145deg,#ffe24e,#ffab00);color:#50311b}.tile-excel{left:4%;top:38%;background:linear-gradient(145deg,#a8f4d1,#31c896);color:#087647;transform:rotate(-13deg)}.tile-sql{right:0;top:53%;background:linear-gradient(145deg,#d2a3ff,#8149d2);color:white;transform:rotate(10deg);font-size:38px;gap:0}.tile-sql small{font:bold 17px Georgia,serif;margin-top:-23px}
+.art-spark{position:absolute;color:#ff9e46;font-size:42px;z-index:7}.spark-a{top:5%;right:11%}.spark-b{top:12%;left:2%;font-size:26px}
+@media(max-width:1200px){.hero-inner{grid-template-columns:58% 42%}.hero h1{font-size:clamp(3.5rem,5.5vw,5.4rem)}.stat{padding:11px 10px;gap:9px}.stat-icon.database,.stat-icon.power,.stat-icon.excel{width:42px;height:42px;font-size:19px}.stat strong{font-size:1.8rem}.stat small{font-size:.57rem}.hero-visual{height:490px}.tech-tile{width:80px;height:80px;font-size:39px}}
+@media(max-width:850px){.hero-inner{display:flex;flex-direction:column;min-height:0}.hero-copy{padding:15px 0}.hero-visual{width:min(100%,650px);height:490px;align-self:center}.hero h1{font-size:clamp(3.6rem,8vw,5rem)}}
+@media(max-width:600px){.hero{padding:25px 15px 20px}.hero h1{font-size:clamp(3.3rem,11vw,4.6rem)}.sub{font-size:1rem}.stats{gap:7px}.stat{min-height:90px;flex:1 1 30%;flex-direction:column;text-align:center;padding:10px 5px}.stat:last-child{flex-basis:30%}.stat strong{font-size:1.55rem}.stat small{font-size:.53rem}.stat-icon.database,.stat-icon.power,.stat-icon.excel{width:34px;height:34px;font-size:16px}.filter-btn{font-size:.82rem;padding:9px 15px}.hero-visual{height:330px;min-height:0;margin-top:0}.tech-tile{width:58px;height:58px;border-radius:15px;font-size:28px}.tile-sql{font-size:24px}.tile-sql small{font-size:11px;margin-top:-15px}.laptop-screen{border-width:9px}.donut{width:43px;height:43px}.donut:after{inset:10px}.art-pedestal{height:65px}.orbit{border-width:6px}}
+</style><style>
+/* Minimal three-column portfolio gallery — original peach/cream palette */
+.hero{padding:65px 28px 55px;background:linear-gradient(115deg,#fff7f1,#fbf0e8)}
+.hero-inner{display:block;max-width:1180px;min-height:0;height:auto;text-align:center}
+.hero-copy{padding:0;max-width:1050px;margin:auto}
+.hero h1{font-size:clamp(2.8rem,5vw,4.7rem);letter-spacing:-1.6px;line-height:1.13;margin:20px 0 18px}
+.hero h1 .gradient{font-style:normal;display:inline;color:#ae665b;-webkit-text-fill-color:#ae665b}
+.hero h1 .gradient::after{display:none}
+.sub{margin:0 auto 28px;max-width:740px;font-size:1.12rem;color:#715b53}
+.stats{max-width:780px;margin:0 auto 27px;justify-content:center}
+.stat{min-height:78px;padding:12px 17px;border-radius:12px;box-shadow:none}
+.stat-icon.database,.stat-icon.power,.stat-icon.excel{width:43px;height:43px;font-size:19px}
+.stat strong{font-size:1.75rem}.stat small{font-size:.65rem}
+.filters{justify-content:center;gap:10px}
+.filter-btn{font-size:.88rem;padding:9px 23px}
+.filter-count{margin-top:17px;font-size:.91rem}
+.explore-link{margin-top:15px;font-size:.95rem;border:0;background:none;padding:0}
+.hero-visual{display:none!important}
+.projects-section{padding:52px 28px 100px}
+.grid{max-width:1290px;grid-template-columns:repeat(3,minmax(0,1fr));gap:55px 34px;align-items:start}
+.card{background:transparent;border:0;border-radius:0;box-shadow:none;overflow:visible;transition:none;text-align:center}
+.card:hover{transform:none;border:0;box-shadow:none}
+.card-media{aspect-ratio:16/9;border-radius:3px;background:#f0e0d7;overflow:hidden;box-shadow:0 3px 13px rgba(91,48,37,.08)}
+.card-media img{object-fit:cover}
+.card:hover .card-media img{transform:scale(1.025)}
+.card-badge{display:none}
+.card-body{padding:15px 3px 0;align-items:stretch}
+.card-topline{display:block}
+.card-title{font-size:1.34rem;line-height:1.35;margin:0 0 12px;font-weight:600;color:#35241e}
+.arrow-mark{display:none}
+.card-description{font-size:.91rem;line-height:1.65;margin:0 auto 13px;max-width:390px;-webkit-line-clamp:3;color:#76625a}
+.tags{justify-content:center;gap:6px;margin:0 0 12px}
+.tag{font-size:.68rem;padding:3px 10px}
+.project-details{margin:0 0 13px;border:0;padding:0;text-align:center}
+.project-details summary{font-size:.85rem}
+.detail-content{text-align:left;background:#fffaf6;border:1px solid #ead8ce;border-radius:8px;padding:14px;margin-top:10px}
+.card-link{justify-content:center;gap:9px;margin-top:auto;font-size:.78rem;letter-spacing:.3px}
+@media(max-width:950px){.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:43px 25px}.hero{padding:48px 22px 42px}}
+@media(max-width:600px){.hero{padding:35px 16px 38px}.hero h1{font-size:clamp(2.5rem,10vw,3.7rem)}.stats{gap:8px}.stat{padding:9px 6px;flex:1 1 30%;flex-direction:column;text-align:center}.stat:last-child{flex-basis:30%}.stat strong{font-size:1.35rem}.stat small{font-size:.52rem}.stat-icon.database,.stat-icon.power,.stat-icon.excel{width:33px;height:33px;font-size:15px}.projects-section{padding:35px 18px 65px}.grid{grid-template-columns:1fr;gap:40px}.card-title{font-size:1.3rem}.sub{font-size:1rem}}
 </style></head>
 <body>
-<header class="topbar"><div class="container nav"><a aria-label="Khurram Naveed homepage" class="brand" href="index.html"><span><strong>Khurram Naveed</strong><small>Data Analyst</small></span></a><nav aria-label="Main navigation"><ul class="nav-links" id="site-nav"><li><a aria-current="page" class="active" href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="projects.html">Projects</a></li><li><a href="skills.html">Skills</a></li><li><a href="certifications.html">Certifications</a></li><li><a href="contact.html">Send Message</a></li></ul></nav><div class="nav-actions"><a aria-label="LinkedIn" class="social-icon" href="https://www.linkedin.com/in/khurram-naveed-0083851aa/" rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-linkedin"></i></a><a aria-label="GitHub" class="social-icon" href="https://github.com/Khurramnaveed3233/Portfolio" rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-github"></i></a><a aria-label="Email" class="social-icon" href="mailto:khurramnaveed4545@gmail.com"><i class="fa-solid fa-envelope"></i></a><a aria-label="Instagram" class="social-icon" href="https://www.instagram.com/khurram_insights/" rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-instagram"></i></a><button aria-controls="site-nav" aria-expanded="false" aria-label="Open menu" class="menu-btn" id="menu-btn" type="button"><i class="fa-solid fa-bars"></i></button></div></div></header>
-<main>
-<section aria-labelledby="hero-heading" class="hero"><img alt="Khurram Naveed in a professional office" class="hero-portrait" fetchpriority="high" src="hero_image.png"/><div class="container hero-layout"><div class="hero-copy"><div class="eyebrow"><span class="live-dot"></span> DATA ANALYST <span aria-hidden="true">·</span> TURNING DATA INTO OPPORTUNITIES</div><h1 id="hero-heading">Turning Data Into <span>Clear Business Decisions</span></h1><p class="lead">I transform complex data into clear, actionable insights that help businesses make smarter decisions, understand performance, and identify opportunities.</p><div class="hero-buttons"><a class="btn btn-primary" href="projects.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> View My Projects</a><a class="btn btn-secondary" href="contact.html"><i class="fa-regular fa-envelope"></i> Contact Me</a></div><div class="hero-points"><div class="hero-point"><i class="fa-solid fa-chart-column"></i><div><strong>Projects</strong><span>Practical analytics</span></div></div><div class="hero-point"><i class="fa-solid fa-briefcase"></i><div><strong>Business</strong><span>Focused solutions</span></div></div><div class="hero-point"><i class="fa-solid fa-bullseye"></i><div><strong>Data-driven</strong><span>Analytical approach</span></div></div><div class="hero-point"><i class="fa-solid fa-arrow-trend-up"></i><div><strong>Insights</strong><span>Clear recommendations</span></div></div></div></div></div></section>
-<section aria-labelledby="projects-heading" class="section" id="featured-projects"><div class="container"><div class="section-heading"><div class="section-name"><h2 id="projects-heading">Featured Projects</h2><p>Business-focused analytics across sales, inventory, and customer behavior.</p></div><a class="outline-small" href="projects.html">View All Projects   <i class="fa-solid fa-arrow-right"></i></a></div><div class="projects-grid">
-<article class="project-card"><div class="project-thumb"><img alt="itel Pakistan Sales Analytics dashboard preview" class="project-preview" decoding="async" loading="lazy" src="itel Pakistan.png"/></div><div class="project-body"><div class="project-titleline"><h3>itel Pakistan Sales Analytics</h3><a aria-label="View itel Pakistan Sales Analytics" class="arrow-link" href="projects.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div><p>Sales, regional performance, product rankings, targets and returns explored through SQL and Power BI.</p><div class="tags"><span class="tag excel">Excel</span><span class="tag sql">SQL Server</span><span class="tag power">Power BI</span></div></div></article>
-<article class="project-card"><div class="project-thumb"><img alt="Stylo Retail Operations Dashboard dashboard preview" class="project-preview" decoding="async" loading="lazy" src="stylo dashboard.png"/></div><div class="project-body"><div class="project-titleline"><h3>Stylo Retail Operations Dashboard</h3><a aria-label="View Stylo Retail Operations Dashboard" class="arrow-link" href="https://github.com/Khurramnaveed3233/Stylo-Retail-Operations-Dashboard-Power-BI-" rel="noopener noreferrer" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div><p>Interactive Power BI reporting for retail operations, sales performance and key business KPIs.</p><div class="tags"><span class="tag excel">Excel</span><span class="tag power">Power BI</span></div></div></article>
-<article class="project-card"><div class="project-thumb"><img alt="Foodpanda Pakistan SQL Data Analysis dashboard preview" class="project-preview" decoding="async" loading="lazy" src="FoodPanda.png"/></div><div class="project-body"><div class="project-titleline"><h3>Foodpanda Pakistan SQL Data Analysis</h3><a aria-label="View Foodpanda Pakistan SQL Data Analysis" class="arrow-link" href="https://github.com/Khurramnaveed3233/Foodpanda-Pakistan-SQL-Data-Analysis-Project" rel="noopener noreferrer" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div><p>SQL exploration of orders, customers, restaurants and sales to answer practical business questions.</p><div class="tags"><span class="tag sql">SQL</span><span class="tag">Data Analysis</span></div></div></article>
-</div></div></section>
-<div class="container lower"><section aria-labelledby="skills-heading"><div class="section-heading"><div class="section-name"><h2 id="skills-heading">Core Skills</h2><p>Tools I use to explore and explain data.</p></div></div><div class="skills-grid"><div class="skill-card"><i class="fa-solid fa-file-excel excel-icon"></i><strong>Excel</strong><small>Analysis</small></div><div class="skill-card"><i class="fa-solid fa-database"></i><strong>SQL</strong><small>Querying</small></div><div class="skill-card"><i class="fa-solid fa-chart-column power-icon"></i><strong>Power BI</strong><small>Dashboards</small></div><div class="skill-card"><i class="fa-brands fa-python python-icon"></i><strong>Python</strong><small>Automation</small></div><div class="skill-card"><i class="fa-solid fa-chart-simple"></i><strong>Visualization</strong><small>Storytelling</small></div><div class="skill-card"><i class="fa-solid fa-function"></i><strong>DAX</strong><small>Measures</small></div><div class="skill-card"><i class="fa-solid fa-arrows-rotate excel-icon"></i><strong>Power Query</strong><small>ETL</small></div><div class="skill-card"><i class="fa-brands fa-github"></i><strong>GitHub</strong><small>Portfolio</small></div></div></section><section aria-labelledby="cert-heading"><div class="section-heading"><div class="section-name"><h2 id="cert-heading">Certifications</h2><p>Continuous professional learning.</p></div></div><div class="cert-card"><div class="cert-head"><div class="cert-logo"><i class="fa-brands fa-microsoft"></i></div><div><small>Microsoft · Coursera · 8 courses</small><h3>Microsoft Power BI Data Analyst Professional Certificate</h3><p>Excel, data modeling, Power Query, DAX, visualization, Power BI deployment and PL-300 exam preparation.</p></div></div><a class="cert-link" href="https://coursera.org/share/e872b10136702eede959ef8291fb5a03" rel="noopener noreferrer" target="_blank">Verify Certificate   <i class="fa-solid fa-arrow-up-right-from-square"></i></a><a class="cert-link" href="certifications.html">All Certifications   <i class="fa-solid fa-arrow-right"></i></a></div></section><section aria-labelledby="value-heading"><div class="section-heading"><div class="section-name"><h2 id="value-heading">What I Deliver</h2><p>Clear analysis for real business questions.</p></div></div><div class="values-grid"><div class="value-card"><i class="fa-solid fa-bullseye"></i><div><h3>Dashboard Design</h3><p>Clear KPIs and intuitive reporting.</p></div></div><div class="value-card"><i class="fa-solid fa-gear"></i><div><h3>Data Cleaning</h3><p>Analysis-ready structured data.</p></div></div><div class="value-card"><i class="fa-solid fa-bolt" style="color:var(--gold)"></i><div><h3>Repeatable Reporting</h3><p>Efficient reporting workflows.</p></div></div><div class="value-card"><i class="fa-solid fa-square-poll-vertical"></i><div><h3>Business Insights</h3><p>Findings explained with context.</p></div></div></div></section></div>
-</main><footer class="footer"><div class="container footer-content"><div><h2>Let's Turn Your Data Into Opportunities</h2><p>Interested in my projects or discussing an analytics opportunity? Get in touch.</p></div><div class="footer-actions"><a class="btn btn-primary" href="contact.html">Contact Me <i class="fa-solid fa-arrow-right"></i></a><div class="footer-socials"><a aria-label="LinkedIn" href="https://www.linkedin.com/in/khurram-naveed-0083851aa/" rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-linkedin"></i></a><a aria-label="GitHub" href="https://github.com/Khurramnaveed3233/Portfolio" rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-github"></i></a><a aria-label="Email" href="mailto:khurramnaveed4545@gmail.com"><i class="fa-solid fa-envelope"></i></a></div></div></div><div class="copyright">© <span id="year">2026</span> Khurram Naveed · Data Analyst Portfolio</div></footer>
-<script>const toggle=document.getElementById('menu-btn'),links=document.getElementById('site-nav');function closeMenu(){links.classList.remove('open');toggle.setAttribute('aria-expanded','false');toggle.setAttribute('aria-label','Open menu');toggle.querySelector('i').className='fa-solid fa-bars'}toggle.addEventListener('click',()=>{let open=links.classList.toggle('open');toggle.setAttribute('aria-expanded',String(open));toggle.setAttribute('aria-label',open?'Close menu':'Open menu');toggle.querySelector('i').className=open?'fa-solid fa-xmark':'fa-solid fa-bars'});document.addEventListener('keydown',e=>{if(e.key==='Escape')closeMenu()});document.addEventListener('click',e=>{if(!e.target.closest('.topbar'))closeMenu()});links.addEventListener('click',e=>{if(e.target.closest('a'))closeMenu()});document.getElementById('year').textContent=new Date().getFullYear();</script>
-</body></html>
+<div aria-hidden="true" class="bg-grid"></div>
+<div aria-hidden="true" class="bg-glow"></div>
+<header class="navbar">
+<div class="container nav-inner">
+<div class="logo">
+<a href="index.html">
+<h2>Khurram Naveed</h2>
+<span>Data Analyst</span>
+</a>
+</div>
+<nav aria-label="Main navigation">
+<ul class="nav-links" id="main-navigation">
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a aria-current="page" class="active" href="projects.html">Projects</a></li>
+<li><a href="skills.html">Skills</a></li>
+<li><a href="certifications.html">Certifications</a></li>
+<li><a href="contact.html">Send Message</a></li>
+</ul>
+</nav>
+<div class="nav-right">
+<div class="social-icons">
+<a aria-label="LinkedIn" class="linkedin" href="https://www.linkedin.com/in/khurram-naveed-0083851aa/" rel="noopener noreferrer" target="_blank"><i class="fab fa-linkedin"></i></a>
+<a aria-label="GitHub" class="github" href="https://github.com/khurraminsights/Portfolio-" rel="noopener noreferrer" target="_blank"><i class="fab fa-github"></i></a>
+<a aria-label="Email Khurram" class="email" href="mailto:khurramnaveed4545@gmail.com"><i class="fas fa-envelope"></i></a>
+<a aria-label="Instagram" class="instagram" href="https://www.instagram.com/khurram_insights/" rel="noopener noreferrer" target="_blank"><i class="fab fa-instagram"></i></a>
+</div>
+<img alt="Khurram Insights Logo" class="nav-logo" src="Khurram Insights.jpeg"/>
+<button aria-controls="main-navigation" aria-expanded="false" aria-label="Open navigation" class="hamburger" type="button"><i aria-hidden="true" class="fas fa-bars"></i></button>
+</div>
+</div>
+</header>
+<main id="main">
+<!-- Redesigned Hero Section with Analytics Side Graphics -->
+<section aria-labelledby="welcome-title" class="hero"><div class="hero-inner">
+<div class="hero-copy"><span class="eyebrow"><span class="live-dot"></span> WELCOME TO MY PROJECTS</span>
+<h1 id="welcome-title">Welcome to<br/><span class="gradient">My Projects</span></h1>
+<p class="sub">Explore SQL, Power BI, and Excel projects built to solve business problems and turn data into actionable insights.</p>
+<div aria-label="Project portfolio categories" class="stats">
+<div class="stat"><span class="stat-icon database"><i aria-hidden="true" class="fas fa-database"></i></span><span><strong>22</strong><small>SQL PROJECTS</small></span></div>
+<div class="stat"><span class="stat-icon power"><i aria-hidden="true" class="fas fa-chart-column"></i></span><span><strong>17</strong><small>POWER BI PROJECTS</small></span></div>
+<div class="stat"><span class="stat-icon excel"><i aria-hidden="true" class="fas fa-file-excel"></i></span><span><strong>2</strong><small>EXCEL PROJECTS SHOWN</small></span></div>
+</div>
+<div aria-label="Filter projects by category" class="filters" role="group"><button aria-pressed="true" class="filter-btn active" data-filter="all">All</button><button aria-pressed="false" class="filter-btn" data-filter="sql">SQL</button><button aria-pressed="false" class="filter-btn" data-filter="powerbi">Power BI</button><button aria-pressed="false" class="filter-btn" data-filter="excel">Excel / Sheets</button></div>
+<p aria-live="polite" class="filter-count" id="filterCount" role="status">Showing all 24 projects</p>
+<a class="explore-link" href="#featured-projects-grid">Explore the work  <i aria-hidden="true" class="fas fa-arrow-right"></i></a>
+</div>
+<div aria-label="Illustration of an analytics dashboard on a laptop with SQL, Power BI and Excel icons" class="hero-visual" role="img"><div class="art-halo halo-one"></div><div class="art-halo halo-two"></div><div class="orbit orbit-a"></div><div class="orbit orbit-b"></div><div aria-label="Power BI" class="tech-tile tile-power"><i class="fas fa-chart-column"></i></div><div aria-label="Excel" class="tech-tile tile-excel"><i class="fas fa-file-excel"></i></div><div aria-label="SQL" class="tech-tile tile-sql"><i class="fas fa-database"></i><small>SQL</small></div><div class="laptop-art"><div class="laptop-screen"><div class="screen-toolbar"><span></span><span></span><span></span></div><div class="screen-dashboard"><div class="chart-bars"><i style="--h:35%"></i><i style="--h:48%"></i><i style="--h:62%"></i><i style="--h:76%"></i><i style="--h:94%"></i></div><div class="chart-side"><div class="donut"></div><div class="fake-line"></div><div class="fake-line short"></div></div></div><svg aria-hidden="true" class="trend-line" preserveaspectratio="none" viewbox="0 0 300 110"><polyline fill="none" points="12,95 75,72 135,80 190,40 246,55 288,12" stroke="#ff9b4e" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"></polyline><g fill="#ff9b4e"><circle cx="12" cy="95" r="6"></circle><circle cx="75" cy="72" r="6"></circle><circle cx="135" cy="80" r="6"></circle><circle cx="190" cy="40" r="6"></circle><circle cx="246" cy="55" r="6"></circle><circle cx="288" cy="12" r="6"></circle></g></svg></div><div class="laptop-base"><div class="trackpad"></div></div></div><div class="art-pedestal"></div><span class="art-spark spark-a">✦</span><span class="art-spark spark-b">✦</span></div></div></section>
+<section class="projects-section" id="featured-projects-grid">
+<div class="grid" id="projectGrid">
+<!-- ============ FEATURED PROJECT: CHARCOAL PAKISTAN RETAIL ANALYTICS ============ -->
+<article class="card" data-category="powerbi">
+<div class="card-media">
+<span class="card-badge">Power BI</span>
+<img alt="Charcoal Pakistan retail sales and inventory analytics portfolio cover featuring executive, sales and inventory dashboards" loading="lazy" src="Charcoal.png"/>
+<span aria-hidden="true" class="view-hint"><i class="fas fa-magnifying-glass-plus"></i> View Full Size</span>
+</div>
+<div class="card-body">
+<div class="card-topline"><h3 class="card-title">Charcoal Pakistan — Retail Sales &amp; Inventory Analytics</h3><span aria-hidden="true" class="arrow-mark">↗</span></div>
+<p class="card-description">Developed an end-to-end SQL Server and Power BI retail analytics case study, connecting sales, supplier delivery, product performance and inventory health through three interactive dashboard pages and validated DAX KPIs.</p>
+<div class="tags"><span class="tag">Power BI</span><span class="tag">SQL Server</span><span class="tag">DAX</span><span class="tag">Retail Analytics</span></div>
+<details class="project-details"><summary>Project details <i aria-hidden="true" class="fas fa-chevron-down"></i></summary>
+<div class="detail-content">
+<strong>Business challenge</strong><p>Bring together simulated apparel retail sales, purchasing, supplier delivery and stock data to help decision-makers understand revenue performance, availability risks and inventory accuracy.</p>
+<strong>Analytical approach</strong><p>Used SQL Server for relational analysis and reconciliation, then built three Power BI pages: Executive Overview, Sales &amp; Product Performance, and Inventory Health &amp; Stock Availability. Created DAX measures and validated location-level filter behavior.</p>
+<strong>Findings &amp; recommendations</strong><p>The simulated dataset shows PKR 58.42M net sales, 13,154 units sold, a 47.44% supplier on-time delivery rate, 152 stockout SKU-location combinations and 375 low-stock combinations at the latest snapshot. Recommended investigating supplier delays, prioritizing replenishment and monitoring inventory discrepancies.</p>
+<strong>Project scope</strong><p>Independent portfolio project using simulated data; figures do not represent actual company performance.</p>
+</div></details>
+<a class="card-link" href="https://github.com/khurraminsights/charcoal-retail-sales-inventory-analytics/blob/main/README.md" rel="noopener noreferrer" target="_blank">View project on GitHub <i aria-hidden="true" class="fas fa-arrow-up-right-from-square"></i></a>
+</div>
+</article>
+<!-- ============ FEATURED PROJECT: ITEL PAKISTAN ANALYTICS ============ -->
+<article class="card" data-category="powerbi">
+<div class="card-media">
+<span class="card-badge">Power BI</span>
+<img alt="itel Pakistan Sales and Operations Analytics Power BI and SQL Server portfolio project cover" loading="lazy" src="itel%20Pakistan.png"/>
+<span aria-hidden="true" class="view-hint">
+<svg fill="none" height="18" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="18"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3"></path><path d="M11 8v6M8 11h6"></path></svg>
+            View Full Size
+          </span></div>
+<div class="card-body"><div class="card-topline"><h3 class="card-title">itel Pakistan — Sales &amp; Operations Analytics</h3><span aria-hidden="true" class="arrow-mark">↗</span></div><p class="card-description">Built an end-to-end SQL Server and Power BI analytics project using synthetic smartphone distribution data: 12,000 sales records, 9 tables, 16 relationships and 5 dashboard pages covering sales, regions, returns and inventory.</p><div class="tags"><span class="tag">Power BI</span><span class="tag">SQL Server</span><span class="tag">DAX</span><span class="tag">Power Query</span></div><details class="project-details"><summary>Project details <i aria-hidden="true" class="fas fa-chevron-down"></i></summary><div class="detail-content"><strong>Business challenge</strong><p>Create a unified reporting view for simulated smartphone sales, regional and product performance, returns, targets, and warehouse stock across Pakistan.</p><strong>Analytical approach</strong><p>Prepared and validated nine staging tables in SQL Server, modeled 16 active dimension-to-fact relationships, and built five Power BI pages with reusable DAX measures.</p><strong>Findings</strong><p>The synthetic dataset generated PKR 2.018B in net sales, a 1.09% unit return rate, and four low-stock products with 107 shortage units. These are simulated portfolio results, not actual itel business figures.</p></div></details><a class="card-link" href="https://github.com/khurraminsights/itel-Pakistan-Analytics" rel="noopener noreferrer" target="_blank">View project on GitHub <i aria-hidden="true" class="fas fa-arrow-up-right-from-square"></i></a></div>
+</article>
+<!-- ============ POWER BI PROJECT 8 (MOVED TO 1ST) ============ -->
+<article class="card" data-category="powerbi">
+<div class="card-media">
+<span class="card-badge">Power BI</span>
+<img alt="Stylo retail operations dashboard in Power BI" loading="lazy" src="stylo%20dashboard.png"/>
+<span aria-hidden="true" class="view-hint">
+<svg fill="none" height="18" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="18"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3"></path><path d="M11 8v6M8 11h6"></path></svg>
+            View Full Size
+          </span></div>
+<div class="card-body"><div class="card-topline"><h3 class="card-title">Stylo Retail Operations Dashboard</h3><span aria-hidden="true" class="arrow-mark">↗</span></div><p class="card-description">Built a star-schema Power BI model (FactSales + 7 dimension tables) with Power Query ETL and DAX measures across Executive Overview and Store Performance pages.</p><div class="tags"><span class="tag">Power BI</span><span class="tag">Power Query</span><span class="tag">DAX</span></div><details class="project-details"><summary>Project details <i aria-hidden="true" class="fas fa-chevron-down"></i></summary><div class="detail-content"><strong>Business challenge</strong><p>Stylo Pakistan (fashion footwear retailer) needed a single source of truth to track store, product, and channel performance across thousands of daily transactions.</p><strong>Findings</strong><p>Total sales of 286M with a 47% profit margin across 26K orders. Women's Shoes was the top category; in-store sales contributed ~80% of revenue vs. 20% online.</p></div></details><a class="card-link" href="https://github.com/khurraminsights/Stylo-Retail-Operations-Dashboard-Power-BI-" rel="noopener noreferrer" target="_blank">View project on GitHub <i aria-hidden="true" class="fas fa-arrow-up-right-from-square"></i></a></div>
+</article>
+<!-- ============ POWER BI PROJECT 7 (MOVED TO 2ND) ============ -->
+<article class="card" data-category="powerbi">
+<div class="card-media">
+<span class="card-badge">Power BI</span>
+<img alt="The Cookie Lab retail analytics and business intelligence dashboard" loading="lazy" src="TheCookieLab.png"/>
+<span aria-hidden="true" class="view-hint">
+<svg fill="none" height="18" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="18"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3"></path><path d="M11 8v6M8 11h6"></path></svg>
+            View Full Size
+          </span></div>
+<div class="card-body"><div class="card-topline"><h3 class="card-title">The Cookie Lab — Retail Analytics &amp; BI</h3><span aria-hidden="true" class="arrow-mark">↗</span></div><p class="card-description">Used SQL Server (joins, CTEs, NTILE window functions for RFM segmentation), then built a 4-page Power BI dashboard for executive review.</p><div class="tags"><span class="tag">SQL Server</span><span class="tag">Power BI</span></div><details class="project-details"><summary>Project details <i aria-hidden="true" class="fas fa-chevron-down"></i></summary><div class="detail-content"><strong>Business challenge</strong><p>The Cookie Lab (an omnichannel cookie retailer) had 824,838+ transaction records across channels and stores but no consolidated view of revenue, customer value, or refund risk.</p><strong>Findings</strong><p>Segmented customers into Champions/Loyal/At-Risk tiers via RFM scoring, identified refund hotspots, and benchmarked store performance with ongoing monitorable KPIs.</p></div></details><a class="card-link" href="https://github.com/khurraminsights/The-Cookie-Lab-Retail-Analytics-Business-Intelligence" rel="noopener noreferrer" target="_blank">View project on GitHub <i aria-hidden="true" class="fas fa-arrow-up-right-from-square"></i></a></div>
+</article>
+<!-- ============ SQL PROJECT (MOVED TO 1ST IN SQL) ============ -->
+<article class="card" data-category="sql">
+<div class="card-media">
+<span class="card-badge">SQL</span>
+<img alt="Zomato restaurant and customer data analysis dashboard" loading="lazy" src="zomato.jpg"/>
+<span aria-hidden="true" class="view-hint">
+<svg fill="none" height="18" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="18"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3"></path><path d="M11 8v6M8 11h6"></path></svg>
+            View Full Size
+          </span></div>
+<div class="card-body"><div class="card-topline"><h3 class="card-title">Zomato — Restaurant &amp; Customer Data Analysis</h3><span aria-hidden="true" class="arrow-mark">↗</span></div><p class="card-description">Used SQL (joins, CTEs, window functions, ranking) to analyze orders, ratings, cuisines, delivery times, and referral chains across the customer/restaurant dataset.</p><div class="tags"><span class="tag">SQL</span></div><details class="project-details"><summary>Project details <i aria-hidden="true" class="fas fa-chevron-down"></i></summary><div class="detail-content"><strong>Business challenge</strong><p>Zomato needed to understand customer behavior, restaurant performance, and referral program impact to guide growth decisions.</p><strong>Findings</strong><p>Chinese cuisine generated the highest revenue; several users showed 6-month inactivity (churn risk); top-rated restaurants were ranked by revenue within each city.</p></div></details><a class="card-link" href="https://github.com/khurraminsights/Comprehensive-Analysis-of-Zomato-s-Restaurant-and-Customer-Data-to-Drive-Business-Growth" rel="noopener noreferrer" target="_blank">View project on GitHub <i aria-hidden="true" class="fas fa-arrow-up-right-from-square"></i></a></div>
+</article>
+<!-- ============ NEW PROJECT: SAMSUNG PAKISTAN ============ -->
+<article class="card" data-category="powerbi">
+<div class="card-media">
+<span class="card-badge">Power BI</span>
+<img alt="Samsung Pakistan Retail Sales Channel Performance Analytics Dashboard" loading="lazy" src="samsung_pakistan.png"/>
+<span aria-hidden="true" class="view-hint">
+<svg fill="none" height="18" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="18"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3"></path><path d="M11 8v6M8 11h6"></path></svg>
+            View Full Size
+          </span>
+</div>
+<div class="card-body"><div class="card-topline"><h3 class="card-title">Samsung Pakistan Retail Sales Channel Performance</h3><span aria-hidden="true" class="arrow-mark">↗</span></div><p class="card-description">Built an interactive Power BI dashboard using KPIs, city-wise and monthly sales analysis, channel/product comparisons, cumulative growth, return rates, and repeat-customer metrics, with filters for date, city, and channel.</p><div class="tags"><span class="tag">Power BI</span><span class="tag">DAX</span></div><details class="project-details"><summary>Project details <i aria-hidden="true" class="fas fa-chevron-down"></i></summary><div class="detail-content"><strong>Business challenge</strong><p>Evaluate Samsung Pakistan's retail sales performance across cities, sales channels, products, categories, and customer behavior to identify revenue drivers, growth trends, and areas requiring improvement.</p><strong>Findings</strong><p>Karachi shows the highest city-level revenue, while the Experience Store contributes the largest channel share (45%). Mobile products dominate category revenue (60%), with Galaxy Z Fold 5 as the top revenue-generating product. The overall return rate is 3.1%, while repeat customers account for 18.5%, indicating an opportunity to improve customer retention and repeat purchases.</p></div></details><a class="card-link" href="https://github.com/khurraminsights/Samsung-Pakistan-Retail-Sales-Channel-Performance-Analytics-SQL-Project-" rel="noopener noreferrer" target="_blank">View project on GitHub <i aria-hidden="true" class="fas fa-arrow-up-right-from-square"></i></a></div>
+</article>
+<!-- ============ EXISTING PROJECT: XEVEN SOLUTIONS ============ -->
+<article class="card" data-category="sql">
+<div class="card-media">
+<span class="card-badge">SQL</span>
+<img alt="Business Insights for Xeven Solutions dashboard showing resource utilization and AI adoption" loading="lazy" src="xeven.jpg"/>
+<span aria-hidden="true" class="view-hint">
+<svg fill="none" height="18" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="18"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3"></path><path d="M11 8v6M8 11h6"></path></svg>
+            View Full Size
+          </span></div>
+<div class="card-body"><div class="card-topline"><h3 class="card-title">Business Insights for Xeven Solutions Using SQL</h3><span aria-hidden="true" class="arrow-mark">↗</span></div><p class="card-description">Used SQL Server to join and analyze 5 normalized tables using JOINs, aggregations, CTEs, window functions, and conditional logic, then built a Power BI dashboard with a star schema and DAX measures for utilization, margins, cost per FTE, and AI penetration.</p><div class="tags"><span class="tag">SQL Server</span></div><details class="project-details"><summary>Project details <i aria-hidden="true" class="fas fa-chevron-down"></i></summary><div class="detail-content"><strong>Business challenge</strong><p>Xeven Solutions lacked a centralized analytics view to identify project delivery issues, resource utilization gaps, client profitability, and AI product adoption opportunities.</p><strong>Findings</strong><p>Identified 15 paused projects locking ₹6.7M in idle budget, 8 projects that could restart within 30 days, and an opportunity to redeploy 6 idle engineers to rescue ₹8M in at-risk revenue. Healthcare generated 41% of total revenue but had only 44% AI-tool penetration, while the project recommendations projected ₹9.3M EBIT uplift within 180 days.</p></div></details><a class="card-link" href="https://github.com/khurraminsights/Business-Insights-for-Xeven-Solutions-Using-SQL" rel="noopener noreferrer" target="_blank">View project on GitHub <i aria-hidden="true" class="fas fa-arrow-up-right-from-square"></i></a></div>
+</article>
+<!-- ============ SQL PROJECT 1 ============ -->
+<article class="card" data-category="powerbi">
+<div class="card-media">
+<span class="card-badge">Power BI</span>
+<img alt="Amazon E-Commerce Power BI dashboard showing revenue, profit, and category performance" loading="lazy" src="AmazonPowerBI.png"/>
+<span aria-hidden="true" class="view-hint">
+<svg fill="none" height="18" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="18"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3"></path><path d="M11 8v6M8 11h6"></path></svg>
+            View Full Size
+          </span></div>
+<div class="card-body"><div class="card-topline"><h3 class="card-title">Amazon E-Commerce SQL &amp; Power BI Analysis</h3><span aria-hidden="true" class="arrow-mark">↗</span></div><p class="card-description">Designed a full e-commerce database schema in SQL Server (ER diagram, joins, window functions, CTEs) and layered a star-schema Power BI dashboard with DAX KPIs on top.</p><div class="tags"><span class="tag">SQL Server</span><span class="tag">Power BI</span><span class="tag">DAX</span></div><details class="project-details"><summary>Project details <i aria-hidden="true" class="fas fa-chevron-down"></i></summary><div class="detail-content"><strong>Business challenge</strong><p>Leadership had no unified view of revenue, product profitability, or regional performance — no way to see which products were high-margin vs. high-volume.</p><strong>Findings</strong><p>Analyzed $1.2M revenue, $250K profit (20.8% margin). Electronics was most profitable and North America drove 60%+ of sales — but margin dropped 2.8% month-over-month, flagging a cost/discount issue.</p></div></details><a class="card-link" href="https://github.com/khurraminsights/Amazon-E-Commerce-SQL-Project" rel="noopener noreferrer" target="_blank">View project on GitHub <i aria-hidden="true" class="fas fa-arrow-up-right-from-square"></i></a></div>
+</article>
+<!-- ============ SQL PROJECT 2 ============ -->
+<article class="card" data-category="sql">
+<div class="card-media">
+<span class="card-badge">SQL</span>
+<img alt="Netflix movies and TV shows SQL data analysis project cover" loading="lazy" src="netflix.jpg"/>
+<span aria-hidden="true" class="view-hint">
+<svg fill="none" height="18" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="18"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3"></path><path d="M11 8v6M8 11h6"></path></svg>
+            View Full Size
+          </span></div>
+<div class="card-body"><div class="card-topline"><h3 class="card-title">Netflix Movies &amp; TV Shows Data Analysis</h3><span aria-hidden="true" class="arrow-mark">↗</span></div><p class="card-description">Used SQL (GROUP BY, window functions like RANK(), string/array functions, CTEs) across 15 real business questions, from content-type counts to keyword-based content categorization.</p><div class="tags"><span class="tag">SQL</span></div><details class="project-details"><summary>Project details <i aria-hidden="true" class="fas fa-chevron-down"></i></summary><div class="detail-content"><strong>Business challenge</strong><p>Needed to answer business questions about Netflix's content library — content-type mix, top ratings, regional distribution, and genre trends — from a large, unstructured dataset.</p><strong>Findings</strong><p>Identified the most common content ratings and genres, the top content-producing countries, and flagged content by keyword sentiment — demonstrating strong SQL fundamentals for content-strategy analysis.</p></div></details><a class="card-link" href="https://github.com/khurraminsights/Netflix_Movies_Data_Analysis-" rel="noopener noreferrer" target="_blank">View project on GitHub <i aria-hidden="true" class="fas fa-arrow-up-right-from-square"></i></a></div>
+</article>
+<!-- ============ SQL PROJECT 3 ============ -->
+<article class="card" data-category="sql">
+<div class="card-media">
+<span class="card-badge">SQL</span>
+<img alt="Spotify tracks and artists SQL data analysis project cover" loading="lazy" src="Spotify.jpg"/>
+<span aria-hidden="true" class="view-hint">
+<svg fill="none" height="18" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="18"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3"></path><path d="M11 8v6M8 11h6"></path></svg>
+            View Full Size
+          </span></div>
+<div class="card-body"><div class="card-topline"><h3 class="card-title">Spotify Data Analysis using SQL</h3><span aria-hidden="true" class="arrow-mark">↗</span></div><p class="card-description">Normalized the dataset for data integrity, then wrote SQL queries of increasing complexity — filters, window functions, subqueries, CTEs — plus query optimization with indexing and EXPLAIN ANALYZE.</p><div class="tags"><span class="tag">SQL</span></div><details class="project-details"><summary>Project details <i aria-hidden="true" class="fas fa-chevron-down"></i></summary><div class="detail-content"><strong>Business challenge</strong><p>A large, denormalized Spotify dataset (tracks, albums, artists, engagement metrics) needed to be structured and queried to uncover listening trends and platform preferences.</p><strong>Findings</strong><p>Found tracks with 1B+ streams, ranked the top 3 most-viewed tracks per artist using window functions, and identified tracks that streamed more on Spotify than YouTube.</p></div></details><a class="card-link" href="https://github.com/khurraminsights/Spotify-Data-Analysis-using-SQL" rel="noopener noreferrer" target="_blank">View project on GitHub <i aria-hidden="true" class="fas fa-arrow-up-right-from-square"></i></a></div>
+</article>
+<!-- ============ SQL PROJECT 4 ============ -->
+<article class="card" data-category="sql">
+<div class="card-media">
+<span class="card-badge">SQL</span>
+<img alt="Tesla Motors operational data SQL Server analysis project cover" loading="lazy" src="Tesla.png"/>
+<span aria-hidden="true" class="view-hint">
+<svg fill="none" height="18" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="18"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3"></path><path d="M11 8v6M8 11h6"></path></svg>
+            View Full Size
+          </span></div>
+<div class="card-body"><div class="card-topline"><h3 class="card-title">Analyzing Tesla Motors Insights (SQL Server)</h3><span aria-hidden="true" class="arrow-mark">↗</span></div><p class="card-description">Queried a 5-domain relational SQL Server database — handling complex joins, inconsistent feedback data, and missing values — to connect sales trends with service and inventory data.</p><div class="tags"><span class="tag">SQL Server</span></div><details class="project-details"><summary>Project details <i aria-hidden="true" class="fas fa-chevron-down"></i></summary><div class="detail-content"><strong>Business challenge</strong><p>Tesla needed cross-domain visibility across Sales, Inventory, Customer Feedback, and Service Records to catch inefficiencies before they hurt the business.</p><strong>Findings</strong><p>Model X had the highest sales, peaking in Q2 and Q4. Models with higher service frequency had lower ratings — driven by battery issues and software bugs — recommending predictive maintenance and OTA updates.</p></div></details><a class="card-link" href="https://github.com/khurraminsights/Analyzing-Tesla-Motors-Insights-from-SQL-Server-Project" rel="noopener noreferrer" target="_blank">View project on GitHub <i aria-hidden="true" class="fas fa-arrow-up-right-from-square"></i></a></div>
+</article>
+<!-- ============ SQL PROJECT 5 ============ -->
+<article class="card" data-category="sql">
+<div class="card-media">
+<span class="card-badge">SQL</span>
+<img alt="Jazz Telecom customer behavior and revenue SQL analysis dashboard" loading="lazy" src="Jazz%20Telecom%20Data%20Analysis%20Dashboard.jpg"/>
+<span aria-hidden="true" class="view-hint">
+<svg fill="none" height="18" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="18"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3"></path><path d="M11 8v6M8 11h6"></path></svg>
+            View Full Size
+          </span></div>
+<div class="card-body"><div class="card-topline"><h3 class="card-title">Jazz Telecom — Customer Behavior &amp; Revenue Optimization</h3><span aria-hidden="true" class="arrow-mark">↗</span></div><p class="card-description">Solved 12 business questions in SQL Server using aggregations, window functions (ROW_NUMBER(), NTILE()), CTEs, and date logic across ARPU, churn, and plan-migration data.</p><div class="tags"><span class="tag">SQL Server</span></div><details class="project-details"><summary>Project details <i aria-hidden="true" class="fas fa-chevron-down"></i></summary><div class="detail-content"><strong>Business challenge</strong><p>Jazz Pakistan needed to detect early churn signals, understand usage trends, and identify top revenue segments — pain points common across telecom operators.</p><strong>Findings</strong><p>Data usage is rising faster than call minutes, postpaid users have higher ARPU than prepaid, and some customers showed zero activity for 2+ months — a clear churn signal for retention teams.</p></div></details><a class="card-link" href="https://github.com/khurraminsights/Jazz-Telecom-SQL-Project-" rel="noopener noreferrer" target="_blank">View project on GitHub <i aria-hidden="true" class="fas fa-arrow-up-right-from-square"></i></a></div>
+</article>
+<!-- ============ SQL PROJECT 6 ============ -->
+<article class="card" data-category="sql">
+<div class="card-media">
+<span class="card-badge">SQL</span>
+<img alt="Kap's Café SQL analytics project showing monthly revenue trends" loading="lazy" src="Kap%E2%80%99s%20Caf%C3%A9%20%E2%80%93%20SQL%20Analytics%20Project.jpg"/>
+<span aria-hidden="true" class="view-hint">
+<svg fill="none" height="18" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="18"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3"></path><path d="M11 8v6M8 11h6"></path></svg>
+            View Full Size
+          </span></div>
+<div class="card-body"><div class="card-topline"><h3 class="card-title">Kap's Café — SQL Analytics Project</h3><span aria-hidden="true" class="arrow-mark">↗</span></div><p class="card-description">Used SQL Server's LAG() window function for month-over-month (MoM) comparative analysis across revenue, order count, and quantity sold.</p><div class="tags"><span class="tag">SQL Server</span></div><details class="project-details"><summary>Project details <i aria-hidden="true" class="fas fa-chevron-down"></i></summary><div class="detail-content"><strong>Business challenge</strong><p>Café management was making decisions with zero visibility into monthly revenue, order volume trends, or product demand shifts, despite having raw transaction data.</p><strong>Findings</strong><p>Some months held steady revenue despite fewer orders — a premium-pricing effect — while other months showed sharp order/revenue volatility tied to seasonality, informing promotion timing.</p></div></details><a class="card-link" href="https://github.com/khurraminsights/Kap-s-Caf-SQL-Analytics-Project" rel="noopener noreferrer" target="_blank">View project on GitHub <i aria-hidden="true" class="fas fa-arrow-up-right-from-square"></i></a></div>
+</article>
+<!-- ============ SQL PROJECT 7 ============ -->
+<article class="card" data-category="sql">
+<div class="card-media">
+<span class="card-badge">SQL</span>
+<img alt="Ola NZ ride-hailing performance SQL and Power BI analysis" loading="lazy" src="ola_sql.jpg"/>
+<span aria-hidden="true" class="view-hint">
+<svg fill="none" height="18" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="18"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3"></path><path d="M11 8v6M8 11h6"></path></svg>
+            View Full Size
+          </span></div>
+<div class="card-body"><div class="card-topline"><h3 class="card-title">Ola NZ — Ride-Hailing Performance Analysis &amp; Strategy</h3><span aria-hidden="true" class="arrow-mark">↗</span></div><p class="card-description">Built a star-schema SQL Server model (fact/dimension tables for bookings, ratings, drivers, customers) using joins, CTEs, window functions, and stored procedures, visualized in Power BI.</p><div class="tags"><span class="tag">SQL Server</span><span class="tag">Power BI</span></div><details class="project-details"><summary>Project details <i aria-hidden="true" class="fas fa-chevron-down"></i></summary><div class="detail-content"><strong>Business challenge</strong><p>Ola's New Zealand operations faced high cancellations, uneven driver utilization, and revenue stagnation with no data-driven diagnosis in place.</p><strong>Findings</strong><p>Wellington's cancellation rate (~18%) was nearly double Auckland's; top 10% of drivers earned 3x the average; EVs had the highest fare-per-km — projecting a NZD 3.1M+ opportunity if cancellations dropped to 15%.</p></div></details><a class="card-link" href="https://github.com/khurraminsights/Ola-NZ-Ride-Hailing-Performance-Analysis-Strategy" rel="noopener noreferrer" target="_blank">View project on GitHub <i aria-hidden="true" class="fas fa-arrow-up-right-from-square"></i></a></div>
+</article>
+<!-- ============ SQL PROJECT 8 ============ -->
+<article class="card" data-category="sql">
+<div class="card-media">
+<span class="card-badge">SQL</span>
+<img alt="Freelancer earnings tracker in Pakistan SQL project cover" loading="lazy" src="Freelancer.jpeg"/>
+<span aria-hidden="true" class="view-hint">
+<svg fill="none" height="18" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="18"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3"></path><path d="M11 8v6M8 11h6"></path></svg>
+            View Full Size
+          </span></div>
+<div class="card-body"><div class="card-topline"><h3 class="card-title">Freelancer Earnings Tracker in Pakistan</h3><span aria-hidden="true" class="arrow-mark">↗</span></div><p class="card-description">Designed an 8-table normalized SQL Server schema (freelancers, projects, reviews, skills, earnings, platforms, category, clients) and solved 10 business questions using window functions.</p><div class="tags"><span class="tag">SQL Server</span></div><details class="project-details"><summary>Project details <i aria-hidden="true" class="fas fa-chevron-down"></i></summary><div class="detail-content"><strong>Business challenge</strong><p>Pakistani freelancers had no structured way to track earnings, skills, or platform performance to make data-driven career decisions.</p><strong>Findings</strong><p>Top 20% of freelancers earn 60%+ of total revenue. SEO, Web Development, and Digital Marketing were the top-paying skills; Upwork paid best while Fiverr suited beginners.</p></div></details><a class="card-link" href="https://github.com/khurraminsights/Freelancer-Earnings-Tracker-in-Pakistan-SQL-Portfolio-Project" rel="noopener noreferrer" target="_blank">View project on GitHub <i aria-hidden="true" class="fas fa-arrow-up-right-from-square"></i></a></div>
+</article>
+<!-- ============ POWER BI PROJECT 2 ============ -->
+<article class="card" data-category="powerbi">
+<div class="card-media">
+<span class="card-badge">Power BI</span>
+<img alt="Bank customer churn analysis Power BI dashboard" loading="lazy" src="bank_customer.png"/>
+<span aria-hidden="true" class="view-hint">
+<svg fill="none" height="18" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="18"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3"></path><path d="M11 8v6M8 11h6"></path></svg>
+            View Full Size
+          </span></div>
+<div class="card-body"><div class="card-topline"><h3 class="card-title">Bank Customer Churn Analysis</h3><span aria-hidden="true" class="arrow-mark">↗</span></div><p class="card-description">Built a Power BI dashboard with DAX measures analyzing demographics, product usage, geography, credit score, and balance patterns.</p><div class="tags"><span class="tag">Power BI</span><span class="tag">DAX</span></div><details class="project-details"><summary>Project details <i aria-hidden="true" class="fas fa-chevron-down"></i></summary><div class="detail-content"><strong>Business challenge</strong><p>A bank was losing customers but had no visibility into who was churning, why, or which segments were most at risk.</p><strong>Findings</strong><p>Highest churn was ages 31–40 and in France/Spain (~40% each). Product 4 had ~69% churn vs. Product 1 (lowest) — leading to a segment-based retention and product-redesign strategy.</p></div></details><a class="card-link" href="https://github.com/khurraminsights/Customer-Churn-Analysis-Report" rel="noopener noreferrer" target="_blank">View project on GitHub <i aria-hidden="true" class="fas fa-arrow-up-right-from-square"></i></a></div>
+</article>
+<!-- ============ POWER BI PROJECT 3 ============ -->
+<article class="card" data-category="powerbi">
+<div class="card-media">
+<span class="card-badge">Power BI</span>
+<img alt="X-Mart sales dashboard 2020 to 2022 in Power BI" loading="lazy" src="X-Mart%20Sales%20Dashboar.jpg"/>
+<span aria-hidden="true" class="view-hint">
+<svg fill="none" height="18" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="18"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3"></path><path d="M11 8v6M8 11h6"></path></svg>
+            View Full Size
+          </span></div>
+<div class="card-body"><div class="card-topline"><h3 class="card-title">X-Mart Sales Dashboard (2020–2022)</h3><span aria-hidden="true" class="arrow-mark">↗</span></div><p class="card-description">Built a Power BI dashboard with DAX KPIs across categories, brands, regions, and supervisors from 5,095 transactions.</p><div class="tags"><span class="tag">Power BI</span><span class="tag">DAX</span></div><details class="project-details"><summary>Project details <i aria-hidden="true" class="fas fa-chevron-down"></i></summary><div class="detail-content"><strong>Business challenge</strong><p>X-Mart, a multinational electronics retailer, needed a consolidated view of sales, cost, and profit performance across 3 years to guide inventory and marketing decisions.</p><strong>Findings</strong><p>Total sales reached $99M with $23M profit. Monitors, Mice, CPUs, and Graphic Cards were top revenue drivers; Intel (19%), Samsung (16%), and Dell (14%) dominated brand sales.</p></div></details><a class="card-link" href="https://github.com/khurraminsights/X-Mart-Sales-Dashboard-" rel="noopener noreferrer" target="_blank">View project on GitHub <i aria-hidden="true" class="fas fa-arrow-up-right-from-square"></i></a></div>
+</article>
+<!-- ============ POWER BI PROJECT 4 ============ -->
+<article class="card" data-category="powerbi">
+<div class="card-media">
+<span class="card-badge">Power BI</span>
+<img alt="EdTech online courses analysis Power BI dashboard" loading="lazy" src="edtech.png"/>
+<span aria-hidden="true" class="view-hint">
+<svg fill="none" height="18" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="18"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3"></path><path d="M11 8v6M8 11h6"></path></svg>
+            View Full Size
+          </span></div>
+<div class="card-body"><div class="card-topline"><h3 class="card-title">EdTech Online Courses Analysis</h3><span aria-hidden="true" class="arrow-mark">↗</span></div><p class="card-description">Built a Power BI dashboard analyzing course type distribution, views by category/language, subtitle impact, and course duration vs. viewership.</p><div class="tags"><span class="tag">Power BI</span></div><details class="project-details"><summary>Project details <i aria-hidden="true" class="fas fa-chevron-down"></i></summary><div class="detail-content"><strong>Business challenge</strong><p>An EdTech platform needed to understand which course formats, languages, and content types actually drive engagement to guide content strategy.</p><strong>Findings</strong><p>Courses dominated at 746 instances; English made up 95.91% of content; courses with 1–2 subtitles and 200–400 hours of content saw the highest engagement.</p></div></details><a class="card-link" href="https://github.com/khurraminsights/EdTech-Online-Courses-Analysis" rel="noopener noreferrer" target="_blank">View project on GitHub <i aria-hidden="true" class="fas fa-arrow-up-right-from-square"></i></a></div>
+</article>
+<!-- ============ POWER BI PROJECT 5 ============ -->
+<article class="card" data-category="powerbi">
+<div class="card-media">
+<span class="card-badge">Power BI</span>
+<img alt="Pakistan e-commerce analytics dashboard 2022 to 2024" loading="lazy" src="pakistan_ecommerce.png"/>
+<span aria-hidden="true" class="view-hint">
+<svg fill="none" height="18" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="18"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3"></path><path d="M11 8v6M8 11h6"></path></svg>
+            View Full Size
+          </span></div>
+<div class="card-body"><div class="card-topline"><h3 class="card-title">Pakistan E-Commerce Analytics Dashboard (2022–2024)</h3><span aria-hidden="true" class="arrow-mark">↗</span></div><p class="card-description">Used SQL Server (CTEs, window functions) for data modeling plus Power BI/DAX for an end-to-end analytics dashboard across a 5-table relational schema.</p><div class="tags"><span class="tag">SQL Server</span><span class="tag">Power BI</span><span class="tag">DAX</span></div><details class="project-details"><summary>Project details <i aria-hidden="true" class="fas fa-chevron-down"></i></summary><div class="detail-content"><strong>Business challenge</strong><p>Pakistani e-commerce operations and strategy teams lacked visibility into revenue drivers, city-level performance, and profit margin leakage.</p><strong>Findings</strong><p>Electronics drove 64% of revenue but only 19–24% margin, while Fashion/Footwear hit 34–38% margins. Top 3 customers made up 51% of revenue — a concentration risk.</p></div></details><a class="card-link" href="https://github.com/khurraminsights/Pakistan-E-Commerce-Analytics-Dashboard-2022-2024-" rel="noopener noreferrer" target="_blank">View project on GitHub <i aria-hidden="true" class="fas fa-arrow-up-right-from-square"></i></a></div>
+</article>
+<!-- ============ POWER BI PROJECT 6 ============ -->
+<article class="card" data-category="powerbi">
+<div class="card-media">
+<span class="card-badge">Power BI</span>
+<img alt="I-Point sales performance dashboard in Power BI" loading="lazy" src="i-point.jpg"/>
+<span aria-hidden="true" class="view-hint">
+<svg fill="none" height="18" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="18"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3"></path><path d="M11 8v6M8 11h6"></path></svg>
+            View Full Size
+          </span></div>
+<div class="card-body"><div class="card-topline"><h3 class="card-title">I-Point Sales Performance Dashboard</h3><span aria-hidden="true" class="arrow-mark">↗</span></div><p class="card-description">Analyzed 4 years of sales data in SQL/Power BI (star schema, DAX) across segments, regions, categories, and discount levels to trace the margin problem.</p><div class="tags"><span class="tag">SQL</span><span class="tag">Power BI</span><span class="tag">DAX</span></div><details class="project-details"><summary>Project details <i aria-hidden="true" class="fas fa-chevron-down"></i></summary><div class="detail-content"><strong>Business challenge</strong><p>I-Point's leadership saw 4 years of strong revenue growth (2011–2014) but flat profit margins, with no visibility into the root cause.</p><strong>Findings</strong><p>Uncovered a "Discount Squeeze": revenue grew 304% ($0.57M → $2.30M) but avg. discount doubled, stalling margin. A 90-day action plan projected ~$108K EBIT uplift.</p></div></details><a class="card-link" href="https://github.com/khurraminsights/I-Point-Sales-Performance-Dashboard-" rel="noopener noreferrer" target="_blank">View project on GitHub <i aria-hidden="true" class="fas fa-arrow-up-right-from-square"></i></a></div>
+</article>
+<!-- ============ POWER BI PROJECT 9 ============ -->
+<article class="card" data-category="powerbi">
+<div class="card-media">
+<span class="card-badge">Power BI</span>
+<img alt="Global terrorism analysis dashboard 1970 to 2017 in Power BI" loading="lazy" src="Global%20terrorism%20Analysis%20Dashboard.jpg"/>
+<span aria-hidden="true" class="view-hint">
+<svg fill="none" height="18" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="18"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3"></path><path d="M11 8v6M8 11h6"></path></svg>
+            View Full Size
+          </span></div>
+<div class="card-body"><div class="card-topline"><h3 class="card-title">Global Terrorism Analysis Dashboard (1970–2017)</h3><span aria-hidden="true" class="arrow-mark">↗</span></div><p class="card-description">Used SQL Server (aggregations, GROUP BY, JOINs, category standardization) plus an interactive Power BI dashboard with map visuals and time-series trend analysis.</p><div class="tags"><span class="tag">SQL Server</span><span class="tag">Power BI</span></div><details class="project-details"><summary>Project details <i aria-hidden="true" class="fas fa-chevron-down"></i></summary><div class="detail-content"><strong>Business challenge</strong><p>96,000+ terrorism records across 47 years were too unstructured to reveal regional hotspots, high-risk groups, or attack trends for security planning.</p><strong>Findings</strong><p>Taliban identified as the most deadly group; explosives were the most-used weapon; South Asia was the highest-risk region; 2017 recorded the peak number of attacks.</p></div></details><a class="card-link" href="https://github.com/khurraminsights/Global-Terrorism-Analysis-Dashboard-Report" rel="noopener noreferrer" target="_blank">View project on GitHub <i aria-hidden="true" class="fas fa-arrow-up-right-from-square"></i></a></div>
+</article>
+<article class="card" data-category="excel">
+<div aria-label="View full size dashboard: Road Accident Analysis — Excel Dashboard" class="card-media" role="button" tabindex="0">
+<span class="card-badge"><i aria-hidden="true" class="fas fa-file-excel"></i> Excel</span>
+<img alt="Excel road accident dashboard with casualty trends, vehicle types, road conditions and location analysis" loading="lazy" src="Road Accident Dashboard.jpg"/>
+<span aria-hidden="true" class="view-hint"><i class="fas fa-magnifying-glass-plus"></i> View Full Size</span>
+</div>
+<div class="card-body">
+<div class="card-topline"><h3 class="card-title">Road Accident Analysis — Excel Dashboard</h3><span aria-hidden="true" class="arrow-mark">↗</span></div>
+<p class="card-description">Interactive Excel dashboard analyzing road accident casualties by severity, vehicle type, road surface, road type, location, and light conditions.</p>
+<div class="tags"><span class="tag">Microsoft Excel</span><span class="tag">Dashboard</span><span class="tag">Trend Analysis</span></div>
+<details class="project-details"><summary>Project details <i aria-hidden="true" class="fas fa-chevron-down"></i></summary>
+<div class="detail-content"><strong>Business challenge</strong><p>Road safety data can be difficult to compare across time periods, locations, accident severity and road conditions without a consolidated view.</p><strong>Analytical approach</strong><p>Built an Excel dashboard combining KPI cards, comparative trend charts, categorical visuals, and interactive date and urban/rural filters.</p><strong>Findings &amp; value</strong><p>The dashboard displays 417,883 recorded casualties and indicates cars account for the largest vehicle-type total shown. It also allows comparisons by severity, year, road type and surface condition.</p></div></details>
+<a class="card-link" href="https://github.com/khurraminsights/Road-Accident-Dashboard-In-Excel" rel="noopener noreferrer" target="_blank">View project on GitHub <i aria-hidden="true" class="fas fa-arrow-up-right-from-square"></i></a>
+</div></article><article class="card" data-category="excel">
+<div aria-label="View full size dashboard: Call Centre — Performance Analysis Dashboard" class="card-media" role="button" tabindex="0">
+<span class="card-badge"><i aria-hidden="true" class="fas fa-file-excel"></i> Excel</span>
+<img alt="Excel call centre analytics dashboard showing call trends, agent performance, ratings and call amounts" loading="lazy" src="Call Centre Data Analysis Excel Project.jpg"/>
+<span aria-hidden="true" class="view-hint"><i class="fas fa-magnifying-glass-plus"></i> View Full Size</span>
+</div>
+<div class="card-body">
+<div class="card-topline"><h3 class="card-title">Call Centre — Performance Analysis Dashboard</h3><span aria-hidden="true" class="arrow-mark">↗</span></div>
+<p class="card-description">Excel analysis of call volumes, representative performance, customer ratings, caller demographics and amount collected, supported by interactive charts.</p>
+<div class="tags"><span class="tag">Microsoft Excel</span><span class="tag">Pivot Tables</span><span class="tag">Slicers</span></div>
+<details class="project-details"><summary>Project details <i aria-hidden="true" class="fas fa-chevron-down"></i></summary>
+<div class="detail-content"><strong>Business challenge</strong><p>Call centre leaders need a unified view of workload, representative effectiveness, customer satisfaction and sales performance to identify areas for improvement.</p><strong>Analytical approach</strong><p>Designed an Excel dashboard with Pivot Tables, trend charts, representative comparisons, slicers and conditional data visualizations for rapid performance review.</p><strong>Findings &amp; value</strong><p>The dashboard compares 5 representatives and includes monthly call trends, caller gender analysis, agent call volumes and a customer rating KPI. Recommendations can target agent coaching and service quality.</p></div></details>
+<a class="card-link" href="https://github.com/khurraminsights/Call-Centre-Data-Analysis-Dashboard-" rel="noopener noreferrer" target="_blank">View project on GitHub <i aria-hidden="true" class="fas fa-arrow-up-right-from-square"></i></a>
+</div></article><article class="card" data-category="excel">
+<div aria-label="View full size dashboard: Coffee Sales — Excel Business Intelligence Dashboard" class="card-media" role="button" tabindex="0">
+<span class="card-badge"><i aria-hidden="true" class="fas fa-file-excel"></i> Excel</span>
+<img alt="Excel coffee sales dashboard showing 2019 to 2022 sales trends, country performance and top customers" loading="lazy" src="Coffee Sales Dashboard.jpg"/>
+<span aria-hidden="true" class="view-hint"><i class="fas fa-magnifying-glass-plus"></i> View Full Size</span>
+</div>
+<div class="card-body">
+<div class="card-topline"><h3 class="card-title">Coffee Sales — Excel Business Intelligence Dashboard</h3><span aria-hidden="true" class="arrow-mark">↗</span></div>
+<p class="card-description">Explored coffee sales trends from 2019–2022, geographic performance, top customers, roast types and purchase preferences in an interactive Excel dashboard.</p>
+<div class="tags"><span class="tag">Microsoft Excel</span><span class="tag">Pivot Tables</span><span class="tag">Sales Analytics</span></div>
+<details class="project-details"><summary>Project details <i aria-hidden="true" class="fas fa-chevron-down"></i></summary>
+<div class="detail-content"><strong>Business challenge</strong><p>Sales teams need to understand seasonal trends, customer concentration, product preferences and differences among country markets.</p><strong>Analytical approach</strong><p>Used Excel Pivot Tables, timeline filtering, slicers and dynamic line/bar charts to examine sales by date, country, customer, roast type, size and loyalty status.</p><strong>Findings &amp; value</strong><p>The dashboard compares the United States, United Kingdom and Ireland, and highlights a top-five customer group. Its time-series and category filters support decisions on promotion timing, product mix and customer retention.</p></div></details>
+<a class="card-link" href="https://github.com/khurraminsights/Coffee-Sales-Dashboard" rel="noopener noreferrer" target="_blank">View project on GitHub <i aria-hidden="true" class="fas fa-arrow-up-right-from-square"></i></a>
+</div></article><p class="no-results" id="noResults">No projects match this filter yet.</p>
+</div>
+</section>
+<section class="cta">
+<h2>Want to see more?</h2>
+<p>Explore the full source code, SQL scripts, and dashboard files for every project on GitHub.</p>
+<a class="btn-primary" href="https://github.com/khurraminsights" rel="noopener" target="_blank">
+      Visit GitHub
+      <svg fill="none" height="16" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="16"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+</a>
+</section>
+</main>
+<footer>
+  © 2026 Khurram Naveed. Built with SQL, Power BI, and a lot of curiosity.
+   ·  <a href="mailto:khurramnaveed4545@gmail.com">Get in touch</a>
+</footer>
+<div aria-label="Full size project image" aria-modal="true" class="lightbox" id="lightbox" role="dialog">
+<div class="lightbox-inner">
+<button aria-label="Close full size image" class="lightbox-close" id="lightboxClose">
+<svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><path d="M6 6l12 12M18 6L6 18"></path></svg>
+</button>
+<img alt="" id="lightboxImg" src=""/>
+<p class="lightbox-caption" id="lightboxCaption"></p>
+</div>
+</div>
+<script>
+(()=>{
+const cards=[...document.querySelectorAll('#projectGrid .card')];
+const buttons=[...document.querySelectorAll('.filter-btn')];
+const empty=document.getElementById('noResults');
+buttons.forEach(btn=>btn.addEventListener('click',()=>{
+ buttons.forEach(b=>{b.classList.remove('active');b.setAttribute('aria-pressed','false')});
+ btn.classList.add('active');btn.setAttribute('aria-pressed','true');
+ const selected=btn.dataset.filter;
+ let visible=0;
+ cards.forEach(card=>{
+   const show=selected==='all'||card.dataset.category===selected;
+   card.hidden=!show;
+   card.style.display=show?'flex':'none';
+   if(show) visible++;
+ });
+ const resultCounter=document.getElementById('filterCount');
+ if(resultCounter) resultCounter.textContent=selected==='all'
+   ? `Showing all ${visible} projects`
+   : `Showing ${visible} ${selected==='powerbi'?'Power BI':selected==='sql'?'SQL':'Excel / Sheets'} projects`;
+ if(empty) empty.style.display=visible?'none':'block';
+}));
+const hamburger=document.querySelector('.hamburger'),nav=document.querySelector('.nav-links');
+function closeMenu(){nav.classList.remove('active');hamburger.setAttribute('aria-expanded','false');hamburger.setAttribute('aria-label','Open navigation')}
+hamburger.addEventListener('click',()=>{const open=nav.classList.toggle('active');hamburger.setAttribute('aria-expanded',String(open));hamburger.setAttribute('aria-label',open?'Close navigation':'Open navigation')});
+nav.addEventListener('click',e=>{if(e.target.closest('a'))closeMenu()});
+document.addEventListener('click',e=>{if(!e.target.closest('.navbar'))closeMenu()});
+const lightbox=document.getElementById('lightbox'),lightImg=document.getElementById('lightboxImg'),caption=document.getElementById('lightboxCaption'),close=document.getElementById('lightboxClose');
+let previousFocus=null;
+function dismiss(){lightbox.classList.remove('open');lightImg.removeAttribute('src');document.body.style.overflow='';previousFocus?.focus()}
+document.querySelectorAll('.card-media').forEach(media=>{media.setAttribute('tabindex','0');media.setAttribute('role','button');media.setAttribute('aria-label','Enlarge project screenshot');const open=()=>{const img=media.querySelector('img');if(!img)return;previousFocus=document.activeElement;lightImg.src=img.src;lightImg.alt=img.alt;caption.textContent=img.alt;lightbox.classList.add('open');document.body.style.overflow='hidden';close.focus()};media.addEventListener('click',open);media.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();open()}})});
+close.addEventListener('click',dismiss);lightbox.addEventListener('click',e=>{if(e.target===lightbox)dismiss()});document.addEventListener('keydown',e=>{if(e.key==='Escape'){if(lightbox.classList.contains('open'))dismiss();else closeMenu()}});
+})();
+</script>
+</body>
+</html>
+
 
