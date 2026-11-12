@@ -66,6 +66,24 @@ h1,h2,h3,.brand strong,.monogram,.hero h1,.section-name h2,.project-body h3,.cer
 @media(max-width:820px){.nav-links{background:#fff9f5;border-color:#ead5c9}.hero:after{background:linear-gradient(90deg,#fbf4eef7,#fbf4eecb 65%,#fbf4ee8a)}}
 @media(max-width:850px){.hero:after{background:linear-gradient(90deg,#fbf4eef5,#fbf4ee9e)}}
 </style>
+<style id="reference-navigation-style">
+/* Navigation typography and colors matched to the supplied reference. */
+.topbar{background:#fffaf6;border:1px solid #ead5c9;border-radius:60px;margin:12px 30px;box-shadow:0 12px 28px rgba(108,65,48,.07)}
+.topbar .nav{min-height:110px;width:calc(100% - 94px);max-width:none}
+.brand .monogram{display:none}
+.brand strong{font-family:'Playfair Display',Georgia,serif!important;font-size:30px;font-weight:600;letter-spacing:-1px;line-height:1.2;color:#35241e}
+.brand small{font-family:'Playfair Display',Georgia,serif;font-size:15px;letter-spacing:3px;color:#b28779;margin-top:10px}
+.nav-links{gap:clamp(18px,1.8vw,38px)}
+.nav-links a{font-family:'Playfair Display',Georgia,serif;font-size:22px;font-weight:600;color:#49352e;letter-spacing:-.4px}
+.nav-links a:hover,.nav-links a.active{color:#b2675d}
+.nav-links a.active:after,.nav-links a:hover:after{background:#b2675d;bottom:-10px;height:2px}
+.nav-actions{gap:25px}.social-icon{font-size:27px;color:#b2675d}.social-icon:hover{color:#914e46}
+.nav-actions .nav-cta{display:none}
+@media(max-width:1320px){.topbar .nav{width:calc(100% - 48px)}.nav-links a{font-size:18px}.nav-links{gap:18px}.nav-actions{gap:16px}.social-icon{font-size:22px}.brand strong{font-size:25px}}
+@media(max-width:1050px){.nav-links a{font-size:15px}.nav-links{gap:12px}.brand strong{font-size:21px}.brand small{font-size:11px}.social-icon{font-size:18px}}
+@media(max-width:820px){.topbar{margin:10px 15px;border-radius:28px}.topbar .nav{min-height:66px;width:calc(100% - 30px)}.brand strong{font-size:21px}.brand small{margin-top:3px}.nav-links{top:66px;left:0;right:0;border-radius:0 0 20px 20px;padding:16px 25px}.nav-links a{font-size:19px}.nav-links a.active:after,.nav-links a:hover:after{bottom:4px}.nav-actions{gap:12px}}
+@media(max-width:560px){.topbar{margin:8px}.topbar .nav{width:calc(100% - 24px)}.brand strong{font-size:19px}.brand small{font-size:10px}}
+</style>
 </head>
 <body>
 <header class="topbar"><div class="container nav"><a aria-label="Khurram Naveed homepage" class="brand" href="index.html"><span class="monogram">KN</span><span><strong>Khurram Naveed</strong><small>DATA ANALYST</small></span></a><nav aria-label="Main navigation"><ul class="nav-links" id="site-nav"><li><a aria-current="page" class="active" href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="projects.html">Projects</a></li><li><a href="skills.html">Skills</a></li><li><a href="certifications.html">Certifications</a></li><li><a href="contact.html">Contact</a></li></ul></nav><div class="nav-actions"><a aria-label="LinkedIn" class="social-icon" href="https://www.linkedin.com/in/khurram-naveed-0083851aa/" rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-linkedin"></i></a><a aria-label="GitHub" class="social-icon" href="https://github.com/Khurramnaveed3233/Portfolio" rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-github"></i></a><a aria-label="Email" class="social-icon" href="mailto:khurramnaveed4545@gmail.com"><i class="fa-solid fa-envelope"></i></a><a aria-label="Instagram" class="social-icon" href="https://www.instagram.com/khurram_insights/" rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-instagram"></i></a><a class="nav-cta" href="contact.html">Let's Connect   <i class="fa-solid fa-arrow-right"></i></a><button aria-controls="site-nav" aria-expanded="false" aria-label="Open menu" class="menu-btn" id="menu-btn" type="button"><i class="fa-solid fa-bars"></i></button></div></div></header>
@@ -80,5 +98,6 @@ h1,h2,h3,.brand strong,.monogram,.hero h1,.section-name h2,.project-body h3,.cer
 </main><footer class="footer"><div class="container footer-content"><div><h2>Let's Turn Your Data Into Opportunities</h2><p>Interested in my projects or discussing an analytics opportunity? Get in touch.</p></div><div class="footer-actions"><a class="btn btn-primary" href="contact.html">Contact Me <i class="fa-solid fa-arrow-right"></i></a><div class="footer-socials"><a aria-label="LinkedIn" href="https://www.linkedin.com/in/khurram-naveed-0083851aa/" rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-linkedin"></i></a><a aria-label="GitHub" href="https://github.com/Khurramnaveed3233/Portfolio" rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-github"></i></a><a aria-label="Email" href="mailto:khurramnaveed4545@gmail.com"><i class="fa-solid fa-envelope"></i></a></div></div></div><div class="copyright">© <span id="year">2026</span> Khurram Naveed · Data Analyst Portfolio</div></footer>
 <script>const toggle=document.getElementById('menu-btn'),links=document.getElementById('site-nav');function closeMenu(){links.classList.remove('open');toggle.setAttribute('aria-expanded','false');toggle.setAttribute('aria-label','Open menu');toggle.querySelector('i').className='fa-solid fa-bars'}toggle.addEventListener('click',()=>{let open=links.classList.toggle('open');toggle.setAttribute('aria-expanded',String(open));toggle.setAttribute('aria-label',open?'Close menu':'Open menu');toggle.querySelector('i').className=open?'fa-solid fa-xmark':'fa-solid fa-bars'});document.addEventListener('keydown',e=>{if(e.key==='Escape')closeMenu()});document.addEventListener('click',e=>{if(!e.target.closest('.topbar'))closeMenu()});links.addEventListener('click',e=>{if(e.target.closest('a'))closeMenu()});document.getElementById('year').textContent=new Date().getFullYear();</script>
 </body></html>
+
 
 
