@@ -107,7 +107,13 @@ h1,h2,h3,.brand strong,.monogram,.hero h1,.section-name h2,.project-body h3,.cer
 @media(max-width:992px){.navbar .hamburger{display:block}.navbar .container.nav-inner{padding:8px 18px}.navbar .nav-links{display:none;position:absolute;top:calc(100% + 12px);left:0;right:0;width:100%;height:auto;padding:20px;background:#fffaf6;border:1px solid #e8d4cb;border-radius:22px;box-shadow:0 12px 30px rgba(91,48,37,.12);flex-direction:column;gap:0}.navbar .nav-links.active{display:flex}.navbar .nav-links a{display:block;padding:12px}}
 @media(max-width:768px){.navbar{top:10px;width:94%}.navbar .container.nav-inner{padding:8px 14px}.navbar .social-icons{gap:8px}}
 @media(max-width:480px){.navbar{width:94%}.navbar .container.nav-inner{padding:7px 10px;gap:5px}.navbar .logo h2{font-size:.86rem}.navbar .logo span{font-size:.56rem}.navbar .nav-right{gap:4px}.navbar .social-icons{gap:4px}.navbar .social-icons a{font-size:1rem;min-width:22px}.navbar .hamburger{font-size:1.1rem;padding:6px}}
-</style></head>
+</style><style id="hero-portrait-position-fix">
+/* Keep the portrait below the floating navigation without changing other sections. */
+@media (min-width: 851px) {
+  .hero .hero-portrait { top: 62px; bottom: auto; height: calc(100% - 62px); object-position: center top; }
+}
+</style>
+</head>
 <body>
 <header class="navbar">
         <div class="container nav-inner">
