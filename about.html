@@ -7,6 +7,7 @@
     <link rel="icon" type="image/jpeg" href="Khurram Insights.jpeg">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
         :root {
             --bg:      #07030f;
@@ -769,6 +770,54 @@ a:focus-visible,button:focus-visible{outline:3px solid #179bff;outline-offset:5p
             .site-footer { display: block; }
         }
 
+
+/* Shared certification page design: cream, peach, and classic serif typography */
+:root {--bg:#fbf5ef;--surface:#fffaf6;--border:rgba(171,103,91,.20);--accent:#ae665b;--accent2:#c88879;--white:#2b201d;--muted:#77645e;--primary:#ae665b;--text-main:#2b201d;--text-muted:#77645e;--bg-dark:#fbf5ef;--border-glass:rgba(171,103,91,.20);--font-heading:'Playfair Display',Georgia,serif;--font-body:'Lora',Georgia,serif}
+html,body {background:#fbf5ef;color:#2b201d}
+body {font-family:'Lora',Georgia,serif}
+body::before {background:none!important}
+.orb {display:none!important}
+.navbar {background:rgba(255,250,246,.97);border:1px solid #e8d4cb;box-shadow:0 7px 28px rgba(91,48,37,.09);color:#2b201d}
+.logo h2 {font-family:'Playfair Display',Georgia,serif;color:#35241e;font-weight:600}
+.logo span {font-family:'Lora',Georgia,serif;color:#97756b}
+.nav-links a {font-family:'Lora',Georgia,serif;color:#59463e}
+.nav-links a:hover,.nav-links a.active {color:#ae665b}
+.nav-links a::after {background:#ae665b}
+.social-icons a,.social-icons .github,.social-icons .github:hover,.social-icons .linkedin,.social-icons .email,.social-icons .instagram {color:#ae665b}
+.social-icons a:hover,.social-icons .github:hover {color:#82463d}
+.hamburger {color:#ae665b}
+a:focus-visible,button:focus-visible {outline-color:#ae665b}
+@media(max-width:992px){.nav-links{background:#fffaf6;border-color:#e8d4cb;box-shadow:0 12px 30px rgba(91,48,37,.12)}}
+.about-section {background:linear-gradient(115deg,#f9ede5 0%,#fffaf6 58%,#fcefe5 100%)}
+.profile-img {border-color:#fffaf6;outline-color:#eac8ba;box-shadow:0 0 0 16px #f6e5da,0 0 0 18px #e9c8bb,0 22px 55px rgba(96,55,43,.16)}
+.img-ring-wrap::before {border-color:#e0b6a6}.img-ring-wrap::after {border-color:#edd4c9}
+.float-badge {background:rgba(255,250,246,.97);border-color:#e8d4cb;box-shadow:0 10px 28px rgba(91,48,37,.10)}
+.float-badge i,.float-badge-num {color:#ae665b}
+.float-badge-num,.main-title,.stat-num {font-family:'Playfair Display',Georgia,serif}
+.float-badge-label {color:#80685e;font-family:'Lora',Georgia,serif}
+.eyebrow {font-family:'Lora',Georgia,serif;color:#a65e51;border-color:#e8c9bd;background:#faeee7}
+.eyebrow span {background:#ae665b}
+.main-title {color:#2b201d;font-family:'Playfair Display',Georgia,serif;font-weight:600;letter-spacing:-.035em}
+.main-title em {background:none;-webkit-text-fill-color:#ae665b;color:#ae665b}
+.about-animated {color:#ae665b}
+.type-cursor {background:#ae665b}
+.desc-text {font-family:'Lora',Georgia,serif;color:#705b53}
+.tool-chip {font-family:'Lora',Georgia,serif;color:#755c53;background:#fffaf6;border-color:#e8d4cb}
+.tool-chip:hover {color:#9c5146;border-color:#ce9a8a;background:#faece3}
+.stat-card {background:rgba(255,250,246,.93);border-color:#e8d4cb;box-shadow:0 8px 24px rgba(91,48,37,.06)}
+.stat-card:hover {border-color:#d8a99a}
+.stat-card i,.stat-num {color:#ae665b;-webkit-text-fill-color:#ae665b;background:none}
+.stat-label {color:#80685e;font-family:'Lora',Georgia,serif}
+.btn-resume,.btn-connect {font-family:'Lora',Georgia,serif}
+.btn-resume {background:#ae665b;color:white}
+.btn-resume:hover {box-shadow:0 9px 22px rgba(174,102,91,.22)}
+.btn-connect {background:#fffaf6;border-color:#d9ac9e;color:#99574c}
+.btn-connect:hover {background:#f8e7dd;border-color:#ae665b;color:#874b40}
+.site-footer {background:#f8ede6;border-color:#e8d4cb}
+.copyright {color:#80685e}
+@media(min-width:769px){body{overflow-y:auto}.about-section{height:auto;min-height:100vh;overflow:visible}.about-container{height:auto;min-height:calc(100vh - 192px)}.float-badge{background:#fffaf6;border-color:#e4c3b6}.float-badge i{color:#ae665b}.profile-img{border-color:#fffaf6;outline-color:#eac8ba;box-shadow:0 0 0 16px #f6e5da,0 0 0 18px #e9c8bb,0 22px 55px rgba(96,55,43,.16)}.img-ring-wrap::before{border-color:#e0b6a6}.img-ring-wrap::after{border-color:#edd4c9}.btn-group{display:flex}.site-footer{display:block}}
+@media(max-width:768px){.about-section{background:linear-gradient(150deg,#f9ede5,#fffaf6)}.nav-links{background:#fffaf6!important}}
+
     </style>
 </head>
 <body>
@@ -838,8 +887,6 @@ a:focus-visible,button:focus-visible{outline:3px solid #179bff;outline-offset:5p
                     </div>
                 </div>
             </div>
-
-            <img src="Sig.png" alt="Khurram Naveed Signature" class="signature-img">
         </div>
 
         <!-- RIGHT: Content -->
@@ -955,6 +1002,7 @@ a:focus-visible,button:focus-visible{outline:3px solid #179bff;outline-offset:5p
 </script>
 </body>
 </html>
+
 
 
 
