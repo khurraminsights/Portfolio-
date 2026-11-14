@@ -761,6 +761,17 @@ a:focus-visible,button:focus-visible {outline-color:#ae665b}
 .footer-brand {background:#f8eee7;border-color:#e8d6cb}
 @media(max-width:600px){.page-header{padding-top:112px;padding-bottom:32px}.cert-overview{margin-top:20px}}
 
+
+/* Compact certification introduction and bring gallery directly beneath it */
+.page-header {padding-bottom:18px;}
+.page-header h1 {font-size:clamp(2.35rem,4.1vw,3.85rem);line-height:1.08;}
+.cert-typewriter {font-size:clamp(.9rem,1.35vw,1.08rem);margin-top:12px;min-height:28px;}
+.page-header p {font-size:clamp(.82rem,1vw,.92rem);line-height:1.55;margin-top:9px;max-width:680px;}
+.certs-section {padding-top:20px;}
+.gallery-heading {margin-bottom:14px;}
+.gallery-heading h2 {font-size:clamp(1.45rem,2.4vw,2rem);}
+.filter-row {margin-bottom:17px;}
+@media(max-width:600px){.page-header{padding-bottom:16px}.page-header h1{font-size:clamp(2.25rem,9vw,3rem)}.certs-section{padding-top:16px}}
 </style>
     <script>
     // Try common GitHub Pages asset locations if the certificate was uploaded to a subfolder.
@@ -919,6 +930,18 @@ a:focus-visible,button:focus-visible {outline-color:#ae665b}
     </div>
 
     <div class="cert-grid">
+        <!-- CPS for Analysts: add CPSForAnalysts.jpg alongside this HTML file -->
+        <div class="cert-card" data-cat="other" style="--i:1">
+            <div class="cert-img-box" onclick="openModal('CPSForAnalysts.jpg','Communication and Presentation for Analysts')">
+                <img src="CPSForAnalysts.jpg" alt="Communication and Presentation for Analysts certificate" loading="eager" decoding="async">
+                <div class="overlay"><i class="fa-solid fa-magnifying-glass"></i> View</div>
+            </div>
+            <div class="cert-body">
+                <span class="issuer-badge badge-other">Other</span>
+                <div class="cert-title">Communication and Presentation for Analysts</div>
+                <button class="btn-view" type="button" onclick="openModal('CPSForAnalysts.jpg','Communication and Presentation for Analysts')"><i class="fa-solid fa-eye" aria-hidden="true"></i> View Certificate</button>
+            </div>
+        </div>
         <!-- Power BI Certification — 365 Data Science -->
         <div class="cert-card" data-cat="other" style="--i:1">
             <div class="cert-img-box" onclick="openModal(document.getElementById('power-bi-365-certificate').currentSrc || document.getElementById('power-bi-365-certificate').src,'Power BI Certification — 365 Data Science')">
@@ -1384,6 +1407,7 @@ startTypewriter(document.getElementById('typed-certifications'), ['Validating My
 
 </body>
 </html>
+
 
 
 
